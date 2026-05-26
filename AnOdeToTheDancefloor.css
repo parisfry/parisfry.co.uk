@@ -12,7 +12,7 @@
 }
 
 .project-info{
-  width: 500px;
+  width: 600px;
 
   flex-shrink:0;
 
@@ -23,7 +23,7 @@
   text-align: right;
 }
 .project-info h1{
-  font-size:4.5rem;
+  font-size:3.5rem;
   letter-spacing:0.1em;
 
   font-weight:200;
@@ -33,18 +33,25 @@
 }
 
 .project-info p{
-    font-size:1.2rem;
+    font-size:1rem;
     opacity: 70%;
-     margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-.project-gallery{
+.desktop-gallery{
   display:grid;
 
-  grid-template-columns:repeat(2, 1fr);
+  grid-template-columns:repeat(3, 1fr);
 
   gap:24px;
-  
+}
+.mobile-gallery{
+  display:none;
+}
+.project-gallery{
+  flex:1;
+
+  min-width:0;
 }
 
 .project-layout{
@@ -90,6 +97,7 @@ video{
   min-width:0;
 }
 
+
 .gallery-column img,
 .gallery-column video{
   width:100%;
@@ -128,9 +136,13 @@ video{
 .project-info p{
     font-size:0.7rem;
     opacity: 70%;
- margin-bottom: 15px;
+
 }
-  .project-gallery{
+  .desktop-gallery{
+    display:none;
+  }
+
+  .mobile-gallery{
     display:grid;
 
     grid-template-columns:repeat(2, 1fr);

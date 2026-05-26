@@ -23,7 +23,7 @@
   text-align: right;
 }
 .project-info h1{
-  font-size:4.5rem;
+  font-size:3.5rem;
   letter-spacing:0.1em;
 
   font-weight:200;
@@ -33,7 +33,7 @@
 }
 
 .project-info p{
-    font-size:1.2rem;
+    font-size:1rem;
     opacity: 70%;
     margin-bottom: 20px;
 }
