@@ -1,11 +1,14 @@
 
+body{
+  padding: 20px;
+}
 
 .page-title{
-  font-size:6rem;
+  font-size:5rem;
 
   font-weight:200;
 
-  margin-bottom:50px;
+  margin-bottom:30px;
 }
 
 
@@ -14,23 +17,17 @@
 }
 
 .project-row{
-  width:60%;
+  width:40%;
 
-  margin-left:auto;
+  margin-left:600px;
 
   display:flex;
 
   align-items:flex-start;
 
-  gap:150px;
+  gap:50px;
 
-  padding:40px 0;
-}
-
-.project-info{
-  width:140px;
-
-  flex-shrink:0;
+  padding:40px 40px;
 }
 
 .project-info{
@@ -55,13 +52,13 @@
 
 
 .project-title{
-  font-size:1.5rem;
+  font-size:1.1rem;
 
   font-style:italic;
 
   letter-spacing:0.1em;
 
-  font-weight:50;
+  font-weight:40;
 
   line-height:1;
 }
@@ -74,7 +71,7 @@
 .project-image img{
   width:100%;
 
-  max-width:900px;
+  max-width:800px;
 
   height:auto;
 
@@ -120,7 +117,7 @@
   }
 
 .project-title{
-  font-size:1rem;
+  font-size:0.9rem;
   font-weight: 20 ;
 }
 .project-number{
