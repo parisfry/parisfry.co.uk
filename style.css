@@ -15,11 +15,15 @@ body{
 
   color:white;
 
-  font-family:'Soria', sans-serif;
+  font-family: 'Inter', sans-serif;
 
   padding:0px;
 
   overflow-x:hidden;
+}
+
+p{
+  line-height: 1.5;
 }
 
 .site-header{
@@ -161,7 +165,7 @@ body{
 
 .footer-name{
   font-size:1rem;
-
+  color:rgb(250, 187, 234);
   letter-spacing:0.08em;
 }
 
@@ -209,6 +213,8 @@ body{
 
   .menu-toggle{
     display:block;
+    margin-top: 20px;
+    margin-right: 20px;
   }
 
   .site-header{
