@@ -35,7 +35,7 @@
 }
 
 .project-info p{
-    font-size:1rem;
+    font-size:0.8rem;
     margin-bottom: 20px;
 }
 
@@ -126,10 +126,11 @@ video{
     text-align: left;
   }
 .project-info h1{
- font-size: 5rem;
+ font-size: 4rem;
     font-weight: 400;
 
   margin-bottom:20px;
+  margin-top: 0px;
 
 }
 

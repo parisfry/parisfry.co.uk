@@ -12,7 +12,7 @@
 }
 
 .project-info{
-  width: 600px;
+  width: 500px;
 
   flex-shrink:0;
 
@@ -32,11 +32,10 @@
   font-weight:400;
 
   margin-bottom:50px;
-  margin-top: 150px;
 }
 
 .project-info p{
-    font-size:1rem;
+    font-size:0.8rem;
     margin-bottom: 20px;
 }
 
@@ -45,7 +44,7 @@
 
   grid-template-columns:repeat(3, 1fr);
 
-  gap:24px;
+  gap:14px;
 }
 .mobile-gallery{
   display:none;
@@ -71,7 +70,7 @@
 
   flex-direction:column;
 
-  gap:20px;
+  gap:10px;
 
   min-width:0;
 }
@@ -127,11 +126,11 @@ video{
     text-align: left;
   }
 .project-info h1{
-  font-size: 5rem;
+  font-size: 4rem;
     font-weight: 400;
 
   margin-bottom:10px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .project-info p{
