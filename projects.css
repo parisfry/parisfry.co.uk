@@ -137,6 +137,13 @@ color:rgb(250, 187, 234);
 .project-number{
   font-size:0.8rem;
 }
+
+.project-year{
+  font-size:0.7rem;
+
+  padding-top: 20px;
+  
+}
   .project-image{
     width:100%;
   }
