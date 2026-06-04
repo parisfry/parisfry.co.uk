@@ -85,7 +85,7 @@ align-items:center;
   transform:translateY(-4px);
 }
 
-@media (max-width:768px){
+@media (max-width:1100px){
 
   .bg-image{
     object-position:60% center;

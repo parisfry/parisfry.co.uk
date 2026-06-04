@@ -110,7 +110,7 @@ video{
 }
 
 
-@media (max-width:768px){
+@media (max-width:1100px){
 
   .project-layout{
     flex-direction:column;

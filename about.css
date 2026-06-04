@@ -28,7 +28,7 @@
 .about-content{
   position: absolute;
   right: 12%;
-  top: 35%;
+  top: 50%;
   transform: translateY(-50%);
 
   display: flex;
@@ -59,7 +59,7 @@ color:rgb(250, 187, 234);
   width: 450px;
 }
 
-@media (max-width:768px){
+@media (max-width:1100px){
 
   .bg-image{
     object-position:60% center;
@@ -68,7 +68,7 @@ color:rgb(250, 187, 234);
   .about-content{
   left: auto;
     right: 20px;
-    top: 30%;
+    top: 50%;
     transform: translateY(-50%);
   }
 

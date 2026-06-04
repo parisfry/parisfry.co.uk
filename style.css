@@ -200,8 +200,43 @@ p{
   opacity:0.7;
 }
 
+.project-gallery img:hover,
+.project-gallery video:hover {
+  opacity: 0.75;
+  transform: scale(1.01);
+  transition: 0.2s ease;
+}
+.glightbox-container .gprev,
+.glightbox-container .gnext {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
 
-@media (max-width:768px){
+  opacity: 0.85;
+  transition: 0.2s ease;
+}
+
+.glightbox-container .gprev *,
+.glightbox-container .gnext * {
+  stroke: rgb(250, 187, 234) !important;
+  fill: rgb(250, 187, 234) !important;
+  stroke-width: 5px !important;  
+}
+
+.glightbox-container .gprev:hover,
+.glightbox-container .gnext:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.glightbox-container video {
+
+  max-width: 90vw;
+  max-height: 90vh;
+
+  object-fit: contain;
+}
+
+@media (max-width:1100px){
 
   body{
     padding:0px;
