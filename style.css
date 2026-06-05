@@ -62,7 +62,7 @@ p{
 }
 
 .desktop-nav a:hover{
-  opacity:0.5;
+  color:rgb(250, 187, 234);
 }
 
 
@@ -198,6 +198,11 @@ p{
   letter-spacing:0.08em;
 
   opacity:0.7;
+}
+
+.footer-right a:hover{
+  color:rgb(250, 187, 234);
+  opacity: 1;
 }
 
 .project-gallery img:hover,
