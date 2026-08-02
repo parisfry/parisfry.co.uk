@@ -337,7 +337,14 @@ align-items:stretch;
 
 @media (max-width: 1100px) {
 
-  /* INTRO */
+      .project-layout{
+    flex-direction:column;
+
+    gap:20px;
+
+    padding:10px;
+    margin-top: 20px;
+  }
 
   .project-intro {
     min-height: 250px;

@@ -104,3 +104,65 @@ lightbox.on('slide_after_load', ({ slide }) => {
   });
 
 });
+
+document.querySelectorAll(".video-unmute").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const wrapper = button.closest(
+            ".section-four-video-wrapper, .section-five-video-wrapper, .section-six-video-wrapper"
+        );
+
+        const video = wrapper.querySelector(
+            ".section-four-video, .section-five-video, .section-six-video"
+        );
+
+        const icon = button.querySelector("i");
+
+        if (video.muted) {
+
+            document.querySelectorAll(
+                ".section-four-video, .section-five-video, .section-six-video"
+            ).forEach(v => {
+                v.muted = true;
+            });
+
+            document.querySelectorAll(".video-unmute i").forEach(i => {
+                i.className = "fa-solid fa-volume-xmark";
+            });
+
+            video.muted = false;
+            icon.className = "fa-solid fa-volume-high";
+
+        } else {
+
+            video.muted = true;
+            icon.className = "fa-solid fa-volume-xmark";
+
+        }
+
+    });
+
+});
+
+document.querySelectorAll(".project-category").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const section = button.parentElement;
+
+        section.classList.toggle("active");
+
+
+        const icon = button.querySelector("span");
+
+        icon.textContent = section.classList.contains("active")
+            ? "−"
+            : "+";
+
+    });
+
+});
+
+
+

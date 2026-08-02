@@ -8,6 +8,44 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+.back-link{
+
+    display:inline-block;
+
+    font-family:"Titillium Web", sans-serif;
+
+    font-size:1.15rem;
+
+    font-weight: 200;
+
+    letter-spacing:.12em;
+
+    text-transform:uppercase;
+
+    text-decoration:none;
+
+    color:rgba(255,255,255,.45);
+
+    transition:.25s ease;
+}
+
+.back-link:hover{
+
+    color:white;
+}
+
+.top-back{
+
+   display: none;
+}
+
+.bottom-back{
+
+    display:block;
+
+    margin:120px 0 40px 40px;
+}
+
 body{
   margin:0;
   padding:0;
@@ -250,6 +288,27 @@ p{
   .desktop-nav{
     display:none;
   }
+
+    .top-back{
+
+      display: block;
+
+        position:absolute;
+
+        top:20px;
+
+        left:20px;
+
+        font-size:.55rem;
+
+    }
+
+    .bottom-back{
+
+        margin:10px 0 30px 20px;
+
+        font-size:.55rem;
+    }
 
   .menu-toggle{
     display:block;
