@@ -123,7 +123,7 @@ p{
 
   padding:40px 40px 40px;
 
-  margin-top:10px;
+   margin-top:auto;
 }
 
 .footer-left{
@@ -135,13 +135,13 @@ p{
 
 .footer-name{
   font-size:1rem;
-  color:rgba(255, 255, 255, 0.182);
+  color:rgba(255, 255, 255, 0.403);
   letter-spacing: 0.08em;
   font-family:"Titillium Web",sans-serif;
 }
 
 .footer-left a{
-color:rgba(255, 255, 255, 0.182);
+ color:rgba(255, 255, 255, 0.403);
    font-family:"Titillium Web",sans-serif;
 
   text-decoration:none;
@@ -161,7 +161,7 @@ color:rgba(255, 255, 255, 0.182);
 }
 
 .footer-right a{
-color:rgba(255, 255, 255, 0.182);
+ color:rgba(255, 255, 255, 0.403);
 
   text-decoration:none;
    font-family:"Titillium Web",sans-serif;
@@ -196,15 +196,7 @@ color:rgba(255, 255, 255, 0.182);
 
     .top-back{
 
-      display: block;
-
-        position:absolute;
-
-        top:20px;
-
-        left:20px;
-
-        font-size:.55rem;
+      display: none
 
     }
 

@@ -193,3 +193,30 @@ document.querySelectorAll(".project-category").forEach(button => {
 
 
 });
+const items = document.querySelectorAll(".column li, .mobile-column li");
+
+function updateBlur() {
+
+    const trigger = window.innerHeight * 0.80;
+
+    items.forEach(item => {
+
+        const rect = item.getBoundingClientRect();
+
+        const progress = Math.max(
+            0,
+            Math.min(1, (trigger - rect.top) / 120)
+        );
+
+        item.style.filter = `blur(${(1 - progress) * 4}px)`;
+        item.style.opacity = 0.25 + progress * 0.75;
+
+    });
+
+}
+
+window.addEventListener("scroll", updateBlur);
+window.addEventListener("resize", updateBlur);
+window.addEventListener("load", updateBlur);
+
+updateBlur();

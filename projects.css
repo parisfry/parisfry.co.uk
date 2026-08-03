@@ -1,13 +1,22 @@
+
 body{
+
+    min-height:100vh;
     padding:20px;
+    display:flex;
+    flex-direction:column;
+    overflow: hidden;
+
 }
 
-
+.site-footer{
+    margin-top:auto;
+}
 .projects-list{
 
     width:90%;
 
-    margin: 220px auto 420px;
+    margin: 220px auto 0;
 
     display:flex;
 
@@ -17,7 +26,6 @@ body{
 
     position:relative;
 }
-
 .project-row{
 
     display:grid;

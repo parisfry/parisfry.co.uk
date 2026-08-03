@@ -1,4 +1,7 @@
-
+body{
+  padding: 0px;
+  overflow: hidden;
+}
 .hero{
   position:relative;
 
