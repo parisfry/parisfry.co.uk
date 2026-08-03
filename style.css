@@ -43,7 +43,7 @@ html {
 
     display:block;
 
-    margin:120px 0 40px 40px;
+    margin:40px 0 40px 40px;
 }
 
 body{
@@ -52,8 +52,6 @@ body{
   background:#000;
 
   color:white;
-
-  font-family: 'Inter', sans-serif;
 
   padding:0px;
 
@@ -90,17 +88,25 @@ p{
 .desktop-nav a{
   color:white;
 
-  text-decoration:none;
+    font-family:"Titillium Web", sans-serif;
 
-  font-size:1rem;
+    font-size:1.15rem;
 
-  letter-spacing:0.08em;
+    font-weight: 200;
+
+    letter-spacing:.12em;
+
+    text-transform:uppercase;
+
+    text-decoration:none;
+
+    transition:.25s ease;
 
   transition:0.2s ease;
 }
 
 .desktop-nav a:hover{
-  color:rgb(250, 187, 234);
+    color:rgba(255,255,255,.6);
 }
 
 
@@ -203,12 +209,14 @@ p{
 
 .footer-name{
   font-size:1rem;
-  color:rgb(250, 187, 234);
-  letter-spacing:0.08em;
+  color:rgba(255, 255, 255, 0.182);
+  letter-spacing: 0.08em;
+  font-family:"Titillium Web",sans-serif;
 }
 
 .footer-left a{
-  color:white;
+color:rgba(255, 255, 255, 0.182);
+   font-family:"Titillium Web",sans-serif;
 
   text-decoration:none;
 
@@ -227,9 +235,10 @@ p{
 }
 
 .footer-right a{
-  color:white;
+color:rgba(255, 255, 255, 0.182);
 
   text-decoration:none;
+   font-family:"Titillium Web",sans-serif;
 
   font-size:0.9rem;
 
@@ -239,7 +248,12 @@ p{
 }
 
 .footer-right a:hover{
-  color:rgb(250, 187, 234);
+  color:white;
+  opacity: 1;
+}
+
+.footer-left a:hover{
+  color:white;
   opacity: 1;
 }
 

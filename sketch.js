@@ -9,101 +9,123 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const visibleGallery = document.querySelector(
-    window.getComputedStyle(document.querySelector('.desktop-gallery')).display !== 'none'
-      ? '.desktop-gallery'
-      : '.mobile-gallery'
-  );
+// ---------- Project gallery ----------
 
-  const items = Array.from(
-    visibleGallery.querySelectorAll('img, video')
-  );
+const desktopGallery = document.querySelector(".desktop-gallery");
+const mobileGallery = document.querySelector(".mobile-gallery");
 
-  items.sort((a, b) =>
-    Number(a.dataset.order) - Number(b.dataset.order)
-  );
+if (desktopGallery || mobileGallery) {
 
-  const elements = items.map(el => {
+    const visibleGallery =
+        desktopGallery &&
+        window.getComputedStyle(desktopGallery).display !== "none"
+            ? desktopGallery
+            : mobileGallery;
 
-    if (el.tagName === 'VIDEO') {
-      return {
-        href: el.querySelector('source').src,
-        type: 'video'
-      };
-    }
+    const items = Array.from(
+        visibleGallery.querySelectorAll("img, video")
+    );
 
-    return {
-      href: el.src,
-      type: 'image'
-    };
-  });
+    items.sort((a, b) =>
+        Number(a.dataset.order) - Number(b.dataset.order)
+    );
 
- const lightbox = GLightbox({
-  elements,
-  loop: true,
-  touchNavigation: true,
-  autoplayVideos: true,
+    const elements = items.map(el => {
 
-  zoomable: false,
-  draggable: false,
+        if (el.tagName === "VIDEO") {
 
+            return {
+                href: el.querySelector("source").src,
+                type: "video"
+            };
 
-  moreText: false,
-  skin: 'clean',
+        }
 
-  openEffect: 'fade',
-  closeEffect: 'fade',
+        return {
+            href: el.src,
+            type: "image"
+        };
 
-  touchFollowAxis: false,
-
-  plyr: {
-    config: {
-      controls: ['play', 'progress', 'current-time', 'fullscreen'],
-      muted: true,
-      volume: 0
-    }
-  }
-});
-
-lightbox.on('slide_changed', ({ current }) => {
-  const video = current?.slide?.querySelector('video');
-
-  if (video) {
-    video.muted = true;
-    video.volume = 0;
-    video.autoplay = false;
-  }
-});
-
-
-
-lightbox.on('slide_after_load', ({ slide }) => {
-  const img = slide.querySelector('img');
-  const media = slide.querySelector('.gslide-media');
-
-  if (img) {
-    img.style.pointerEvents = 'none';
-    img.style.cursor = 'default';
-  }
-
-  if (media) {
-    media.style.transform = 'none';
-  }
-});
-
-  items.forEach(item => {
-    item.style.cursor = 'default';
-
-    item.addEventListener('click', e => {
-      e.preventDefault();
-
-      const index = items.indexOf(item);
-
-      lightbox.openAt(index);
     });
-  });
 
-});
+    const lightbox = GLightbox({
+
+        elements,
+        loop:true,
+        touchNavigation:true,
+        autoplayVideos:true,
+
+        zoomable:false,
+        draggable:false,
+
+        moreText:false,
+        skin:"clean",
+
+        openEffect:"fade",
+        closeEffect:"fade",
+
+        touchFollowAxis:false,
+
+        plyr:{
+            config:{
+                controls:["play","progress","current-time","fullscreen"],
+                muted:true,
+                volume:0
+            }
+        }
+
+    });
+
+    lightbox.on("slide_changed", ({ current }) => {
+
+        const video = current?.slide?.querySelector("video");
+
+        if(video){
+
+            video.muted = true;
+            video.volume = 0;
+            video.autoplay = false;
+
+        }
+
+    });
+
+    lightbox.on("slide_after_load", ({ slide }) => {
+
+        const img = slide.querySelector("img");
+        const media = slide.querySelector(".gslide-media");
+
+        if(img){
+
+            img.style.pointerEvents = "none";
+            img.style.cursor = "default";
+
+        }
+
+        if(media){
+
+            media.style.transform = "none";
+
+        }
+
+    });
+
+    items.forEach(item => {
+
+        item.style.cursor = "default";
+
+        item.addEventListener("click", e => {
+
+            e.preventDefault();
+
+            lightbox.openAt(items.indexOf(item));
+
+        });
+
+    });
+
+  }
+
 
 document.querySelectorAll(".video-unmute").forEach(button => {
 
@@ -165,4 +187,4 @@ document.querySelectorAll(".project-category").forEach(button => {
 });
 
 
-
+});
