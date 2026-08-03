@@ -1,0 +1,144 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+body{
+
+background:black;
+color:white;
+
+font-family: "Titillium Web", sans-serif;
+
+scroll-snap-type:y mandatory;
+
+overflow-y:scroll;
+
+}
+
+
+section{
+
+    scroll-snap-align:start;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding:5px;
+
+    text-align:center;
+
+}
+
+.home-section{
+
+    min-height:55vh;
+    padding-top:200px;
+
+}
+
+.about-section{
+
+    padding-top:40px;
+    gap:0;
+
+}
+
+.home-section img{
+
+width:100%;
+}
+
+
+.home-section h1{
+
+  font-weight: 700;
+  font-style: normal;
+
+  font-size: 1.5rem;
+
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+
+margin-top:20px;
+
+}
+
+
+.home-section p{
+
+font-size:.7rem;
+
+margin-top:0px;
+
+}
+
+
+.about-section p{
+
+font-family: "Titillium Web", sans-serif;
+
+font-size:.7rem;
+letter-spacing: 0.01rem;
+
+ color: rgba(255, 255, 255, 0.5);
+    margin-bottom:20px;
+}
+
+
+.about-section img{
+
+width:55%;
+max-width:180px;
+
+border-radius:5px;
+
+margin-top:20px;
+
+}
+
+.projects-section{
+
+align-items:flex-end;
+
+padding:40px 50px 100px;
+
+min-height:auto;
+
+gap: 10px;
+
+}
+
+.projects-link{
+
+color:white;
+
+text-decoration:none;
+
+font-size:.6rem;
+
+font-family:"Titillium Web", sans-serif;
+
+font-weight:300;
+
+letter-spacing:.12em;
+
+text-transform:uppercase;
+
+border-bottom:0.5px solid white;
+
+padding-bottom:2px;
+
+transition:.2s ease;
+
+}
+
+.projects-link:hover{
+
+opacity:.7;
+
+}

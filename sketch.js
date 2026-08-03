@@ -1,13 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  const menuToggle = document.getElementById('menuToggle');
-  const mobileMenu = document.getElementById('mobileMenu');
+const menuButton = document.querySelector(".mobile-menu-button");
+const menu = document.querySelector(".mobile-menu");
 
-  if (menuToggle && mobileMenu) {
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('active');
+
+if(menuButton && menu){
+
+    menuButton.addEventListener("click", () => {
+
+        menu.classList.toggle("active");
+
     });
-  }
+
+}
 
 // ---------- Project gallery ----------
 

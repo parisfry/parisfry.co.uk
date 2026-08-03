@@ -1,168 +1,87 @@
-.about-hero{
-
-    position:relative;
-
-    width:100%;
+.about-intro{
 
     min-height:900px;
 
-    padding:70px 70px 80px;
+    display:grid;
+
+    grid-template-columns: 1fr 500px;
+
+    align-items:center;
+
+    gap:80px;
+
+    padding:140px 120px;
+
 }
 
-.about-title{
 
-    position:absolute;
 
-    top:140px;
-    right:500px;
+.about-text{
 
-    font-family:"Titillium Web", sans-serif;
- 
-    font-weight:100;
+    max-width:700px;
 
-    font-size:1.6rem;
+}
+
+
+.about-text h1{
+
+    font-family:"Titillium Web",sans-serif;
+
+    font-size:1.5rem;
+
+    font-weight:300;
+
+    letter-spacing:.1em;
+
+    color:white;
+
+    margin-bottom:60px;
+
+}
+
+
+
+.about-text p{
+
+    font-family:"Titillium Web",sans-serif;
+
+    font-size:.9rem;
+
+    font-weight:300;
 
     line-height:1.1;
 
     letter-spacing:.08em;
 
-    z-index:10;
+    color:rgba(255,255,255,.65);
 
-    color:rgba(255,255,255,.6);
-}
-
-.image-layout{
-
-    position:relative;
-
-    width:1290px;
-    height:570px;
-
-    left:50%;
-    transform:translateX(-50%);
-}
-
-
-.image-layout img{
-
-    position:absolute;
-    object-fit:cover;
-
-    display:block;
-
-    transform:translateZ(0);
-
-    backface-visibility:hidden;
-    -webkit-backface-visibility:hidden;
-
-}
-.img-1{
-
-    width:250px;
-
-    opacity: .5;
-
-    aspect-ratio:3/4;
-
-    left:0;
-    top:50px;
-
-    border-radius: 5px;
-}
-
-.img-2{
-
-    width:250px;
-   opacity: .5;
-
-    aspect-ratio:4/3;
-
-    left:260px;
-    top:20px;
-
-    border-radius: 5px;
-}
-
-.img-3{
-
-    width:200px;
-    opacity: .5;
-
-    aspect-ratio:7/5;
-
-    left:350px;
-    top:300px;
-
-    border-radius: 5px;
-}
-
-.img-4{
-
-    width:330px;
-    opacity: .5;
-
-    aspect-ratio:4/5;
-
-    left:560px;
-    top:100px;
-
-    border-radius: 5px;
-}
-
-.img-5{
-
-    width:190px;
-    opacity: .5;
-
-    aspect-ratio:5/7;
-
-    left:900px;
-    top:120px;
-
-    border-radius: 5px;
-}
-
-.img-6{
-
-    width:190px;
-    opacity: .5;
-
-    aspect-ratio:3/4;
-
-    left:1100px;
-    top:100px;
-
-    border-radius: 5px;
+    margin-bottom:20px;
 
 }
 
-.about-copy{
+
+
+.about-more{
+
+    margin-top:80px;
+
+    text-align: right;
+    
+
+}
+
+
+
+.about-image img{
 
     width:100%;
 
-    margin-top:0;
+    aspect-ratio:4/5;
 
-    text-align: center;
-}
+    object-fit:cover;
 
-.about-copy p{
+    border-radius:6px;
 
-    font-family:"Titillium Web", sans-serif;
-
-    font-weight:100;
-
-    letter-spacing: 0.1em;
-
-    line-height:2;
-
-    color:rgba(255,255,255,.6);
-
-    font-size:0.9rem;
-
-    text-align: center;
-}
-
-@media (max-width:1100px){
-
+    opacity:.85;
 
 }
