@@ -59,6 +59,18 @@
   line-height: 1.35;
 }
 
+.section-title {
+
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+
+    font-size: 1.15rem;
+
+    padding-bottom: 5px;
+
+    color: white;
+
+}
 .section-one {
     width: 100%;
 
@@ -665,6 +677,11 @@ display: block;
 }
 .project-intro-description {
   font-size: 0.8rem;
+}
+
+.section-title{
+    font-size: 0.9rem;
+    color: white;
 }
     .section-one {
         width: 100%;

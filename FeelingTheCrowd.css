@@ -59,6 +59,18 @@
   line-height: 1.35;
 }
 
+.section-title {
+
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+
+    font-size: 1.15rem;
+
+    padding-bottom: 5px;
+
+    color: white;
+
+}
 .section-one{
 
 align-items:stretch;
@@ -97,12 +109,16 @@ align-items:stretch;
 .section-one-text {
   width: 100%;
 
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 200;
-
   margin-top: 80px;
 
   padding: 0;
+
+}
+.section-one-text p{
+
+
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
 
   font-size: 1rem;
   line-height: 1.35;
@@ -143,9 +159,11 @@ align-items:stretch;
 
     grid-template-rows:auto 1fr;
 }
-.section-two-text{
+.section-two-text {
 
-    text-align: right;
+    text-align: right;}
+
+.section-two-text p{
 
     font-family: "Titillium Web", sans-serif;
   font-weight: 200;
@@ -155,6 +173,8 @@ align-items:stretch;
 
     color:rgba(255,255,255,.75);
 }
+
+
 .section-two-image{
     align-self:end;
 
@@ -199,10 +219,14 @@ align-items:stretch;
 
     display:block;
 }
-.section-three-text{
+
+.section-three-text {
 
     padding-top:40px;
     max-width: 400px;
+}
+
+.section-three-text p{
 
     font-family: "Titillium Web", sans-serif;
     font-weight: 200;
@@ -241,17 +265,20 @@ align-items:stretch;
 
   text-align: right;
 
+  margin-top: 40px;
+
+}
+
+.section-four-text p{
+
   font-family: "Titillium Web", sans-serif;
     font-weight: 200;
-
-  margin-top: 40px;
 
   font-size: 1rem;
   line-height: 1.35;
 
   color: rgba(255, 255, 255, 0.75);
 }
-
 .section-four-grid {
   min-width: 0;
 
@@ -287,7 +314,6 @@ align-items:stretch;
 
     color: rgba(255,255,255,.75);
 }
-
 
 
 .timeline-section {
@@ -370,8 +396,12 @@ align-items:stretch;
   font-size: 0.8rem;
 }
 
-  /* SECTIONS ONE AND TWO */
+.section-title{
 
+  color:white;
+  font-size: 0.9em;
+
+}
   .section-one,
   .section-two {
     grid-template-columns: 1fr;
@@ -399,9 +429,10 @@ align-items:stretch;
 
   .section-one-text {
     margin-top: 10px;
+  }
+ .section-one-text p{
     font-size: 0.7rem;
   }
-
   .section-one-image,
   .section-two-image{
     width: 100%;
@@ -422,11 +453,12 @@ align-items:stretch;
         order: 2;
         margin-top: 10px;
         text-align: right;
+    }
+  .section-two-text p {
+      
         font-size: 0.7rem;
     }
 
-
-  /* SECTION THREE */
 
   .section-three {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -445,10 +477,14 @@ align-items:stretch;
     padding-top: 0px;
     margin-top: 0px;
 
-    font-size: 0.7rem;
-
     max-width: 100%;
     
+  }
+
+    .section-three-text p{
+    font-size: 0.7rem;
+
+  
   }
 
   .section-three-image {
@@ -458,10 +494,6 @@ align-items:stretch;
     height: auto;
     aspect-ratio: 3 / 4;
   }
-
-
-
-  /* SECTION FOUR */
 
   .section-four {
     grid-template-columns: 1fr;
@@ -473,6 +505,9 @@ align-items:stretch;
     max-width: 100%;
     margin-top: 0;
     text-align: center;
+  }
+
+  .section-four-text p{
     font-size: 0.7rem;
   }
 
@@ -532,9 +567,6 @@ align-items:stretch;
     font-size: 0.7rem;
   }
 
-
-
-  /* TIMELINE */
 
   .timeline-section {
     padding: 10px;

@@ -145,14 +145,27 @@
     object-fit: cover;
     min-width: 0;
 }
-
 .section-three-text {
     padding-top: 200px;
+}
+.section-title {
+
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+
+    font-size: 1.15rem;
+
+    padding-bottom: 5px;
+
+    color: white;
+
+}
+
+.section-three-text p {
 
     font-family: "Titillium Web", sans-serif;
     font-weight: 200;
     
-
     font-size: 1rem;
     line-height: 1.35;
 
@@ -547,7 +560,19 @@
 .project-intro-description {
   font-size: 0.8rem;
 }
+.section-title-mobile{
+    font-size: 0.9rem;
+    color: white;
+     font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
 
+padding-bottom: 5px;
+}
+
+.section-title{
+    font-size: 0.9rem;
+    color: white;
+}
     .section-one {
         width: 100%;
         grid-template-columns: 1fr;
@@ -582,6 +607,10 @@
         padding-top: 0px;
         font-size: 0.7rem;
     }
+.section-three-text p{
+        font-size: 0.7rem;
+    }
+
        .section-three-text-mobile{
         display:block;
         padding:10px;
