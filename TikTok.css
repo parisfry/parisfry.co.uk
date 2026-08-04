@@ -96,6 +96,8 @@
 
     padding-bottom: 5px;
 
+    color: white;
+
 }
 
 .section-one-block {
@@ -249,7 +251,7 @@
     font-weight: 200;
 
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.35;
 
     color: rgba(255,255,255,.75);
 }
@@ -326,6 +328,8 @@
     font-size: 1.15rem;
 
     text-align: left;
+
+    color: white;
 }
 
 .section-four-video {
@@ -421,11 +425,11 @@
     font-family: "Titillium Web", sans-serif;
     font-weight: 200;
 
-    font-size: 0.9rem;
+    font-size: 1rem;
 
     text-align: left;
 
-    line-height: 1.4;
+    line-height: 1.35;
 
     color: rgba(255,255,255,.75);
 }
@@ -512,9 +516,9 @@
     font-family: "Titillium Web", sans-serif;
     font-weight: 200;
 
-    font-size: 0.9rem;
+    font-size: 1rem;
 
-    line-height: 1.4;
+    line-height: 1.35;
 
     color: rgba(255,255,255,.75);
 }
@@ -645,9 +649,9 @@
 
     font-weight: 200;
 
-    font-size: 0.9rem;
+    font-size: 1rem;
 
-    line-height: 1.4;
+    line-height: 1.35;
 
     color: rgba(255,255,255,.75);
 }
@@ -704,9 +708,9 @@
 
     font-weight: 200;
 
-    font-size: 0.9rem;
+    font-size: 1rem;
 
-    line-height: 1.4;
+    line-height: 1.35;
 
     color: rgba(255,255,255,.75);
 
@@ -821,9 +825,9 @@
 
     font-weight: 200;
 
-    font-size: .95rem;
+    font-size: 1rem;
 
-    line-height: 1.45;
+    line-height: 1.35;
 
     color: rgba(255,255,255,.75);
 
@@ -942,9 +946,9 @@
 
     font-weight: 200;
 
-    font-size: 0.9rem;
+    font-size: 1rem;
 
-    line-height: 1.4;
+    line-height: 1.35;
 
     color: rgba(255,255,255,.75);
 }
@@ -1029,9 +1033,9 @@
 
     font-weight: 200;
 
-    font-size: 0.9rem;
+    font-size: 1rem;
 
-    line-height: 1.4;
+    line-height: 1.35;
 
     color: rgba(255,255,255,.75);
 }
@@ -1161,7 +1165,7 @@
 
 .section-two-title {
 
-    text-align: left;
+    text-align: center;
 
     font-size: 0.9rem;
 
@@ -1170,7 +1174,7 @@
 
 .section-two-text p {
 
-    text-align: left;
+    text-align: center;
 
     font-size: 0.7rem;
 }
@@ -1595,10 +1599,6 @@
 
     font-size: 0.7rem;
 
-    line-height: 1.4;
-
-    color: rgba(255,255,255,.75);
-
     text-align: left;
 }
 
@@ -1693,15 +1693,11 @@
 
 .section-eight-info {
 
-    font-family: "Titillium Web", sans-serif;
-
-    font-weight: 200;
 
     font-size: .7rem;
 
     text-align: left;
 
-    color: rgba(255,255,255,.75);
 }
 
 .section-eight-info p {
@@ -1779,7 +1775,7 @@
 
     margin: 0 ;
 
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 
     text-align: left;
 
@@ -1789,7 +1785,7 @@
 
     margin: 0;
 
-    font-size: 0.65rem;
+    font-size: 0.7rem;
 
     text-align: left;
 }
@@ -1847,7 +1843,7 @@
 
     margin: 0 ;
 
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 
     text-align: left;
 }
@@ -1856,7 +1852,7 @@
 
     margin: 0;
 
-    font-size: 0.65rem;
+    font-size: 0.7rem;
 
     text-align: left;
 }
