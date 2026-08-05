@@ -471,6 +471,123 @@
      align-self:end;
 }
 
+.section-nine{
+
+    width:100%;
+
+    padding:10px;
+
+    gap: 10px;
+}
+
+
+.section-nine-content{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:10px;
+
+    align-items:start;
+
+    padding-top: 90px;
+}
+
+.section-nine-video{
+
+    position:relative;
+
+    width:fit-content;
+
+    justify-self:end;
+}
+
+.section-nine-video video{
+
+    height:600px;
+
+    width:auto;
+
+    display:block;
+
+    aspect-ratio:10 / 16;
+
+    object-fit:cover;
+
+    border-radius: 6px;
+}
+
+.video-unmute{
+
+      position: absolute;
+
+    top: 10px;
+    left: 10px;
+
+    width: 36px;
+    height: 36px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(0,0,0,.45);
+
+    color: white;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(5px);
+}
+
+.video-unmute i{
+
+    font-size:0.9rem;
+}
+.section-nine-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    padding-right: 50px;
+}
+
+.section-nine-right img{
+
+    width:100%;
+
+    aspect-ratio:16 / 4;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+.section-nine-text{
+
+    max-width:690px;
+}
+
+.section-nine-text p{
+
+    margin:0;
+
+    font-family:"Titillium Web", sans-serif;
+
+    font-size:1.2rem;
+
+    font-weight:200;
+
+    line-height:1.35;
+
+    color:rgba(255,255,255,.75);
+
+    text-align: center;
+}
 
 @media (max-width: 1100px) {
 
@@ -853,4 +970,75 @@
 
     aspect-ratio:16 / 10;
 }
+
+.section-nine{
+
+    width:100%;
+
+    padding:10px;
+}
+
+.section-nine-content{
+
+    display:grid;
+
+    grid-template-columns:140px 1fr;
+
+    gap:10px;
+
+    align-items:start;
+
+    padding: 10px;
+}
+
+.section-nine-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    padding-right:0;
+}
+
+.section-nine-right img{
+
+    width:100%;
+
+    aspect-ratio:18 / 5;
+
+    object-fit:cover;
+    
+}
+
+.section-nine-text p{
+
+    font-size:.7rem;
+
+    line-height:1.35;
+
+    text-align:left;
+
+    padding-top: 20px;
+}
+
+.section-nine-video-text{
+
+    display:grid;
+
+    grid-template-columns:110px 1fr;
+
+    gap:10px;
+
+    align-items:start;
+}
+
+.section-nine-video video{
+
+    height:220px;
+
+    width:auto;
+}
+
 }

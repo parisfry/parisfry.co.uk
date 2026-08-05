@@ -137,11 +137,11 @@ document.querySelectorAll(".video-unmute").forEach(button => {
     button.addEventListener("click", () => {
 
         const wrapper = button.closest(
-            ".section-four-video-wrapper, .section-five-video-wrapper, .section-six-video-wrapper"
+            ".section-four-video-wrapper, .section-five-video-wrapper, .section-six-video-wrapper, .section-nine-video-wrapper"
         );
 
         const video = wrapper.querySelector(
-            ".section-four-video, .section-five-video, .section-six-video"
+            ".section-four-video, .section-five-video, .section-six-video, .section-nine-video"
         );
 
         const icon = button.querySelector("i");
@@ -149,7 +149,7 @@ document.querySelectorAll(".video-unmute").forEach(button => {
         if (video.muted) {
 
             document.querySelectorAll(
-                ".section-four-video, .section-five-video, .section-six-video"
+                ".section-four-video, .section-five-video, .section-six-video, .section-nine-video"
             ).forEach(v => {
                 v.muted = true;
             });
@@ -172,6 +172,31 @@ document.querySelectorAll(".video-unmute").forEach(button => {
 
 });
 
+const sectionNine = document.querySelector(".section-nine-video");
+
+if (sectionNine) {
+
+    const button = sectionNine.querySelector(".video-unmute");
+    const video = sectionNine.querySelector("video");
+    const icon = button.querySelector("i");
+
+    button.addEventListener("click", () => {
+
+        if (video.muted) {
+
+            video.muted = false;
+            icon.className = "fa-solid fa-volume-high";
+
+        } else {
+
+            video.muted = true;
+            icon.className = "fa-solid fa-volume-xmark";
+
+        }
+
+    });
+
+}
 document.querySelectorAll(".project-category").forEach(button => {
 
     button.addEventListener("click", () => {
