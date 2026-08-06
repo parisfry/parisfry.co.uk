@@ -1,4 +1,32 @@
+body::before{
+    content:"";
+    position:fixed;
 
+    width:900px;
+    height:2200px;
+
+    background:url("images/spiral.png") no-repeat center;
+    background-size:contain;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%) rotate(90deg);
+
+    opacity:.12;
+
+    pointer-events:none;
+
+    z-index:0;
+}
+
+.project-layout,
+.site-header,
+.site-footer,
+.back-link{
+    position:relative;
+    z-index:1;
+}
 body{
 
     min-height:100vh;
@@ -289,5 +317,27 @@ display:flex;
     text-overflow:ellipsis;
 
     min-width:0;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+
+    width:900px;
+    height:800px;
+
+    background:url("images/spiral.png") no-repeat center;
+    background-size:contain;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    opacity:.12;
+
+    pointer-events:none;
+
+    z-index:0;
 }
 }
