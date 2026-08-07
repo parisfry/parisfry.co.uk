@@ -1,140 +1,117 @@
+const modal = document.querySelector(".video-modal");
+const modalVideo = modal.querySelector("video");
+const caption = modal.querySelector(".video-caption");
+const close = modal.querySelector(".close-video");
+
 document.addEventListener("DOMContentLoaded", () => {
 
-const menuButton = document.querySelector(".mobile-menu-button");
-const menu = document.querySelector(".mobile-menu");
+    const isMobile = window.matchMedia("(max-width: 1100px)").matches;
+    const activeClass = isMobile ? "lightbox-mobile" : "lightbox-desktop";
 
+    const images = document.querySelectorAll(`img.${activeClass}`);
 
-if(menuButton && menu){
-
-    menuButton.addEventListener("click", () => {
-
-        menu.classList.toggle("active");
-
-    });
-
-}
-
-// ---------- Project gallery ----------
-
-const desktopGallery = document.querySelector(".desktop-gallery");
-const mobileGallery = document.querySelector(".mobile-gallery");
-
-if (desktopGallery || mobileGallery) {
-
-    const visibleGallery =
-        desktopGallery &&
-        window.getComputedStyle(desktopGallery).display !== "none"
-            ? desktopGallery
-            : mobileGallery;
-
-    const items = Array.from(
-        visibleGallery.querySelectorAll("img, video")
-    );
-
-    items.sort((a, b) =>
-        Number(a.dataset.order) - Number(b.dataset.order)
-    );
-
-    const elements = items.map(el => {
-
-        if (el.tagName === "VIDEO") {
-
-            return {
-                href: el.querySelector("source").src,
-                type: "video"
-            };
-
-        }
-
-        return {
-            href: el.src,
-            type: "image"
-        };
-
-    });
+    const elements = Array.from(images).map(el => ({
+        href: el.src,
+        type: "image",
+        description: el.dataset.caption || ""
+    }));
 
     const lightbox = GLightbox({
-
         elements,
-        loop:true,
+        loop:false,
         touchNavigation:true,
-        autoplayVideos:true,
-
+        draggable:true,
         zoomable:false,
-        draggable:false,
-
-        moreText:false,
-        skin:"clean",
-
         openEffect:"fade",
         closeEffect:"fade",
-
-        touchFollowAxis:false,
-
-        plyr:{
-            config:{
-                controls:["play","progress","current-time","fullscreen"],
-                muted:true,
-                volume:0
-            }
-        }
-
+        moreLength: 0
     });
 
-    lightbox.on("slide_changed", ({ current }) => {
-
-        const video = current?.slide?.querySelector("video");
-
-        if(video){
-
-            video.muted = true;
-            video.volume = 0;
-            video.autoplay = false;
-
-        }
-
-    });
-
-    lightbox.on("slide_after_load", ({ slide }) => {
-
-        const img = slide.querySelector("img");
-        const media = slide.querySelector(".gslide-media");
-
-        if(img){
-
-            img.style.pointerEvents = "none";
-            img.style.cursor = "default";
-
-        }
-
-        if(media){
-
-            media.style.transform = "none";
-
-        }
-
-    });
-
-    items.forEach(item => {
-
-        item.style.cursor = "default";
-
-        item.addEventListener("click", e => {
-
-            e.preventDefault();
-
-            lightbox.openAt(items.indexOf(item));
-
+    images.forEach((item, index) => {
+        item.classList.add("lightbox-item"); // for cursor styling, see CSS below
+        item.addEventListener("click", () => {
+            lightbox.openAt(index);
         });
-
     });
 
-  }
+    // same pattern for videos, if some are also split by breakpoint
+    document.querySelectorAll(`video.${activeClass}`).forEach(video => {
+        video.classList.add("lightbox-item");
+        video.addEventListener("click", () => {
+            modal.classList.add("active");
+            modalVideo.src = video.querySelector("source").src;
+            modalVideo.controls = true;
+            modalVideo.controlsList = "nodownload noplaybackrate";
+            modalVideo.disablePictureInPicture = true;
+            caption.textContent = video.dataset.caption || "";
+            modalVideo.play();
+        });
+    });
 
+});
+
+close.addEventListener("click",()=>{
+
+    modal.classList.remove("active");
+
+    modalVideo.pause();
+
+    modalVideo.src="";
+
+});
+
+modal.addEventListener("click",e=>{
+
+    if(e.target===modal){
+
+        modal.classList.remove("active");
+
+        modalVideo.pause();
+
+        modalVideo.src="";
+
+    }
+
+});
+
+document.querySelectorAll("[data-caption]").forEach(media => {
+
+    const wrapper = document.createElement("div");
+
+    wrapper.className = "caption-wrapper";
+
+
+    media.parentNode.insertBefore(wrapper, media);
+
+    wrapper.appendChild(media);
+
+
+    const caption = document.createElement("div");
+
+    caption.className = "media-caption";
+
+    caption.textContent = media.dataset.caption;
+
+
+    wrapper.appendChild(caption);
+
+
+    media.addEventListener("mouseenter", () => {
+        caption.classList.add("visible");
+    });
+
+
+    media.addEventListener("mouseleave", () => {
+        caption.classList.remove("visible");
+    });
+
+});
 
 document.querySelectorAll(".video-unmute").forEach(button => {
 
-    button.addEventListener("click", () => {
+    button.addEventListener("click", (e) => {
+
+        e.stopPropagation(); // prevent this click from also triggering the video's lightbox-open listener
 
         const wrapper = button.closest(
             ".section-four-video-wrapper, .section-five-video-wrapper, .section-six-video-wrapper, .section-nine-video-wrapper"
@@ -150,9 +127,7 @@ document.querySelectorAll(".video-unmute").forEach(button => {
 
             document.querySelectorAll(
                 ".section-four-video, .section-five-video, .section-six-video, .section-nine-video"
-            ).forEach(v => {
-                v.muted = true;
-            });
+            ).forEach(v => { v.muted = true; });
 
             document.querySelectorAll(".video-unmute i").forEach(i => {
                 i.className = "fa-solid fa-volume-xmark";
@@ -180,7 +155,8 @@ if (sectionNine) {
     const video = sectionNine.querySelector("video");
     const icon = button.querySelector("i");
 
-    button.addEventListener("click", () => {
+ button.addEventListener("click", (e) => {
+    e.stopPropagation();
 
         if (video.muted) {
 
@@ -216,8 +192,6 @@ document.querySelectorAll(".project-category").forEach(button => {
 
 });
 
-
-});
 const items = document.querySelectorAll(".column li, .mobile-column li");
 
 function updateBlur() {
