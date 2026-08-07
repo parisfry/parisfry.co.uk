@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         zoomable:false,
         openEffect:"fade",
         closeEffect:"fade",
-        moreLength: 0
+         moreLength: 0
     });
 
     images.forEach((item, index) => {
