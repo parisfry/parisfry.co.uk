@@ -28,13 +28,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     images.forEach((item, index) => {
-        item.classList.add("lightbox-item"); // for cursor styling, see CSS below
+        item.classList.add("lightbox-item");
         item.addEventListener("click", () => {
             lightbox.openAt(index);
         });
     });
 
-    // same pattern for videos, if some are also split by breakpoint
     document.querySelectorAll(`video.${activeClass}`).forEach(video => {
         video.classList.add("lightbox-item");
         video.addEventListener("click", () => {
@@ -43,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
             modalVideo.controls = true;
             modalVideo.controlsList = "nodownload noplaybackrate";
             modalVideo.disablePictureInPicture = true;
+             modalVideo.muted = false;
             caption.textContent = video.dataset.caption || "";
             modalVideo.play();
         });
@@ -111,7 +111,7 @@ document.querySelectorAll(".video-unmute").forEach(button => {
 
     button.addEventListener("click", (e) => {
 
-        e.stopPropagation(); // prevent this click from also triggering the video's lightbox-open listener
+        e.stopPropagation(); 
 
         const wrapper = button.closest(
             ".section-four-video-wrapper, .section-five-video-wrapper, .section-six-video-wrapper, .section-nine-video-wrapper"
@@ -219,3 +219,57 @@ window.addEventListener("resize", updateBlur);
 window.addEventListener("load", updateBlur);
 
 updateBlur();
+
+const track = document.querySelector(".instagram-track");
+const slides = document.querySelectorAll(".instagram-slide");
+
+const prevButton = document.querySelector(".instagram-prev");
+const nextButton = document.querySelector(".instagram-next");
+
+const dots = document.querySelectorAll(".instagram-dot");
+
+let currentSlide = 0;
+
+function updateInstagramCarousel() {
+
+    track.style.transform =
+        `translateX(-${currentSlide * 100}%)`;
+
+    dots.forEach((dot, index) => {
+
+        dot.classList.toggle(
+            "active",
+            index === currentSlide
+        );
+
+    });
+
+    prevButton.disabled = currentSlide === 0;
+    nextButton.disabled = currentSlide === slides.length - 1;
+}
+
+nextButton.addEventListener("click", () => {
+
+    if (currentSlide < slides.length - 1) {
+
+        currentSlide++;
+
+        updateInstagramCarousel();
+
+    }
+
+});
+
+prevButton.addEventListener("click", () => {
+
+    if (currentSlide > 0) {
+
+        currentSlide--;
+
+        updateInstagramCarousel();
+
+    }
+
+});
+
+updateInstagramCarousel();
