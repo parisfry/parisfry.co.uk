@@ -7,6 +7,9 @@
 
   <title>Feeling The Crowd</title>
 
+ <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="FeelingTheCrowd.css">
 
@@ -72,7 +75,7 @@
 
 <section class="section-one">
 
-<video class="section-one-video" autoplay muted loop playsinline >
+<video class="section-one-video lightbox-desktop lightbox-mobile" autoplay muted loop playsinline  data-caption="Python Deepface emotion recognition of marathon crowd">
           <source src="images/project5/video1.mp4">
         </video>
 
@@ -106,11 +109,11 @@
                 </p>
         </div>
 
-        <img class="section-two-image" src="images/project5/image2.png">
+        <img class="section-two-image lightbox-desktop lightbox-mobile" src="images/project5/image2.png" data-caption="Python Deepface emotion recognition of marathon crowd">
 
     </div>
 
-    <video class="section-two-video" autoplay muted loop playsinline >
+    <video class="section-two-video lightbox-desktop lightbox-mobile" autoplay muted loop playsinline data-caption="Python Deepface emotion recognition of marathon crowd">
         <source src="images/project5/video2.mp4">
     </video>
 
@@ -120,9 +123,9 @@
 
     <div></div>
 
-    <img class="section-three-image" src="images/project5/image3.png">
+    <img class="section-three-image lightbox-mobile" src="images/project5/image3.png">
 
-    <img class="section-three-image" src="images/project5/image4.png">
+    <img class="section-three-image lightbox-mobile" src="images/project5/image4.png">
 
     <div class="section-three-text">
                <h3 class="section-title">Python Deepface Analysis</h3>
@@ -155,9 +158,9 @@
 
   <div class="section-four-grid">
     <div class="section-four-scroll">
-    <img class="section-four-image" src="images/project5/image5.png">
-    <img class="section-four-image" src="images/project5/image6.png">
-    <img class="section-four-image" src="images/project5/image7.png">
+    <img class="section-four-image lightbox-desktop lightbox-mobile no-hover-caption" src="images/project5/image5.png" data-caption="Frequency of 'happy' emotion over time, detected by Python Deepface">
+    <img class="section-four-image lightbox-desktop lightbox-mobile no-hover-caption" src="images/project5/image6.png" data-caption="Audio analysis of crowd reaction, detected by Python Librosa">
+    <img class="section-four-image lightbox-desktop lightbox-mobile no-hover-caption" src="images/project5/image7.png" data-caption="Frequency of 'fear' emotion over time, detected by Python Deepface">
     </div>
     <div class="section-four-grid-text">
         <p>My analysis highlighted both the potential and limitations of Al-based emotion recognition in real-world environments, where factors such as lighting, crowd density, and image quality affected accuracy. Despite these challenges, combining emotion detection with audio analysis revealed meaningful patterns in crowd support and highlights the potential of a real-time system to help optimise spectator distribution, improve runner morale, and enhance the overall marathon experience.</p>
@@ -209,6 +212,27 @@
 
 </footer>
 
+<div class="video-modal">
+
+    <span class="close-video">&times;</span>
+
+    <video 
+    class="video-modal-player" 
+    autoplay 
+    muted 
+    playsinline
+    controls
+    controlsList="nodownload noplaybackrate"
+    disablePictureInPicture
+></video>
+
+    <p class="video-caption"></p>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script src="sketch.js"></script>
 
 </body>
 

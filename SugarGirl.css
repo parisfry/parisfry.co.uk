@@ -1,6 +1,6 @@
 .project-layout {
   display: block;
-  padding: 0;
+   padding: 40px;
 }
 
 .project-intro {
@@ -904,7 +904,16 @@
 
 
 @media (min-width: 701px) and (max-width: 1100px) {
-.project-intro {
+
+  .project-layout{
+    flex-direction:column;
+
+    gap:20px;
+
+    padding:10px;
+  }
+  
+    .project-intro {
   width: 100%;
 
   min-height: 450px;

@@ -7,6 +7,9 @@
 
   <title>Muse</title>
 
+      <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="Muse.css">
 
@@ -82,7 +85,7 @@
 
     <div class="section-one-gallery">
 
-        <img src="images/project3/13.jpg">
+        <img src="images/project3/13.jpg" data-caption="Typography and pattern exploration" class="lightbox-mobile">
 
     </div>
 
@@ -104,8 +107,8 @@
 
     <div class="section-two-images">
 
-        <img src="images/project3/22.png" alt="">
-        <img src="images/project3/23.png" alt="">
+        <img src="images/project3/22.png" data-caption="Primary Research - Industrial Structures" class="lightbox-mobile">
+        <img src="images/project3/23.png" data-caption="Primary Research - Industrial Structures" class="lightbox-mobile">
 
     </div>
 
@@ -134,12 +137,12 @@
 
     <div class="section-three-gallery">
 
-        <img src="images/project3/3.png" class="portrait portrait-1">
-        <img src="images/project3/9.jpg" class="portrait portrait-2">
-        <img src="images/project3/11.png" class="portrait portrait-3">
+        <img src="images/project3/3.png" class="portrait portrait-1 lightbox-desktop lightbox-mobile" data-caption="Pattern/Composition development" >
+        <img src="images/project3/9.jpg" class="portrait portrait-2 lightbox-desktop lightbox-mobile" data-caption="Pattern/Composition development">
+        <img src="images/project3/11.png" class="portrait portrait-3 lightbox-desktop lightbox-mobile" data-caption="Pattern/Composition development">
 
-        <img src="images/project3/image 9.png" class="square square-1">
-        <img src="images/project3/10.png" class="square square-2">
+        <img src="images/project3/image 9.png" class="square square-1 lightbox-desktop lightbox-mobile no-hover-caption" data-caption="Paper collage exploring colour, texture, shapes">
+        <img src="images/project3/10.png" class="square square-2 lightbox-desktop lightbox-mobile no-hover-caption" data-caption="Paper collage exploring colour, texture, shapes">
 
     </div>
 
@@ -149,16 +152,16 @@
 
     <div class="mobile-landscapes">
 
-        <img src="images/project3/3.png" alt="">
-        <img src="images/project3/9.jpg" alt="">
-        <img src="images/project3/11.png" alt="">
+        <img src="images/project3/3.png" data-caption="Pattern/Composition development" class="lightbox-mobile">
+        <img src="images/project3/9.jpg" data-caption="Pattern/Composition development" class="lightbox-mobile">
+        <img src="images/project3/11.png" data-caption="Pattern/Composition development" class="lightbox-mobile">
 
     </div>
 
     <div class="mobile-portraits">
 
-        <img src="images/project3/image 9.png" alt="">
-        <img src="images/project3/10.png" alt="">
+        <img src="images/project3/image 9.png" data-caption="Paper collage exploring colour, texture, shapes" class="lightbox-mobile">
+        <img src="images/project3/10.png" data-caption="Paper collage exploring colour, texture, shapes" class="lightbox-mobile">
 
     </div>
 
@@ -183,8 +186,8 @@
 
     <div class="section-five-gallery">
 
-        <img src="images/project3/4.png" alt="">
-        <img src="images/project3/12.png" alt="">
+        <img src="images/project3/4.png" data-caption="Poster design exploring visual identity" class="lightbox-desktop lightbox-mobile">
+        <img src="images/project3/12.png" data-caption="Poster design exploring visual identity" class="lightbox-desktop lightbox-mobile">
 
     </div>
 
@@ -194,9 +197,9 @@
 
     <div class="section-six-gallery">
 
-        <img src="images/project3/brand1.png" alt="">
-        <img src="images/project3/brand2.png" alt="">
-        <img src="images/project3/brand3.png" alt="">
+        <img src="images/project3/brand1.png" data-caption="Experimental poster design developed through digital and print" class="lightbox-desktop lightbox-mobile">
+        <img src="images/project3/brand2.png" data-caption="Experimental poster design developed through digital and print" class="lightbox-desktop lightbox-mobile">
+        <img src="images/project3/brand3.png" data-caption="Experimental poster design developed through digital and print" class="lightbox-desktop lightbox-mobile">
 
     </div>
 
@@ -221,10 +224,10 @@
 
     <div class="section-seven-gallery">
 
-        <img src="images/project3/16.png" alt="">
-        <img src="images/project3/15.png" alt="">
-        <img src="images/project3/14.png" alt="">
-        <img src="images/project3/17.png" alt="">
+        <img src="images/project3/16.png" data-caption="Environmental application of poster design" class="lightbox-desktop lightbox-mobile">
+        <img src="images/project3/15.png" data-caption="Environmental application of sticker designs" class="lightbox-desktop lightbox-mobile">
+        <img src="images/project3/14.png" data-caption="Environmental application of poster design" class="lightbox-desktop lightbox-mobile">
+        <img src="images/project3/17.png" data-caption="Environmental application of poster design" class="lightbox-desktop lightbox-mobile">
 
     </div>
 
@@ -234,8 +237,8 @@
 
     <div class="section-eight-gallery">
 
-        <img src="images/project3/18.png" alt="">
-        <img src="images/project3/6.png" alt="">
+        <img src="images/project3/18.png" data-caption="Visual identity extended into wearable merchandise" class="lightbox-desktop lightbox-mobile">
+        <img src="images/project3/6.png" data-caption="Visual identity extended into wearable merchandise" class="lightbox-desktop lightbox-mobile">
 
     </div>
 
@@ -245,16 +248,18 @@
 
     <div class="section-nine-content">
 
- <div class="section-nine-video">
+ <div class="section-nine-video-wrapper">
 
-    <button class="video-unmute">
-        <i class="fa-solid fa-volume-xmark"></i>
-    </button>
+         <div class="section-nine-video">
 
-    <video autoplay muted loop playsinline>
+    <video autoplay muted loop playsinline data-caption="Short-form video entry to a Bicep competition exploring the visual language of their new track" class="lightbox-desktop lightbox-mobile no-hover-caption">
         <source src="images/project3/tiktok.MP4" type="video/mp4">
     </video>
 
+      <button class="video-unmute">
+        <i class="fa-solid fa-volume-xmark"></i>
+    </button>
+</div>
 </div>
         <div class="section-nine-right">
 
@@ -300,6 +305,27 @@
   </div>
 
 </footer>
+
+<div class="video-modal">
+
+    <span class="close-video">&times;</span>
+
+    <video 
+    class="video-modal-player" 
+    autoplay 
+    muted 
+    playsinline
+    controls
+    controlsList="nodownload noplaybackrate"
+    disablePictureInPicture
+></video>
+
+    <p class="video-caption"></p>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script src="sketch.js"></script>
 </body>
 </html>

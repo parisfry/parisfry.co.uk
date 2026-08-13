@@ -378,6 +378,8 @@ video{
     letter-spacing:.08em;
 
   color: rgba(255, 255, 255, 0.5) !important;
+
+  text-align: center;
 }
 
 .close-video{
@@ -484,7 +486,10 @@ video{
 
     font-size:0.7rem;
 }
+.video-caption{
 
+    max-width: 80vw;
+}
     .media-caption{
         display:none;
     }
@@ -497,6 +502,7 @@ img,
 video{
     -webkit-touch-callout: none;
 }
+
 .gslide-inner-content,
 .ginner-container,
 .gslide-media,
@@ -558,5 +564,10 @@ video{
     .gdesc-inner {
         padding: 20px 20px 0 !important;
     }
+
+    .video-caption{
+
+    font-size:1rem;
+}
 
 }
