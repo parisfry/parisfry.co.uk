@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body::before{
     content:"";
     position:fixed;
@@ -13,7 +17,7 @@ body::before{
 
     transform:translate(-50%,-50%) rotate(90deg);
 
-    opacity:.12;
+    opacity:.15;
 
     pointer-events:none;
 
@@ -27,24 +31,25 @@ body::before{
     position:relative;
     z-index:1;
 }
-body{
+body {
+    min-height: 100vh;
+    padding: 0px;
 
-    min-height:100vh;
-    padding:20px;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
+
     overflow: hidden;
-
 }
 
 .site-footer{
     margin-top:auto;
 }
+
 .projects-list{
 
     width:90%;
 
-    margin: 220px auto 0;
+    margin: 200px auto 0;
 
     display:flex;
 
@@ -98,10 +103,11 @@ body{
 
     font-family:"Titillium Web",sans-serif;
 
-    font-size:1rem;
+    font-size:1.1rem;
 
      font-weight: 700;
     font-style: normal;
+    letter-spacing:.08em;
      text-transform: uppercase;
 
 }
@@ -110,7 +116,7 @@ body{
 
     font-family:"Titillium Web",sans-serif;
 
-    font-size:.9rem;
+    font-size:1rem;
 
     text-align:right;
 
@@ -156,7 +162,7 @@ body{
 
 .preview-2{
 
-    top:10%;
+    top:9%;
     left:16%;
 
     width:300px;
@@ -200,24 +206,36 @@ body{
 
      width:150px;
 
-    aspect-ratio: 2 / 3;
+    aspect-ratio: 3 / 4;
+}
+
+.preview-7{
+
+    top:38%;
+    left:48%;
+
+    width:200px;
+
+    aspect-ratio: 10 / 12;
 }
 
 
-@media (max-width:1100px){
+@media (max-width:700px){
 
 .projects-list{
 
     flex:1;
 
-    width:100%;
-display:flex;
+    margin: 100px auto 0;
+
+    width:90%;
+    display:flex;
 
     flex-direction:column;
 
     justify-content:center;
 
-    gap:25px;
+    gap:15px;
 
     transform:translateY(-50px);
 }
@@ -255,7 +273,8 @@ display:flex;
         bottom:0;
 
         height:0.5px;
-        background:rgba(255,255,255,.18);
+       background: #d0d0d0;
+        z-index: 2;
     }
 
     .project-row:last-child::after{
@@ -283,7 +302,7 @@ display:flex;
 
     text-align:right;
 
-    font-size:.75rem;
+    font-size:.85rem;
 
     font-weight:600;
 
@@ -306,10 +325,9 @@ display:flex;
 
     text-align:right;
 
-    font-size:.65rem;
+    font-size:.75rem;
 
     font-style:italic;
-
 
 
     overflow:hidden;
@@ -334,10 +352,168 @@ body::before{
 
     transform:translate(-50%,-50%);
 
-    opacity:.12;
+    opacity:.15;
 
     pointer-events:none;
 
     z-index:0;
 }
+}
+
+@media (min-width: 701px) and (max-width: 1100px) {
+    
+.project-layout,
+.site-header,
+.site-footer,
+.back-link{
+    position:relative;
+    z-index:1;
+}
+
+
+     .projects-list {
+        flex: 1;
+        width: 90%;
+
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+
+        gap: 20px;
+
+        transform: translateY(-30px);
+
+        min-height: 0;
+    }
+
+    .project-row {
+        position: relative;
+
+        width: 100%;
+
+        padding-bottom: 8px;
+        margin-bottom: 5px;
+
+        box-sizing: border-box;
+
+        grid-template-columns:
+            50px
+            70px
+            minmax(0, 1fr);
+
+        grid-template-areas:
+            "number date name"
+            "tags tags tags";
+
+        gap: 4px 15px;
+
+        align-items: start;
+    }
+
+
+    .project-row::after {
+        content: "";
+
+        position: absolute;
+
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        height: 0.5px;
+
+       background: #d0d0d0;
+        z-index: 2;
+
+    }
+
+    .project-row:last-child::after {
+        display: none;
+    }
+
+
+    .project-number {
+        grid-area: number;
+
+        font-size: .8rem;
+
+        color: white;
+    }
+
+
+    .project-date {
+        grid-area: date;
+
+        font-size: .8rem;
+
+        color: white;
+    }
+
+    .project-name {
+        grid-area: name;
+
+        text-align: right;
+
+        font-size: 1.1rem;
+
+        font-weight: 600;
+
+        color: white;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        min-width: 0;
+    }
+
+    .project-tags {
+        grid-area: tags;
+
+        display: block;
+
+        text-align: right;
+
+        font-size: 1rem;
+
+        font-style: italic;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        color:rgba(255,255,255,.35);
+
+        min-width: 0;
+    }
+
+    .project-preview {
+        display: none;
+    }
+
+    body::before {
+        content: "";
+
+        position: fixed;
+
+        width: 1000px;
+        height: 1000px;
+
+        background: url("images/spiral.png") no-repeat center;
+        background-size: contain;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        opacity: .15;
+
+        pointer-events: none;
+
+        z-index: 0;
+    }
+
+
 }

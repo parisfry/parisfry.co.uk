@@ -34,19 +34,38 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    document.querySelectorAll(`video.${activeClass}`).forEach(video => {
-        video.classList.add("lightbox-item");
-        video.addEventListener("click", () => {
-            modal.classList.add("active");
-            modalVideo.src = video.querySelector("source").src;
-            modalVideo.controls = true;
-            modalVideo.controlsList = "nodownload noplaybackrate";
-            modalVideo.disablePictureInPicture = true;
-             modalVideo.muted = false;
-            caption.textContent = video.dataset.caption || "";
-            modalVideo.play();
-        });
+document.querySelectorAll(`video.${activeClass}`).forEach(video => {
+    video.classList.add("lightbox-item");
+
+    video.addEventListener("click", () => {
+
+        video.muted = true;
+
+        const button = video.closest(
+            ".section-four-video-wrapper, .section-five-video-wrapper, .section-six-video-wrapper, .section-nine-video-wrapper"
+        )?.querySelector(".video-unmute");
+
+        if (button) {
+            const icon = button.querySelector("i");
+
+            if (icon) {
+                icon.className = "fa-solid fa-volume-xmark";
+            }
+        }
+        modal.classList.add("active");
+
+        modalVideo.src = video.querySelector("source").src;
+        modalVideo.controls = true;
+        modalVideo.controlsList = "nodownload noplaybackrate";
+        modalVideo.disablePictureInPicture = true;
+
+        modalVideo.muted = false;
+
+        caption.textContent = video.dataset.caption || "";
+
+        modalVideo.play();
     });
+});
 
 });
 
@@ -273,3 +292,39 @@ prevButton.addEventListener("click", () => {
 });
 
 updateInstagramCarousel();
+
+const videos = document.querySelectorAll("video");
+
+const videoObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        const video = entry.target;
+
+        if (!entry.isIntersecting) {
+
+            video.muted = true;
+
+            const button = video.closest(
+                ".section-four-video-wrapper, .section-five-video-wrapper, .section-six-video-wrapper, .section-nine-video-wrapper"
+            )?.querySelector(".video-unmute");
+
+            if (button) {
+                const icon = button.querySelector("i");
+
+                if (icon) {
+                    icon.className = "fa-solid fa-volume-xmark";
+                }
+            }
+
+        }
+
+    });
+
+}, {
+    threshold: 0.2
+});
+
+videos.forEach(video => {
+    videoObserver.observe(video);
+});
