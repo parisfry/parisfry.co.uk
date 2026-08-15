@@ -97,8 +97,8 @@
     display: block;
     width: 100%;
     height: 100%;
-}
 
+}
 
 .section-two {
     width: min(100%, 1100px);
@@ -578,7 +578,7 @@
 }
 
 
-@media (max-width: 1100px) {
+@media (max-width: 700px) {
 
     .project-layout{
     flex-direction:column;
@@ -832,6 +832,7 @@ padding-bottom: 5px;
         padding-top: 0px;
         font-size: 0.7rem;
     }
+
    .section-eleven{
      width: 100%;
     padding: 10px;
@@ -906,6 +907,7 @@ padding-bottom: 5px;
 
   padding: 40px 40px 24px;
 }
+
     .project-intro-content {
   grid-column: 6 / 12;
 
@@ -959,6 +961,34 @@ padding-bottom: 5px;
   .section-twelve-text {
     font-size: 1rem;
   }
+
+.section-one {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 1.2fr) minmax(200px, 1fr);
+
+    gap: 10px;
+
+    padding: 10px;
+
+    align-items: stretch;
+}
+
+.section-one-image,
+.section-one-video {
+    display: block;
+
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+}
+
+.section-one-video {
+    object-position: center bottom;
+}
 
   .section-two {
     width: 100%;
@@ -1060,7 +1090,10 @@ padding-bottom: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
+.section-seven .caption-wrapper:has(.section-seven-video-square){
+    display: block;
+    padding: 5px;
+}
 .section-eight-text {
     order: 1;
     grid-column: 1 / -1;
@@ -1072,6 +1105,24 @@ padding-bottom: 5px;
     padding-bottom: 20px;
 
 }
+
+.section-eight {
+     width: 100%;
+    padding: 0px 10px;
+    gap: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.section-eight .caption-wrapper{
+    order: 2;
+}
+
+.section-eight .caption-wrapper:nth-child(1),
+.section-eight .caption-wrapper:nth-child(2) {
+    grid-column: auto;
+}
+
+
 .section-nine {
     width: 100%;
     display: grid;
@@ -1141,11 +1192,13 @@ padding-bottom: 5px;
 
   .section-ten{
         display:grid;
+        width: 80%;
+        margin: 0 auto;
         grid-template-columns:1fr 1fr;
         gap:10px;
     }
 
-    .section-ten-video{
+      .section-ten .caption-wrapper:has(.section-ten-video){
         order:0;
         grid-column:1;
     }
@@ -1156,6 +1209,7 @@ padding-bottom: 5px;
         align-self:center;
         padding-top:0;
     }
+    
 .section-eleven {
     width: 100%;
     display: grid;
@@ -1181,6 +1235,10 @@ padding-bottom: 5px;
     aspect-ratio: 16 / 11;
     object-fit: cover;
 }
+  .section-twelve {
+  
+        grid-template-columns: 1.4fr 1fr 1fr;
+    }
 
     .section-twelve-text{
         padding-top: 20px;

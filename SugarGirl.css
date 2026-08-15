@@ -553,12 +553,12 @@
 
 .section-seven {
     width: 100%;
-    padding: 80px 40px;
+    padding: 40px 40px;
     box-sizing: border-box;
 }
 
 .section-seven-title {
-    margin: 0 0 50px 0;
+    margin: 0 0 40px 0;
     text-align: center;
     padding-bottom: 10px;
     font-weight: 700;
@@ -651,6 +651,226 @@
 .media-caption{
     display: none;
 }
+
+.section-eight {
+    width: 100%;
+    padding: 80px 40px;
+    box-sizing: border-box;
+}
+
+.section-eight-title {
+    margin-bottom: 10px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+      color: rgba(255, 255, 255, 0.5);
+}
+
+.section-eight-layout {
+    width: 60%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+
+    align-items: center;
+}
+
+.section-eight-feed {
+    width: 100%;
+}
+
+.section-eight-feed img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.section-eight-square {
+    width: 100%;
+}
+
+.section-eight-square img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.campaign-optimisation,
+.performance-metrics,
+.content-distribution,
+.optimisation {
+    width: 100%;
+    padding: 40px 40px;
+}
+
+.campaign-optimisation .section-title {
+    margin: 0 0 20px 0;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.campaign-optimisation-intro {
+    width: 70%;
+    margin: 20px auto 100px auto;
+     font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+    text-align: center;
+      font-size: 1.3rem;
+    line-height: 1.35;
+}
+
+.content-distribution-intro{
+      font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    text-align: left;
+      font-size: 1.2rem;
+    line-height: 1.35;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.platform-strategy {
+    width: 100%;
+}
+
+.campaign-subheading {
+    margin-bottom: 10px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+      color: rgba(255, 255, 255, 0.5);
+}
+
+.platform-list,
+.metrics-list{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.content-list{
+    padding-top: 40px;
+     width: 90%;
+    margin: 0 auto;
+
+}
+
+.platform-item{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    align-items: start;
+
+    padding: 25px 0;
+    border-bottom: 1px solid #ffffff5d;
+}
+
+.metrics-item {
+ display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: start;
+    gap: 15px;
+
+    padding: 10px 0;
+    border-bottom: 1px solid #ffffff5d;
+}
+
+.content-item,
+.content-item-optimisation {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 10px 0;
+
+}
+
+.platform-item:last-child,
+.metrics-item:last-child {
+    border-top: 1px solid #ffffff5d;
+}
+
+.platform-item h4,
+.metrics-item h4,
+.content-item h4,
+.content-item-optimisation h4 {
+    margin: 0;
+   font-family: "Titillium Web", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.platform-item p{
+    margin: 0;
+   font-family: "Titillium Web", sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.35;
+
+    color: rgba(255,255,255,.75);
+    max-width: 550px;
+}
+
+.metrics-item p {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.35;
+    color: rgba(255,255,255,.75);
+}
+
+.content-item p,
+.content-item-optimisation p {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.35;
+    color: rgba(255,255,255,.75);
+}
+
+.optimisation-flow {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+
+    margin: 20px 0;
+}
+
+.optimisation-step {
+    font-family: "Titillium Web", sans-serif;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    letter-spacing: 0.1em;
+
+    white-space: nowrap;
+}
+
+.optimisation-arrow {
+    font-family: "Titillium Web", sans-serif;
+
+    font-size: 1.5rem;
+    font-weight: 200;
+
+    color: rgba(255,255,255,.6);
+}
+
 
 @media (max-width: 700px) {
 
@@ -899,7 +1119,129 @@
         margin-bottom: 5px;
     }
 
+    .section-eight{
+        padding: 20px 20px;
+    }
 
+    .section-eight-title {
+      margin-bottom: 10px;
+    font-weight: 700;
+   font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.5);
+}
+
+.section-eight-layout {
+    width: 100%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 20px;
+
+    align-items: center;
+}
+    .campaign-optimisation,
+    .performance-metrics{
+    width: 100%;
+    padding: 20px 20px;
+}
+
+    .content-distribution,
+    .optimisation{
+    width: 100%;
+    padding: 20px 10px;
+}
+.content-distribution-intro{
+      font-size: 0.8rem;
+  
+}
+.campaign-optimisation .section-title {
+   font-size: 0.9rem;
+     margin: 0 0 10px 0;
+      padding-bottom: 5px;
+}
+
+.campaign-optimisation-intro {
+    width: 90%;
+    margin: 10px auto 50px auto;
+    font-size: 0.75rem;
+}
+
+.campaign-subheading {
+    margin-bottom: 10px;
+    font-weight: 700;
+   font-size: 0.7rem;
+}
+.platform-list,
+.metrics-list {
+    width: 100%;
+}
+
+.content-list{
+    padding-top: 10px;
+     width: 100%;
+
+}
+
+.platform-item {
+    grid-template-columns: 35% 65%;
+    gap: 10px;
+    padding: 10px 0;
+}
+.metrics-item {
+    grid-template-columns: 35% 65%;
+    gap: 10px;
+    padding: 5px 0;
+}
+
+.platform-item h4,
+.metrics-item h4,
+.content-item h4,
+ .content-item-optimisation h4{
+  font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.platform-item p,
+.metrics-item p {
+    margin: 0;
+       gap: 10px;
+     font-size: 0.7rem;
+        line-height: 1.35;
+
+    color: rgba(255,255,255,.75);
+    max-width: 550px;
+}
+
+.content-item,
+.content-item-optimisation {
+    display: block;
+    padding: 10px 0;
+}
+
+.content-item p,
+.content-item-optimisation p {
+    display: block;
+    margin: 0;
+    font-size: 0.7rem;
+    line-height: 1.35;
+    color: rgba(255,255,255,.75);
+}
+
+.optimisation-flow {
+    gap: 5px;
+    margin: 10px 0;
+
+}
+.optimisation-step {
+
+    font-size: 0.7rem;
+}
+.optimisation-arrow {
+
+    font-size: 0.6rem;
+
+}
 }
 
 
@@ -950,7 +1292,8 @@
   .section-five,
   .section-six, 
   .section-seven,
-  .section-eight{
+  .section-eight,
+  .campaign-optimisation{
     padding-top: 20px;
 }
   .section-title {
@@ -1181,5 +1524,95 @@
         margin-bottom:5px;
     }
 
+.section-eight-layout {
+    width: 80%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 20px;
+
+    align-items: center;
+}
+.section-eight {
+    width: 100%;
+    padding: 40px 40px;
+}
+
+    .campaign-optimisation .section-title {
+    margin: 0 0 10px 0;
+
+}
+    .campaign-optimisation-intro {
+ font-size: 1rem;
+   width: 90%;
+    line-height: 1.35;
+    margin: 10px auto 70px auto;
+
+    }
+    .platform-list,
+    .metrics-list {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content-list{
+    padding-top: 20px;
+     width: 100%;
+
+}
+.content-item,
+.content-item-optimisation  {
+    display: block;
+    padding: 15px 0;
+}
+
+.content-distribution-intro{
+      font-size: 1.1rem;
+
+}
+
+.content-item h4,
+ .content-item-optimisation h4{
+    margin: 0 0 4px 0;
+}
+
+.content-item p{
+    margin: 0;
+     gap: 5px;
+}
+
+.platform-item{
+    grid-template-columns: 40% 60%;
+    padding: 15px 0;
+}
+
+.metrics-item {
+    grid-template-columns: 40% 60%;
+    padding: 10px 0;
+}
+.platform-item h4,
+.metrics-item h4{
+      font-size: 1rem;
+    margin-bottom: 5px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.optimisation-flow {
+
+    gap: 20px;
+    margin: 10px 0;
+
+}
+.optimisation-step {
+    font-family: "Titillium Web", sans-serif;
+
+    font-size: 1rem;
+}
+
+.content-item-optimisation p{
+ gap: 20px;
+}
 }
 
