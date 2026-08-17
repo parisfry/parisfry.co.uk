@@ -1616,3 +1616,65 @@
 }
 }
 
+@media (max-width: 380px) {
+
+    .project-layout {
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+    .project-intro {
+        min-height: 260px;
+        padding: 20px 10px 10px;
+    }
+
+    .project-intro-content {
+        grid-column: 3 / 9;
+        max-width: 250px;
+    }
+
+    .project-intro-title {
+        font-size: 0.9rem;
+    }
+
+    .project-intro-title2 {
+        font-size: 0.8rem;
+    }
+
+    .project-intro-description {
+        font-size: 0.7rem;
+    }
+.section-title-mobile{
+    font-size: 0.8rem;
+}
+.section-title,
+.brief-box .section-title,
+    .section-five-block h3,
+    .section-four-block h3,
+ .section-six-text h3 ,
+    .section-seven-block h3,
+      .section-eight-title  {
+    font-size: 0.8rem;
+
+}
+.section-two-text,
+.section-five-list,
+    .section-four-list,
+  .section-five-block p,
+    .section-four-block p ,
+.section-six-text p,
+.section-six-list,
+    .section-seven-block p,
+        .section-seven-list,
+        .campaign-optimisation-intro,
+        .campaign-subheading,
+        .platform-item p,
+.metrics-item p,
+.content-item p,
+.content-item-optimisation p,
+.optimisation-step    {
+        font-size: 0.62rem;
+    }
+
+
+}

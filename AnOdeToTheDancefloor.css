@@ -509,7 +509,7 @@
 }
 
 .section-ten-text{
-    grid-column: 3;
+    grid-column: 3 / 5;
 
     padding-top:150px;
 
@@ -520,6 +520,10 @@
     line-height:1.35;
 
     color:rgba(255,255,255,.75);
+}
+
+.section-ten-text p {
+    margin: 0 0 20px 0;
 }
 
 .section-eleven {
@@ -1246,6 +1250,53 @@ padding-bottom: 5px;
 
     }
 
+}
+
+@media (max-width: 380px) {
+
+    .project-layout {
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+    .project-intro {
+        min-height: 260px;
+        padding: 20px 10px 10px;
+    }
+
+    .project-intro-content {
+        grid-column: 3 / 9;
+        max-width: 250px;
+    }
+
+    .project-intro-title {
+        font-size: 0.9rem;
+    }
+
+    .project-intro-title2 {
+        font-size: 0.8rem;
+    }
+
+    .project-intro-description {
+        font-size: 0.7rem;
+    }
+.section-title-mobile{
+    font-size: 0.8rem;
+}
+.section-title{
+    font-size: 0.8rem;
+
+}
+  .section-three-text p,
+    .section-four-text,
+     .section-five-text1,
+    .section-five-text2,
+    .section-eight-text,
+    .section-nine-text,
+    .section-ten-text,
+    .section-twelve-text   {
+        font-size: 0.62rem;
+    }
 }
 
 

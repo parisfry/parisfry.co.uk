@@ -191,3 +191,21 @@ p{
 }
 
 }
+
+@media (max-width: 380px) {
+
+  .bg-image{
+      object-position:45% center;
+}
+
+  .contact-content{
+  left: auto;
+    right: 20px;
+    top: 45%;
+    transform: translateY(-50%);
+  }
+
+.contact-form{
+  width:270px;
+}
+}

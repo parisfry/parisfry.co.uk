@@ -2196,3 +2196,67 @@ margin-bottom: 0 !important;
      border-radius: 12px;
 }
 }
+
+@media (max-width: 380px) {
+
+    .project-layout {
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+    .project-intro {
+        min-height: 260px;
+        padding: 20px 10px 10px;
+    }
+
+    .project-intro-content {
+        grid-column: 3 / 9;
+        max-width: 250px;
+    }
+
+    .project-intro-title {
+        font-size: 0.9rem;
+    }
+
+    .project-intro-title2 {
+        font-size: 0.8rem;
+    }
+
+    .project-intro-description {
+        font-size: 0.7rem;
+    }
+.section-title-mobile{
+    font-size: 0.8rem;
+}
+.section-title,
+.section-two-title,
+ .section-three-title,
+ .section-four-title,
+ .section-five-title,
+ .section-six-title,
+ .section-seven-title,
+ .section-nine-title,
+ .section-ten-title    {
+    font-size: 0.8rem;
+
+}
+.section-one-text p,
+.section-two-text p,
+.section-three-text p,
+.section-four-description ,
+.section-five-description,
+.section-six-description,
+.section-seven-text p,
+.section-eight-info,
+.section-nine-text p,
+.section-ten-text p  {
+        font-size: 0.62rem;
+    }
+.section-four-heading,
+.section-five-heading,
+.section-six-heading,
+.section-eight-heading,
+.section-nine-heading   {
+    font-size: 0.9rem;
+}
+}

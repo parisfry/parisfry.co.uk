@@ -937,3 +937,47 @@ img.no-hover-caption + .media-caption{
     height: 500px;
 }
 }
+@media (max-width: 380px) {
+
+    .project-layout {
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+    .project-intro {
+        min-height: 260px;
+        padding: 20px 10px 10px;
+    }
+
+    .project-intro-content {
+        grid-column: 3 / 9;
+        max-width: 250px;
+    }
+
+    .project-intro-title {
+        font-size: 0.9rem;
+    }
+
+    .project-intro-title2 {
+        font-size: 0.8rem;
+    }
+
+    .project-intro-description {
+        font-size: 0.7rem;
+    }
+.section-title-mobile{
+    font-size: 0.8rem;
+}
+.section-title{
+    font-size: 0.8rem;
+
+}
+ .section-one-text p,
+  .section-two-text p ,
+       .section-three-text p,
+.section-four-text p,
+.section-four-grid-text ,
+      .timeline-text {
+        font-size: 0.62rem;
+    }
+}

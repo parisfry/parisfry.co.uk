@@ -631,6 +631,55 @@
     object-fit: cover;
     display: block;
 }
+.dissertation-link{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 10px;
+
+}
+.dissertation-label {
+    margin: 0;
+   font-family: "Titillium Web", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding-bottom: 30px;
+}
+
+.dissertation-link h2{
+     font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+
+    font-size: 1.3rem;
+    letter-spacing: 0.08em;
+
+    padding-bottom: 5px;
+    font-style: italic;
+
+    color: white;
+}
+.dissertation-description {
+
+    padding: 20px;
+
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+
+    font-size: 1rem;
+    line-height: 1.35;
+
+    color: rgba(255,255,255,.75);
+}
+.dissertation-link a {
+      margin: 0;
+   font-family: "Titillium Web", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding-bottom: 30px;
+    color: rgba(255,255,255,.75);
+}
 
 @media (max-width: 700px) {
 
@@ -1658,6 +1707,51 @@ padding-top: 20px;
         object-fit: cover;
 
         display: block;
+    }
+
+}
+@media (max-width: 380px) {
+
+    .project-layout {
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+    .project-intro {
+        min-height: 260px;
+        padding: 20px 10px 10px;
+    }
+
+    .project-intro-content {
+        grid-column: 3 / 9;
+        max-width: 250px;
+    }
+
+    .project-intro-title {
+        font-size: 0.9rem;
+    }
+
+    .project-intro-title2 {
+        font-size: 0.8rem;
+    }
+
+    .project-intro-description {
+        font-size: 0.7rem;
+    }
+.section-title-mobile{
+    font-size: 0.8rem;
+}
+.section-title {
+    font-size: 0.8rem;
+
+}
+.section-two-text,
+.section-three-text,
+.section-five-text,
+     .section-nine-text ,
+    .section-ten-text ,
+.section-eleven-text {
+        font-size: 0.62rem;
     }
 
 }
