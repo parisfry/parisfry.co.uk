@@ -417,7 +417,7 @@ video{
 
         margin:10px 0 30px 20px;
 
-        font-size:.7rem;
+        font-size:.9rem;
     }
 
     .mobile-header{
@@ -440,7 +440,7 @@ video{
         color: white;
         text-decoration: none;
         font-family: "Titillium Web", sans-serif;
-        font-size: .8rem;
+        font-size: .85rem;
         letter-spacing: .12em;
         font-weight: 200;
     }
@@ -484,7 +484,7 @@ video{
 .footer-right a,
 .footer-name{
 
-    font-size:0.7rem;
+    font-size:0.8rem;
 }
 .video-caption{
 

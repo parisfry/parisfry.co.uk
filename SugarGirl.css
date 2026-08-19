@@ -884,7 +884,7 @@
   }
 
   .project-intro {
-    min-height: 250px;
+    min-height: 350px;
 
     grid-template-columns: repeat(8, 1fr);
 
@@ -897,18 +897,22 @@
     max-width: 420px;
   }
     .project-intro-title {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .project-intro-title2 {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .project-intro-description {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .section-title{
-    font-size: 0.9rem;
-    color: white;
+     color:white;
+  font-size: 0.9em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 .section-one{
     padding: 0px;
@@ -930,12 +934,16 @@
 
 .brief-box .section-title {
     margin-bottom: 10px;
-    font-size: 0.9rem;
-    letter-spacing: 1.5px;
+     color:white;
+  font-size: 0.9em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .section-two-text{
-    font-size: 0.75rem;
+    font-size: 0.8rem;
 }
 .section-three {
     width: 100%;
@@ -987,7 +995,7 @@
 
     .section-five-list,
     .section-four-list{
-     font-size: 0.7rem;
+     font-size: 0.8rem;
 }
     .section-five-content,
     .section-four-content {
@@ -1002,13 +1010,13 @@
 
     .section-five-block h3,
     .section-four-block h3{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         margin-bottom: 2px;
     }
 
     .section-five-block p,
     .section-four-block p {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         line-height: 1.45;
     }
 
@@ -1044,17 +1052,17 @@
 }
 
  .section-six-text h3 {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         margin-bottom: 2px;
     }
 .section-six-text p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     line-height: 1.35;
     margin-bottom: 15px;
 }
 
 .section-six-list {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     line-height: 1.35;
     margin-bottom: 15px;
 }
@@ -1099,17 +1107,17 @@
     }
 
     .section-seven-block h3 {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         margin-bottom: 5px;
     }
 
     .section-seven-block p {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         line-height: 1.35;
     }
 
     .section-seven-list {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         line-height: 1.35;
         padding-left: 16px;
     }
@@ -1164,13 +1172,13 @@
 .campaign-optimisation-intro {
     width: 90%;
     margin: 10px auto 50px auto;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
 }
 
 .campaign-subheading {
     margin-bottom: 10px;
     font-weight: 700;
-   font-size: 0.7rem;
+   font-size: 0.9rem;
 }
 .platform-list,
 .metrics-list {
@@ -1206,7 +1214,7 @@
 .metrics-item p {
     margin: 0;
        gap: 10px;
-     font-size: 0.7rem;
+     font-size: 0.8rem;
         line-height: 1.35;
 
     color: rgba(255,255,255,.75);
@@ -1223,7 +1231,7 @@
 .content-item-optimisation p {
     display: block;
     margin: 0;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     line-height: 1.35;
     color: rgba(255,255,255,.75);
 }
@@ -1235,7 +1243,7 @@
 }
 .optimisation-step {
 
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 .optimisation-arrow {
 
@@ -1642,10 +1650,10 @@
     }
 
     .project-intro-description {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 .section-title-mobile{
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 .section-title,
 .brief-box .section-title,
@@ -1654,7 +1662,7 @@
  .section-six-text h3 ,
     .section-seven-block h3,
       .section-eight-title  {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 
 }
 .section-two-text,
@@ -1673,7 +1681,7 @@
 .content-item p,
 .content-item-optimisation p,
 .optimisation-step    {
-        font-size: 0.62rem;
+        font-size: 0.7rem;
     }
 
 

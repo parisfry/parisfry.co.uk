@@ -382,7 +382,7 @@ img.no-hover-caption + .media-caption{
   }
 
   .project-intro {
-    min-height: 250px;
+    min-height: 350px;
 
     grid-template-columns: repeat(8, 1fr);
 
@@ -396,19 +396,22 @@ img.no-hover-caption + .media-caption{
   }
 
   .project-intro-title {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .project-intro-title2 {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .project-intro-description {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .section-title{
-
   color:white;
   font-size: 0.9em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 
 }
   .section-one,
@@ -440,7 +443,7 @@ img.no-hover-caption + .media-caption{
     margin-top: 10px;
   }
  .section-one-text p{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .section-one-image,
   .section-two-image{
@@ -465,7 +468,7 @@ img.no-hover-caption + .media-caption{
     }
   .section-two-text p {
       
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
 
@@ -491,7 +494,7 @@ img.no-hover-caption + .media-caption{
   }
 
     .section-three-text p{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 
   
   }
@@ -517,7 +520,7 @@ img.no-hover-caption + .media-caption{
 }
 
 .section-four-text p{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .section-four-grid {
@@ -583,7 +586,7 @@ img.no-hover-caption + .media-caption{
 
     padding-top: 10px;
 
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
   .timeline-section {
@@ -963,13 +966,13 @@ img.no-hover-caption + .media-caption{
     }
 
     .project-intro-description {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 .section-title-mobile{
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 .section-title{
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 
 }
  .section-one-text p,
@@ -978,6 +981,6 @@ img.no-hover-caption + .media-caption{
 .section-four-text p,
 .section-four-grid-text ,
       .timeline-text {
-        font-size: 0.62rem;
+        font-size: 0.7rem;
     }
 }

@@ -284,7 +284,7 @@ body {
 .project-number{
     grid-area:number;
 
-    font-size: .6em;
+    font-size: .65em;
 
     color: white;
 }
@@ -292,7 +292,7 @@ body {
 .project-date{
     grid-area:date;
 
-    font-size: .7em;
+    font-size: .75em;
 
     color: white;
 }
@@ -302,7 +302,7 @@ body {
 
     text-align:right;
 
-    font-size:.85rem;
+    font-size:.9rem;
 
     font-weight:600;
 
@@ -325,7 +325,7 @@ body {
 
     text-align:right;
 
-    font-size:.75rem;
+    font-size:.8rem;
 
     font-style:italic;
 
@@ -540,7 +540,7 @@ body::before{
     }
 
     .project-number {
-        font-size: .55rem;
+        font-size: .6rem;
     }
 
     .project-date {
@@ -548,12 +548,12 @@ body::before{
     }
 
     .project-name {
-        font-size: .7rem;
+        font-size: .75rem;
         line-height: 1.1;
     }
 
     .project-tags {
-        font-size: .65rem;
+        font-size: .7rem;
         line-height: 1.1;
     }
 

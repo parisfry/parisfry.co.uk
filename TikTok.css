@@ -1061,7 +1061,7 @@ margin-bottom: 0 !important;
   }
 
   .project-intro {
-    min-height: 250px;
+    min-height: 350px;
 
     grid-template-columns: repeat(8, 1fr);
 
@@ -1074,13 +1074,13 @@ margin-bottom: 0 !important;
     max-width: 420px;
   }
     .project-intro-title {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .project-intro-title2 {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .project-intro-description {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .section-one {
@@ -1126,16 +1126,19 @@ margin-bottom: 0 !important;
 
     text-align: left;
 
-    font-size: 0.9rem;
-
-    padding-bottom: 0px;
+     color:white;
+  font-size: 0.9em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .section-one-text p {
 
     text-align: left;
 
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .section-two {
@@ -1176,16 +1179,19 @@ margin-bottom: 0 !important;
 
     text-align: center;
 
-    font-size: 0.9rem;
-
-    padding-bottom: 0px;
+     color:white;
+  font-size: 0.9em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .section-two-text p {
 
     text-align: center;
 
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .section-three {
@@ -1216,15 +1222,18 @@ margin-bottom: 0 !important;
 
     text-align: center;
 
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 .section-three-title {
 
     text-align: center;
 
-    font-size: 0.9rem;
-
-    padding-bottom: 0px;
+  color:white;
+  font-size: 0.9em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 .section-four {
     width: 100%;
@@ -1239,6 +1248,7 @@ margin-bottom: 0 !important;
     font-size: 1rem;
 
     margin-bottom: 15px;
+    letter-spacing: 1.5px;
 
     padding: 10px 0;
 
@@ -1286,14 +1296,17 @@ margin-bottom: 0 !important;
 
     text-align: left;
 
-    font-size: 0.9rem;
-
-    padding-bottom: 5px;
+     color:white;
+  font-size: 0.9em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .section-four-description {
 
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 
     text-align: left;
 }
@@ -1317,6 +1330,8 @@ margin-bottom: 0 !important;
     font-size: 1rem;
 
     margin-bottom: 15px;
+
+    letter-spacing: 1.5px;
 
     padding: 10px 0;
 
@@ -1361,14 +1376,17 @@ margin-bottom: 0 !important;
 
     text-align: left;
 
-    font-size: 0.9rem;
-
-    padding-bottom: 5px;
+     color:white;
+  font-size: 0.9em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .section-five-description {
 
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 
     text-align: left;
 }
@@ -1400,6 +1418,8 @@ margin-bottom: 0 !important;
     font-size: 1rem;
 
     text-align: center;
+
+    letter-spacing: 1.5px;
 
     padding: 10px 0;
 
@@ -1495,17 +1515,20 @@ margin-bottom: 0 !important;
 }
 
 .section-six-title {
-
-    font-size: 0.9rem;
+  color:white;
+  font-size: 0.9em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 
     text-align: left;
 
-    padding-bottom: 5px;
 }
 
 .section-six-description {
 
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 
     text-align: left;
 }
@@ -1608,7 +1631,12 @@ margin-bottom: 0 !important;
 
     margin: 0 0 8px;
 
-    font-size: 0.9rem;
+    color:white;
+  font-size: 0.9em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 
     text-align: left;
 }
@@ -1617,7 +1645,7 @@ margin-bottom: 0 !important;
 
     margin: 0;
 
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 
     text-align: left;
 }
@@ -1639,6 +1667,7 @@ margin-bottom: 0 !important;
 .section-eight-heading {
 
     font-size: 1rem;
+    letter-spacing: 1.5px;
 
     text-align: center;
 
@@ -1714,7 +1743,7 @@ margin-bottom: 0 !important;
 .section-eight-info {
 
 
-    font-size: .7rem;
+    font-size: .8rem;
 
     text-align: left;
 
@@ -1749,6 +1778,7 @@ margin-bottom: 0 !important;
 .section-nine-heading {
 
     font-size: 1rem;
+    letter-spacing: 1.5px;
 
     padding: 10px 0;
 
@@ -1794,7 +1824,12 @@ margin-bottom: 0 !important;
 
     margin: 0 ;
 
-    font-size: 0.9rem;
+    color:white;
+  font-size: 0.9em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 
     text-align: left;
 
@@ -1804,7 +1839,7 @@ margin-bottom: 0 !important;
 
     margin: 0;
 
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 
     text-align: left;
 }
@@ -1861,7 +1896,12 @@ margin-bottom: 0 !important;
 
     margin: 0 ;
 
-    font-size: 0.9rem;
+  color:white;
+  font-size: 0.9em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 
     text-align: left;
 }
@@ -1870,7 +1910,7 @@ margin-bottom: 0 !important;
 
     margin: 0;
 
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 
     text-align: left;
 }
@@ -2223,10 +2263,10 @@ margin-bottom: 0 !important;
     }
 
     .project-intro-description {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 .section-title-mobile{
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 .section-title,
 .section-two-title,
@@ -2237,7 +2277,7 @@ margin-bottom: 0 !important;
  .section-seven-title,
  .section-nine-title,
  .section-ten-title    {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 
 }
 .section-one-text p,
@@ -2250,7 +2290,7 @@ margin-bottom: 0 !important;
 .section-eight-info,
 .section-nine-text p,
 .section-ten-text p  {
-        font-size: 0.62rem;
+        font-size: 0.7rem;
     }
 .section-four-heading,
 .section-five-heading,

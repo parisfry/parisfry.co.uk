@@ -497,7 +497,7 @@
   }
 
   .project-intro {
-    min-height: 250px;
+    min-height: 350px;
 
     grid-template-columns: repeat(8, 1fr);
 
@@ -510,13 +510,13 @@
     max-width: 420px;
   }
     .project-intro-title {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .project-intro-title2 {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .project-intro-description {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .section-one{
@@ -562,6 +562,7 @@
 .section-two-text{
 
     grid-area:text;
+    margin-top: 30px;
 }
 
 .section-two-video{
@@ -580,13 +581,17 @@
 }
 
 .section-two-text h2{
-
-    font-size:.9rem;
+      color:white;
+  font-size: 0.9em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .section-two-text p{
 
-    font-size:.7rem;
+    font-size:.8rem;
 }
 
 .section-two-image img,
@@ -631,12 +636,17 @@ gap: 10px;
 
 .section-four-text h2{
 
-    font-size:.9rem;
+      color:white;
+  font-size: 0.9em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .section-four-text p{
 
-    font-size:.7rem;
+    font-size:.8rem;
 
 }
 
@@ -682,12 +692,17 @@ gap: 10px;
 
 .section-five-text h2{
 
-    font-size:.9rem;
+    color:white;
+  font-size: 0.9em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .section-five-text p{
 
-    font-size:.7rem;
+    font-size:.8rem;
 
 }
 
@@ -829,12 +844,17 @@ gap: 10px;
 
 .section-eight-text h2{
 
-    font-size:.9rem;
+     color:white;
+  font-size: 0.9em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .section-eight-text p{
 
-    font-size:.7rem;
+    font-size:.8rem;
 }
 
 .section-eight-gallery{
@@ -1045,23 +1065,23 @@ gap: 10px;
     }
 
     .project-intro-description {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 .section-title-mobile{
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 .section-title,
 .section-two-text h2,
 .section-four-text h2,
 .section-five-text h2,
 .section-eight-text h2{
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 
 }
 .section-two-text p,
 .section-four-text p,
 .section-five-text p,
 .section-eight-text p{
-        font-size: 0.62rem;
+        font-size: 0.7rem;
     }
 }

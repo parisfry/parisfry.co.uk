@@ -693,7 +693,7 @@
   }
 
   .project-intro {
-    min-height: 250px;
+    min-height: 350px;
 
     grid-template-columns: repeat(8, 1fr);
 
@@ -706,18 +706,22 @@
     max-width: 420px;
   }
     .project-intro-title {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .project-intro-title2 {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .project-intro-description {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .section-title{
-    font-size: 0.9rem;
-    color: white;
+  color:white;
+  font-size: 0.9em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
  .section-one {
         width: 100%;
@@ -744,9 +748,10 @@
     .section-two-text {
         text-align: center;
 
-        font-size: 0.7rem;
-
         padding-top: 0px;
+    }
+    .section-two-text p {
+        font-size: 0.8em;
     }
 
     .section-two-images {
@@ -875,7 +880,7 @@
 
     text-align: right;
 
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .section-five-video {
@@ -934,7 +939,7 @@
 }
 
 .section-six-text p {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
 }
 
 .section-seven {
@@ -1026,11 +1031,13 @@
 
         grid-row: 1;
 
-        padding-top: 50px;
-
-        font-size: 0.7rem;
+        padding-top: 10px;
 
         text-align: right;
+    }
+
+    .section-nine-text p{
+        font-size: 0.8rem;
     }
 
     .section-nine-portraits img {
@@ -1095,8 +1102,10 @@
         padding-top: 0;
         padding-bottom: 0;
 
-        font-size: 0.7rem;
         text-align: left;
+    }
+    .section-ten-text p{
+        font-size: 0.8rem;
     }
 
     .section-ten-media{
@@ -1153,11 +1162,11 @@
 
     text-align: center;
 
-    font-size: 0.7rem;
 }
 
 .section-eleven-text p {
-    margin: 0;
+    margin: 0;    
+    font-size: 0.8rem;
 }
 
 
@@ -1736,13 +1745,13 @@ padding-top: 20px;
     }
 
     .project-intro-description {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 .section-title-mobile{
-    font-size: 0.8rem;
+    font-size: 0.5rem;
 }
 .section-title {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
 
 }
 .section-two-text,
@@ -1751,7 +1760,7 @@ padding-top: 20px;
      .section-nine-text ,
     .section-ten-text ,
 .section-eleven-text {
-        font-size: 0.62rem;
+        font-size: 0.7rem;
     }
 
 }
