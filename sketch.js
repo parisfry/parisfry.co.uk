@@ -239,6 +239,7 @@ window.addEventListener("load", updateBlur);
 
 updateBlur();
 
+
 const track = document.querySelector(".instagram-track");
 const slides = document.querySelectorAll(".instagram-slide");
 
@@ -267,31 +268,35 @@ function updateInstagramCarousel() {
     nextButton.disabled = currentSlide === slides.length - 1;
 }
 
-nextButton.addEventListener("click", () => {
+if (track && prevButton && nextButton) {
 
-    if (currentSlide < slides.length - 1) {
+    nextButton.addEventListener("click", () => {
 
-        currentSlide++;
+        if (currentSlide < slides.length - 1) {
 
-        updateInstagramCarousel();
+            currentSlide++;
 
-    }
+            updateInstagramCarousel();
 
-});
+        }
 
-prevButton.addEventListener("click", () => {
+    });
 
-    if (currentSlide > 0) {
+    prevButton.addEventListener("click", () => {
 
-        currentSlide--;
+        if (currentSlide > 0) {
 
-        updateInstagramCarousel();
+            currentSlide--;
 
-    }
+            updateInstagramCarousel();
 
-});
+        }
 
-updateInstagramCarousel();
+    });
+
+    updateInstagramCarousel();
+
+}
 
 const videos = document.querySelectorAll("video");
 
@@ -328,3 +333,46 @@ const videoObserver = new IntersectionObserver((entries) => {
 videos.forEach(video => {
     videoObserver.observe(video);
 });
+
+// SECTION 8 CAROUSEL
+
+const sectionEightGrid = document.querySelector(".section-eight-grid");
+const sectionEightNext = document.querySelector(".section-eight-next");
+const sectionEightPrev = document.querySelector(".section-eight-prev");
+
+if (sectionEightGrid && sectionEightNext && sectionEightPrev) {
+
+    sectionEightNext.addEventListener("click", () => {
+
+        const card = sectionEightGrid.querySelector(".section-eight-card");
+
+        if (!card) return;
+
+        const cardWidth = card.getBoundingClientRect().width;
+        const gap = 15;
+
+        sectionEightGrid.scrollBy({
+            left: cardWidth + gap,
+            behavior: "smooth"
+        });
+
+    });
+
+
+    sectionEightPrev.addEventListener("click", () => {
+
+        const card = sectionEightGrid.querySelector(".section-eight-card");
+
+        if (!card) return;
+
+        const cardWidth = card.getBoundingClientRect().width;
+        const gap = 15;
+
+        sectionEightGrid.scrollBy({
+            left: -(cardWidth + gap),
+            behavior: "smooth"
+        });
+
+    });
+
+}

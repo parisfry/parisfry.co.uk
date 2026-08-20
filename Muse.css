@@ -144,11 +144,14 @@
 
     margin:0 0 10px;
 
-    font-family:"Titillium Web", sans-serif;
+   color: white;
+     font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 
     font-size:1.15rem;
 
-    font-weight:200;
 
     text-align: left;
 }
@@ -190,11 +193,15 @@
 
     margin:0 0 14px;
 
-    font-family:"Titillium Web", sans-serif;
+   color: white;
+     font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 
     font-size:1.15rem;
 
-    font-weight:200;
+
 }
 
 .section-four-text p{
@@ -310,11 +317,15 @@
 
     margin:0 0 10px;
 
-    font-family:"Titillium Web", sans-serif;
+color: white;
+     font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 
     font-size:1.15rem;
 
-    font-weight:200;
+
 }
 
 .section-five-text p{
@@ -400,11 +411,15 @@
 
     margin:0 0 10px;
 
-    font-family:"Titillium Web", sans-serif;
+color: white;
+     font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 
     font-size:1.15rem;
 
-    font-weight:200;
+
 }
 
 .section-seven-text p{
@@ -1179,7 +1194,7 @@ img.no-hover-caption + .media-caption{
 
 }
 
-@media (min-width: 701px) and (max-width: 1100px) {
+@media (min-width: 701px) and (max-width: 900px) {
 
 .project-layout {
   display: block;
@@ -1374,4 +1389,142 @@ img.no-hover-caption + .media-caption{
         font-size: 0.7rem;
     }
 
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .project-layout {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+.project-intro-content {
+  grid-column: 6 / 11;
+  width: 100%;
+  max-width: 450px;
+}
+ .project-intro-title {
+    font-size: 1.6rem;
+  }
+    .project-intro-title2 {
+    font-size: 1.3rem;
+  }
+    .project-intro-description {
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+    .section-one,
+    .section-two,
+    .section-three,
+    .section-four,
+    .section-five,
+    .section-six,
+    .section-seven,
+    .section-eight,
+    .section-nine {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    img,
+    video {
+        max-width: 100%;
+    }
+      .section-title,
+  .section-two-text h2,
+.section-four-text h2,
+.section-five-text h2,
+.section-seven-text h2{
+    font-size: 1.3rem;
+  }
+
+    .section-two-text p,
+  .section-four-text p,
+  .section-five-text p,
+  .section-seven-text p,
+  .section-nine-text p,
+  .section-ten-text p{
+    font-size: 1.2rem;
+  }
+
+  .section-two {
+        width: min(100%, 1100px);
+        margin: 0 auto;
+    }
+
+.section-two-images{
+
+    padding: 0 10px 0 40px;
+}
+
+.section-two-text{
+
+    margin-top: 50px;
+}
+.section-three-gallery .caption-wrapper:has(.square){
+
+    width:240px;
+
+}
+.section-nine-content {
+    display: grid;
+
+    grid-template-columns: 400px 1fr;
+
+    grid-template-areas:
+        "image image"
+        "video text";
+
+    gap: 20px;
+
+    align-items: start;
+
+    padding: 40px;
+}
+
+.section-nine-video-wrapper {
+    grid-area: video;
+}
+
+.section-nine-right {
+    display: contents;
+}
+
+.section-nine-right img {
+    grid-area: image;
+
+    width: 100%;
+    aspect-ratio: 18 / 5;
+    object-fit: cover;
+}
+
+.section-nine-text {
+    grid-area: text;
+    max-width: 100%;
+    padding-top: 70px;
+}
+
+.section-nine-text p {
+    text-align: left;
+}
+
+.section-nine-video video {
+    height: 520px;
+    width: auto;
+}
+
+.section-ten-gallery img {
+
+    aspect-ratio: 16 / 10;
+
+}
 }
