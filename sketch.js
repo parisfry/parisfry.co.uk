@@ -334,7 +334,6 @@ videos.forEach(video => {
     videoObserver.observe(video);
 });
 
-// SECTION 8 CAROUSEL
 
 const sectionEightGrid = document.querySelector(".section-eight-grid");
 const sectionEightNext = document.querySelector(".section-eight-next");
@@ -344,7 +343,7 @@ if (sectionEightGrid && sectionEightNext && sectionEightPrev) {
 
     sectionEightNext.addEventListener("click", () => {
 
-        const card = sectionEightGrid.querySelector(".section-eight-card");
+        const card = sectionEightGrid.firstElementChild;
 
         if (!card) return;
 
@@ -361,7 +360,7 @@ if (sectionEightGrid && sectionEightNext && sectionEightPrev) {
 
     sectionEightPrev.addEventListener("click", () => {
 
-        const card = sectionEightGrid.querySelector(".section-eight-card");
+        const card = sectionEightGrid.firstElementChild;
 
         if (!card) return;
 

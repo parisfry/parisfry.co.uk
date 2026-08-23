@@ -792,12 +792,23 @@ gap: 10px;
 
 .section-seven-gallery::-webkit-scrollbar{
 
-    display:none;
+    height: 10px;
 }
 
 .section-seven-gallery{
 
-    scrollbar-width:none;
+    scrollbar-width: auto;
+    scrollbar-color: #555 #d0d0d0;
+}
+
+.section-seven-gallery::-webkit-scrollbar-track {
+    background: #d0d0d0;
+    border-radius: 999px;
+}
+
+.section-seven-gallery::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 999px;
 }
 
 .section-seven-gallery .caption-wrapper{
