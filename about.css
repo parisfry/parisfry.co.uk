@@ -10,11 +10,9 @@
 
     gap:80px;
 
-    padding:140px 120px;
+    padding: 140px 8.16vw; 
 
 }
-
-
 
 .about-text{
 
@@ -22,12 +20,11 @@
 
 }
 
-
 .about-text h1{
 
     font-family:"Titillium Web",sans-serif;
 
-    font-size:1.5rem;
+     font-size: clamp(1.4rem, 1.8vw, 2rem);
 
     font-weight:300;
 
@@ -45,7 +42,7 @@
 
     font-family:"Titillium Web",sans-serif;
 
-    font-size:.9rem;
+    font-size: clamp(0.95rem, 1.1vw, 1.15rem);
 
     font-weight:300;
 
@@ -81,7 +78,6 @@
     object-fit:cover;
 
     border-radius:6px;
-
     opacity:.85;
 
 }
@@ -94,9 +90,10 @@
 
     height:1200px;
 
-    margin-top:100px;
+    margin-top:20px;
 
     z-index:1;
+
 
 }
 
@@ -118,7 +115,7 @@
 
 font-family: "Titillium Web", sans-serif;
 
-    font-size:.75rem;
+    font-size: clamp(0.8rem, 0.65vw, 0.8rem);
 
     letter-spacing:.18em;
 
@@ -157,7 +154,7 @@ font-family: "Titillium Web", sans-serif;
 
 font-weight: 200;
 
-    font-size:1.5rem;
+    font-size: clamp(1.1rem, 1.6vw, 1.6rem);
 
     line-height:1.08;
 
@@ -178,46 +175,36 @@ font-weight: 200;
     opacity:1;
 }
 .design{
-
-    left:120px;
-    top:120px;
-
+    left: 8.16vw;
+    top: 120px;
 }
 
 .creative{
-
-    left:700px;
-    top:0;
-
+    left: 30vw;
+    top: 0;
 }
 
 .digital{
-
-    right:120px;
-    top:420px;
-
+    right: 8.16vw;
+    top: 420px;
 }
 
 .education{
-
-    left:200px;
-    bottom:370px;
-
-    min-width:1100px;
-
+    left: 6vw;
+    right: 4vw;
+    bottom: 450px;
 }
 
 .inspired{
-
-    left:520px;
-    bottom:620px;
-
+    left: 22vw;
+    bottom: 620px;
 }
+
 .projects-link{
 
     width:80%;
 
-    margin:-400px auto 250px;
+    margin:-300px auto 250px;
 
     text-align:right;
 
@@ -232,7 +219,7 @@ font-weight: 200;
 
     font-family:"Titillium Web", sans-serif;
 
-    font-size:.9rem;
+font-size: clamp(1.1rem, 1.4vw, 1.6rem);
 
     font-weight:300;
 

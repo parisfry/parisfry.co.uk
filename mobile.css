@@ -475,3 +475,70 @@ margin-top:0px;
 }
 
 }
+
+@media (min-width: 901px) and (max-width: 1100px) {
+
+    .home-section h1{
+
+  font-size: 1.8rem;
+
+}
+.home-section p{
+
+font-size:1.4rem;
+}
+.about-section p{
+
+font-size:1.2rem;
+}
+.mobile-label{
+
+    width:120px;
+    font-size:1.1rem;
+}
+
+.mobile-column li{
+
+    font-size:1.4rem;
+
+}
+.design{
+    left:40px;
+    top:0;
+}
+.skills{
+
+    right:100px;
+    top:100px;
+
+}
+.digital{
+
+    left:100px;
+    top:250px;
+
+}
+.education{
+
+    right:0;
+    top:520px;
+    left: 20px;
+
+    padding-right: 20px;
+}
+.inspired{
+
+    left:200px;
+    top:650px;
+
+}
+.mobile-links a{
+
+    font-size:1.4rem;
+}
+.projects-link{
+
+    font-size:1.2rem;
+
+}
+}
