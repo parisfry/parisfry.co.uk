@@ -1,5 +1,8 @@
-if (window.innerWidth <= 1000) {
-
-    window.location.href = "mobile.html";
-
+function checkMobile() {
+    if (window.innerWidth <= 700) {
+        window.location.href = "mobile.html";
+    }
 }
+
+checkMobile();
+window.addEventListener("resize", checkMobile);

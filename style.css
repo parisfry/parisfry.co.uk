@@ -14,7 +14,7 @@ html {
 
     font-family:"Titillium Web", sans-serif;
 
-    font-size:1.15rem;
+    font-size: clamp(0.9rem, 1vw, 1.15rem);
 
     font-weight: 200;
 
@@ -85,25 +85,7 @@ p{
   gap:32px;
 }
 
-.desktop-nav a{
-  color:white;
 
-    font-family:"Titillium Web", sans-serif;
-
-    font-size:1.15rem;
-
-    font-weight: 200;
-
-    letter-spacing:.12em;
-
-    text-transform:uppercase;
-
-    text-decoration:none;
-
-    transition:.25s ease;
-
-  transition:0.2s ease;
-}
 
 .desktop-nav a:hover{
     color:rgba(255,255,255,.6);
@@ -132,24 +114,41 @@ p{
 
   gap:6px;
 }
-
 .footer-name{
-  font-size:1rem;
-  color:rgba(255, 255, 255, 0.403);
-  letter-spacing: 0.08em;
-  font-family:"Titillium Web",sans-serif;
+    font-size: clamp(1rem, 1.6vw, 1.4rem);
+    color:rgba(255, 255, 255, 0.403);
+    letter-spacing: 0.08em;
+    font-family:"Titillium Web",sans-serif;
 }
 
 .footer-left a{
- color:rgba(255, 255, 255, 0.403);
-   font-family:"Titillium Web",sans-serif;
-
-  text-decoration:none;
-
-  font-size:1rem;
-
-  opacity:0.7;
+    color:rgba(255, 255, 255, 0.403);
+    font-family:"Titillium Web",sans-serif;
+    text-decoration:none;
+    font-size: clamp(1rem, 1.6vw, 1.4rem);
+    opacity:0.7;
 }
+
+.footer-right a{
+    color:rgba(255, 255, 255, 0.403);
+    text-decoration:none;
+    font-family:"Titillium Web",sans-serif;
+    font-size: clamp(0.95rem, 1.4vw, 1.3rem);
+    letter-spacing:0.08em;
+    opacity:0.7;
+}
+
+.desktop-nav a{
+    color:white;
+    font-family:"Titillium Web", sans-serif;
+    font-size: clamp(1.1rem, 1.6vw, 1.5rem);
+    font-weight: 200;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    text-decoration:none;
+    transition:.25s ease;
+}
+
 
 .footer-right{
   display:flex;
@@ -160,18 +159,7 @@ p{
   gap:6px;
 }
 
-.footer-right a{
- color:rgba(255, 255, 255, 0.403);
 
-  text-decoration:none;
-   font-family:"Titillium Web",sans-serif;
-
-  font-size:0.9rem;
-
-  letter-spacing:0.08em;
-
-  opacity:0.7;
-}
 
 .footer-right a:hover{
   color:white;
@@ -294,7 +282,7 @@ video{
 
     font-family:"Titillium Web", sans-serif !important;
 
-    font-size:.85rem !important;
+    font-size: clamp(0.85rem, 0.9vw, 1.2rem) !important;
 
     letter-spacing:.08em;
 
@@ -373,7 +361,7 @@ video{
 
     font-family:"Titillium Web",sans-serif;
 
-    font-size:.85rem;
+    font-size: clamp(0.85rem, 0.9vw, 1.2rem);
 
     letter-spacing:.08em;
 
@@ -399,25 +387,16 @@ video{
 
 @media (max-width:700px){
 
-  body{
-    padding:0px;
-  }
-
-  .desktop-nav{
-    display:none;
-  }
-
-    .top-back{
-
-      display: none
-
+    body{
+        padding:0px;
     }
 
-    .bottom-back{
+    .desktop-nav{
+        display:none;
+    }
 
-        margin:10px 0 30px 20px;
-
-        font-size:.9rem;
+    .top-back{
+        display: none;
     }
 
     .mobile-header{
@@ -440,56 +419,10 @@ video{
         color: white;
         text-decoration: none;
         font-family: "Titillium Web", sans-serif;
-        font-size: .85rem;
         letter-spacing: .12em;
-        font-weight: 200;
+        font-size: clamp(0.85rem, 2.5vw, 1.4rem);
     }
 
-  .site-header{
-    padding:5px 5px 10px 5px;
-  }
-
-.site-footer{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:flex-start;
-
-    padding:10px;
-
-    gap:10px;
-}
-
-.footer-left{
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:flex-start;
-}
-
-.footer-right{
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:flex-end;
-}
-
-.footer-left a,
-.footer-right a,
-.footer-name{
-
-    font-size:0.8rem;
-}
-.video-caption{
-
-    max-width: 80vw;
-}
     .media-caption{
         display:none;
     }
@@ -498,138 +431,69 @@ video{
         width:100%;
     }
 
-img,
-video{
-    -webkit-touch-callout: none;
-}
+    img,
+    video{
+        -webkit-touch-callout: none;
+    }
 
-.gslide-inner-content,
-.ginner-container,
-.gslide-media,
-.gslide-image{
-    height:auto !important;
-}
+    .gslide-inner-content,
+    .ginner-container,
+    .gslide-media,
+    .gslide-image{
+        height:auto !important;
+    }
 
-.gslide-image img{
-    max-height: calc(75vh - 90px) !important;
+    .gslide-image img{
+        max-height: calc(75vh - 90px) !important;
         max-width: 92vw !important;
-    
-}
-
- .gdesc-inner{
-      padding: 20px 20px 0 !important;
     }
 
-    .gslide-description{
-    position: static !important;
-    
-}
-}
-
-@media (min-width: 701px) and (max-width: 1100px) {
-
-    body{
-    padding:0px;
-  }
-
-  .desktop-nav{
-    display:none;
-  }
-
-    .top-back{
-
-      display: none
-
-    }
-
-  .mobile-header{
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 25px 20px;
-        z-index: 100;
-    }
-
-    .mobile-nav{
-        display: flex;
-        justify-content: flex-end;
-        gap: 30px;
-    }
-
-    .mobile-nav a{
-        color: white;
-        text-decoration: none;
-        font-family: "Titillium Web", sans-serif;
-        font-size: 1.2rem;
-        letter-spacing: .12em;
-        font-weight: 300;
-    }
-
-    .bottom-back {
-        margin: 20px 0 40px 30px;
-        font-size: 1rem;
-    }
-    .site-footer {
-        padding: 30px;
-        gap: 20px;
-    }
-
-    .footer-left a,
-    .footer-right a,
-    .footer-name {
-        font-size: 1rem;
-    }
-
-    .gslide-description {
-        font-size: 1rem !important;
-    }
-
-    .gdesc-inner {
+    .gdesc-inner{
         padding: 20px 20px 0 !important;
     }
 
-    .video-caption{
+    .gslide-description{
+        position: static !important;
+    }
 
-    font-size:1rem;
-}
+    .bottom-back{
+        margin:10px 0 30px 20px;
+    }
+
+    .site-header{
+        padding:5px 5px 10px 5px;
+    }
+
+    .site-footer{
+        display:flex;
+        justify-content:space-between;
+        align-items:flex-start;
+        padding:10px;
+        gap:10px;
+    }
+
+    .footer-left{
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .footer-right{
+        display:flex;
+        flex-direction:column;
+        align-items:flex-end;
+    }
 
 }
 
 @media (max-width: 380px) {
 
- .mobile-header{
+    .mobile-header{
         padding: 15px 15px;
     }
-      .mobile-nav{
+
+    .mobile-nav{
         gap: 20px;
-    }
-
-}
-
-@media (min-width: 901px) and (max-width: 1100px){
-
-    .mobile-nav a{
-
-        font-size: 1.4rem;
-  
-    }
-
-    .bottom-back {
-        font-size: 1.2rem;
-    }
-        .video-caption{
-
-    font-size:1.2rem;
-}
-    .footer-left a,
-    .footer-right a,
-    .footer-name {
-        font-size: 1.2rem;
-    }
-     .gslide-description {
-        font-size: 1.2rem !important;
     }
 
 }

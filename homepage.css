@@ -2,6 +2,7 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
+}
 
 body{
   padding: 0px;
@@ -75,7 +76,7 @@ body{
 
     font-weight:700;
 
-    font-size:1.6rem;
+      font-size: clamp(1.6rem, 2.2vw, 3.2rem);
 
     line-height:1.1;
 
@@ -86,11 +87,13 @@ body{
 
     margin:0 0 22px;
 
+     max-width: 380px;
+
     font-family:"Titillium Web",sans-serif;
 
     font-weight:200;
 
-    font-size:1.1rem;
+   font-size: clamp(1.1rem, 1.6vw, 2rem);
 
     line-height:1.2;
 
@@ -110,8 +113,7 @@ body{
 .hero-link{
 
     display:block;
-
-    width:170px;
+     width: 70%;
 
     padding-bottom:2px;
 
@@ -121,7 +123,7 @@ body{
 
     font-family:"Titillium Web",sans-serif;
 
-    font-size:1rem;
+    font-size: clamp(1rem, 1.3vw, 1.5rem);
 
     font-weight:500;
 
@@ -138,4 +140,35 @@ body{
 
     border-color:white;
 }
+
+@media (orientation: portrait) {
+
+    .hero-content{
+        padding: 10px 10px 20vh;
+    }
+
+    .hero-image{
+        max-width: none;
+        grid-column:1 / 8;
+        width: 100%;
+    }
+
+    .hero-text{
+        transform: translateY(-40px);
+        grid-column:8 / 12;
+    }
+
+    .hero-title{
+        font-size: clamp(1.8rem, 4vw, 3rem);
+    }
+
+    .hero-subtitle{
+        font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    }
+
+     .hero-link{
+        font-size: clamp(1.1rem, 2vw, 1.4rem);
+        width: clamp(180px, 20vw, 240px);
+    }
+
 }

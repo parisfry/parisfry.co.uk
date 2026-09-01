@@ -2,6 +2,9 @@
 
     min-height:900px;
 
+    max-width: 1600px;
+    margin: 0 auto;
+
     display:grid;
 
     grid-template-columns: 1fr 500px;
@@ -42,11 +45,11 @@
 
     font-family:"Titillium Web",sans-serif;
 
-    font-size: clamp(0.95rem, 1.1vw, 1.15rem);
+    font-size: clamp(1rem, 1.1vw, 1.2rem);
 
     font-weight:300;
 
-    line-height:1.1;
+    line-height:1.2;
 
     letter-spacing:.08em;
 
@@ -66,7 +69,6 @@
     
 
 }
-
 
 
 .about-image img{
@@ -98,14 +100,13 @@
 }
 
 
-
 .column{
 
     position:absolute;
 
     display:flex;
 
-    gap:58px;
+    gap: clamp(50px, 4vw, 75px);
     pointer-events:none;
 }
 
@@ -115,7 +116,7 @@
 
 font-family: "Titillium Web", sans-serif;
 
-    font-size: clamp(0.8rem, 0.65vw, 0.8rem);
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
 
     letter-spacing:.18em;
 
@@ -142,7 +143,7 @@ font-family: "Titillium Web", sans-serif;
 
     margin:0;
 
- min-width:340px;
+    min-width: clamp(240px, 20vw, 340px);
 
 }
 
@@ -175,7 +176,7 @@ font-weight: 200;
     opacity:1;
 }
 .design{
-    left: 8.16vw;
+    left: 9.5vw;
     top: 120px;
 }
 
@@ -201,6 +202,9 @@ font-weight: 200;
 }
 
 .projects-link{
+
+    position: relative;
+    z-index: 20;
 
     width:80%;
 
@@ -255,7 +259,7 @@ font-size: clamp(1.1rem, 1.4vw, 1.6rem);
 
     gap:0;
 
-    margin:0 auto 200px;
+    margin: 0 auto 60px;
 
     position:relative;
 
@@ -278,7 +282,7 @@ font-size: clamp(1.1rem, 1.4vw, 1.6rem);
 
     font-family:"Titillium Web", sans-serif;
 
-    font-size:1.5rem;
+   font-size: clamp(1.1rem, 1.6vw, 1.8rem);
 
     font-weight:500;
 
@@ -292,7 +296,7 @@ font-size: clamp(1.1rem, 1.4vw, 1.6rem);
 
     color:rgb(255, 255, 255);
 
-    font-size:.9rem;
+    font-size: clamp(0.8rem, 1vw, 1rem);
 
 }
 
@@ -301,3 +305,79 @@ font-size: clamp(1.1rem, 1.4vw, 1.6rem);
     opacity:.5;
 
 }
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+
+    .about-intro{
+        grid-template-columns: 1.6fr 1fr;
+        gap: 40px;
+        padding: 100px 50px;
+        min-height: auto;
+    }
+
+    .about-image img{
+        max-width: 100%;
+    }
+
+    .about-text h1{
+        font-size: clamp(1.5rem, 1.5vw, 1.8rem);
+         margin-bottom:40px;
+    }
+
+    .about-text p{
+        font-size: clamp(1rem, 0.9vw, 1.2rem);
+    }
+
+    .about-more{
+
+    margin-top:50px;
+    }
+
+     .links{
+        margin: 0 auto 60px;
+    }
+
+
+
+}
+
+@media (max-width: 1023px) {
+
+    .about-intro{
+        grid-template-columns: 1fr;
+        gap: 40px;
+         min-height: auto;
+
+        padding: 60px 8.16vw;
+    }
+
+    .about-image{
+        order: -1;
+
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .about-image img{
+        aspect-ratio: 4/5;
+    }
+
+    .about-text{
+        max-width: none;
+    }
+
+     .design{
+        left: 5vw;
+    }
+
+    .creative{
+        left: 45vw;
+    }
+
+ .links{
+        margin: 0 auto 60px;
+    }
+
+
+}
+

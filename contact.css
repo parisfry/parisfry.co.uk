@@ -1,14 +1,16 @@
 body{
   padding: 0px;
-  overflow: hidden;
 }
+
 .hero{
   position:relative;
 
   width:100%;
-  height:100vh;
+  min-height:100vh;
 
-  overflow:hidden;
+  overflow-y:auto;
+  overflow-x:hidden;
+
   padding: 0;
 }
 
@@ -31,8 +33,8 @@ body{
 
 .contact-content{
   position: absolute;
-  right: 12%;
-  top: 45%;
+  right: clamp(20px, 12%, 220px);
+  top: 50vh;
   transform: translateY(-50%);
 
   display: flex;
@@ -41,65 +43,66 @@ body{
 
   align-items: flex-start;
   z-index: 2;
+
+  max-height: 85vh;
+  overflow-y: auto;
 }
 
 .contact-text h1{
-color:rgb(255, 255, 255);
+  color:rgb(255, 255, 255);
   font-family:"Titillium Web",sans-serif;
 
-    font-weight:700;
+  font-weight:700;
 
-    font-size:1.6rem;
+   font-size: clamp(1.3rem, 3vw, 2.8rem);
 
-    line-height:1.1;
-
-    letter-spacing:.03em;
+  line-height:1.1;
+  letter-spacing:.03em;
 
   margin-bottom:20px;
 }
-.label{
 
+.label{
   font-family:"Titillium Web",sans-serif;
 
-    font-weight:200;
+  font-weight:200;
 
-    font-size:1rem;
+   font-size: clamp(0.9rem, 1.6vw, 1.6rem);
 
-    line-height:1.2;
+  line-height:1.2;
 
-    color:white;
-
-    letter-spacing:.08em;
+  color:white;
+  letter-spacing:.08em;
 }
 
 .value{
   font-weight: 200;
   color:rgba(255,255,255,.45);
   font-family:"Titillium Web",sans-serif;
-  font-size: 1rem;
-}
-
-p{
-  display: flex;
-  gap: 10px;
-  align-items: baseline;
-  margin-bottom: 20px;
+    font-size: clamp(0.9rem, 1.6vw, 1.6rem);
 }
 
 .contact-form{
   display:flex;
   flex-direction:column;
   gap:12px;
-  width:400px;
+  width: clamp(260px, 40vw, 480px);
+}
+
+.contact-text p{
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  margin-bottom: 20px;
 }
 
 .contact-form input,
 .contact-form textarea{
   background:black;
- color:rgba(255,255,255,.45);
   color:white;
   padding:10px;
- font-family:"Titillium Web",sans-serif;
+  font-family:"Titillium Web",sans-serif;
+ font-size: clamp(0.85rem, 1.4vw, 1.3rem);
 }
 
 .contact-form textarea{
@@ -107,12 +110,6 @@ p{
   resize:none;
 }
 
-.contact-form button{
-  color:black;
-  border:none;
-  padding:10px;
-  cursor:pointer;
-}
 .contact-form button{
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -127,7 +124,7 @@ p{
   padding: 10px;
 
   font-family: "Titillium Web", sans-serif;
-  font-size: 1rem;
+   font-size: clamp(0.9rem, 1.4vw, 1.4rem);
 
   cursor: pointer;
 
@@ -138,18 +135,14 @@ p{
   opacity: 0.8;
 }
 
+/* ============================================
+   PHONE
+   ============================================ */
+
 @media (max-width:700px){
 
   .bg-image{
-    object-position:35% center;
-
-  }
-
-  .contact-content{
-  left: auto;
-    right: 20px;
-    top: 35%;
-    transform: translateY(-50%);
+    object-position:45% center;
   }
 
   .contact-text{
@@ -158,77 +151,93 @@ p{
   }
 
   .contact-text h1{
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: clamp(1.6rem, 6vw, 2rem);
   }
-  .label{
-  font-weight: 400;
-  font-size: 1rem;
+
+  .label,
+  .value{
+    font-size: clamp(1.05rem, 4vw, 1.3rem);
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button{
+    font-size: clamp(1rem, 3.8vw, 1.15rem);
+  }
+
 }
 
-.value{
-  font-weight: 200;
-  font-size: 1rem;
-}
-p{
-  gap: 10px;
-  margin-bottom: 10px;
-  
-}
-.contact-form{
-  width:250px;
-}
-}
+/* ============================================
+   TABLET
+   ============================================ */
 
 @media (min-width: 701px) and (max-width: 1100px) {
 
-
-.bg-image{
-      object-position:35% center;
-}
-
-  .contact-content{
-  left: auto;
-    right: 60px;
-    top: 35%;
-    transform: translateY(-50%);
-  }
-
-   .contact-text h1{
-    font-size: 1.4rem;
-    font-weight: 400;
-  }
-
-    .label{
-  font-weight: 400;
-  font-size: 1rem;
-}
-
-.value{
-  font-weight: 200;
-  font-size: 1.1rem;
-}
-
-.contact-form{
-  width:450px;
-}
-
-}
-
-@media (max-width: 380px) {
-
   .bg-image{
-      object-position:45% center;
-}
-
-  .contact-content{
-  left: auto;
-    right: 20px;
-    top: 45%;
-    transform: translateY(-50%);
+    object-position:35% center;
   }
 
-.contact-form{
-  width:270px;
+  .contact-text h1{
+    font-size: clamp(1.5rem, 4vw, 2.6rem);
+  }
+
+  .label,
+  .value{
+    font-size: clamp(1rem, 2.2vw, 1.7rem);
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button{
+    font-size: clamp(0.95rem, 2vw, 1.5rem);
+  }
+
+  .contact-form{
+    width: clamp(300px, 42vw, 500px);
+  }
+
 }
+
+/* ============================================
+   SHORT / LANDSCAPE SCREENS (any width)
+   Generic fallback — compact + anchor to top
+   ============================================ */
+
+@media (max-height: 550px){
+
+  .contact-content{
+    top: 18vh;
+    transform: none;
+
+    max-height: 78vh;
+  }
+
+  .contact-text h1{
+    font-size: clamp(1.3rem, 4vw, 1.7rem);
+    margin-bottom: 8px;
+  }
+
+  .label,
+  .value{
+    font-size: clamp(0.9rem, 2.5vw, 1.15rem);
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button{
+    font-size: clamp(0.85rem, 2.3vw, 1.05rem);
+  }
+
+  .contact-text p{
+    margin-bottom: 6px;
+  }
+
+  .contact-form{
+    gap: 6px;
+  }
+
+  .contact-form textarea{
+    min-height: 50px;
+  }
+
 }
