@@ -1,0 +1,715 @@
+.muse-opening-image {
+  width: 84%;
+  margin-inline: auto;
+}
+
+.muse-opening-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3.8 / 1;
+  object-fit: fill;
+}
+
+.muse-visual-development {
+  width: min(60%, 52rem);
+  margin: clamp(3rem, 7vh, 6rem) auto;
+  color: rgba(255, 255, 255, .5);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: clamp(1.05rem, 1.2vw, 1.35rem);
+  font-weight: 200;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.muse-visual-development h2 {
+  margin: 0 0 .65rem;
+  color: #f1f1f1;
+  font-size: clamp(1rem, 1.3vw, 1.4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.muse-visual-development p {
+  margin: 0;
+}
+
+.muse-composition {
+  position: relative;
+  width: 84%;
+  aspect-ratio: 2.25 / 1;
+  margin: 0 auto clamp(4rem, 8vh, 7rem);
+}
+
+.muse-composition-base {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(.4rem, .7vw, .8rem);
+}
+
+.muse-composition-base img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .7;
+}
+
+.muse-composition-overlay {
+  position: absolute;
+  z-index: 1;
+  bottom: 2%;
+  display: block;
+  width: 33%;
+  height: 96%;
+  object-fit: contain;
+}
+
+.muse-composition-overlay--red {
+  left: 16%;
+}
+
+.muse-composition-overlay--blue {
+  right: 16%;
+}
+
+.muse-identity-development {
+  --muse-copy-overhang: clamp(3rem, 8.5vw, 10rem);
+  display: grid;
+  width: 84%;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  align-items: center;
+  gap: clamp(1rem, 2vw, 2rem);
+  margin: 0 auto clamp(4rem, 8vh, 7rem);
+}
+
+.muse-identity-copy {
+  width: calc(100% + var(--muse-copy-overhang));
+  margin-left: calc(0rem - var(--muse-copy-overhang));
+  color: rgba(255, 255, 255, .5);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: clamp(1.05rem, 1.2vw, 1.35rem);
+  font-weight: 200;
+  line-height: 1.25;
+  text-align: right;
+}
+
+.muse-identity-copy h2 {
+  margin: 0 0 .6rem;
+  color: #f1f1f1;
+  font-size: clamp(1rem, 1.3vw, 1.4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.muse-identity-copy p {
+  margin: 0;
+}
+
+.muse-identity-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(.5rem, .8vw, .9rem);
+}
+
+.muse-identity-images img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.muse-brand-row {
+  display: grid;
+  width: 84%;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(.5rem, .8vw, .9rem);
+  margin: 0 auto clamp(4rem, 8vh, 7rem);
+}
+
+.muse-brand-row img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.muse-brand-application {
+  width: min(60%, 52rem);
+  margin: 0 auto clamp(4rem, 8vh, 7rem);
+  color: rgba(255, 255, 255, .5);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: clamp(1.05rem, 1.2vw, 1.35rem);
+  font-weight: 200;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.muse-brand-application h2 {
+  margin: 0 0 .6rem;
+  color: #f1f1f1;
+  font-size: clamp(1rem, 1.3vw, 1.4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.muse-brand-application p {
+  margin: 0;
+}
+
+.muse-application-gallery {
+  display: grid;
+  width: 84%;
+  gap: clamp(.75rem, 1.25vw, 1.25rem);
+  margin: 0 auto 0;
+}
+
+.muse-application-triptych {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(.5rem, .8vw, .9rem);
+}
+
+.muse-application-triptych img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.muse-mobile-gallery-image {
+  display: none !important;
+}
+
+.muse-application-poster-frame {
+  width: 100%;
+  aspect-ratio: 2.2 / 1;
+  overflow: hidden;
+}
+
+.muse-application-poster {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+  transform: scale(1.08) translateY(2%);
+}
+
+.muse-outcome-pair {
+  display: flex;
+  width: 84%;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(.75rem, 1.25vw, 1.25rem);
+  margin: clamp(.75rem, 1.25vw, 1.25rem) auto clamp(4rem, 8vh, 7rem);
+}
+
+.muse-outcome-pair img {
+  display: block;
+  width: auto;
+  max-width: calc(100% - .75rem);
+  height: clamp(12rem, 27vw, 32rem);
+  object-fit: contain;
+}
+
+@media (min-width: 521px) and (max-width: 1024px) {
+  .muse-visual-development,
+  .muse-visual-development h2,
+  .muse-brand-application,
+  .muse-brand-application h2,
+  .muse-identity-copy {
+    font-size: clamp(.9rem, calc(.8rem + .35vw), 1.1rem);
+  }
+
+  .muse-identity-development {
+    --muse-copy-overhang: clamp(2rem, 5vw, 5rem);
+  }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1366px) and (max-aspect-ratio: 3 / 2) {
+  .muse-visual-development,
+  .muse-visual-development h2,
+  .muse-brand-application,
+  .muse-brand-application h2,
+  .muse-identity-copy {
+    font-size: clamp(.95rem, calc(.85rem + .35vw), 1.2rem);
+  }
+
+  .muse-identity-copy h2 {
+    font-size: clamp(.95rem, calc(.85rem + .35vw), 1.2rem);
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1366px) and (max-aspect-ratio: 3 / 2) {
+  .project-detail-content {
+    width: calc(100vw - clamp(6rem, 16vw, 12rem));
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1366px) and (max-aspect-ratio: 3 / 2) and (orientation: landscape) {
+  .muse-outcome-pair {
+    justify-content: center;
+    gap: clamp(.75rem, 1.25vw, 1.25rem);
+    container-type: inline-size;
+  }
+
+  .muse-outcome-pair img {
+    height: clamp(14rem, calc((100cqw - clamp(.75rem, 1.25vw, 1.25rem)) * .433), 32rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .muse-visual-development {
+    width: 100%;
+    margin-block: 2.5rem;
+    font-size: clamp(.86rem, calc(.58rem + 1.35vw), 1rem);
+  }
+
+  .muse-brand-application {
+    width: 100%;
+    margin-bottom: 3rem;
+    font-size: clamp(.86rem, calc(.58rem + 1.35vw), 1rem);
+  }
+
+  .muse-visual-development h2 {
+    font-size: clamp(.9rem, calc(.66rem + 1.2vw), 1.05rem);
+  }
+
+  .muse-brand-application h2 {
+    font-size: clamp(.9rem, calc(.66rem + 1.2vw), 1.05rem);
+  }
+
+  .muse-identity-development {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 3rem;
+  }
+
+  .muse-identity-copy {
+    width: 100%;
+    margin-left: 0;
+    font-size: clamp(.86rem, calc(.58rem + 1.35vw), 1rem);
+  }
+
+  .muse-identity-copy h2 {
+    font-size: clamp(.9rem, calc(.66rem + 1.2vw), 1.05rem);
+  }
+
+  .muse-composition {
+    width: 100%;
+    aspect-ratio: 1.25 / 1;
+  }
+
+  .muse-brand-row {
+    width: 100%;
+    gap: .5rem;
+    margin-bottom: 3rem;
+  }
+
+  .muse-application-gallery {
+    width: 100%;
+    gap: .75rem;
+    margin-bottom: 0;
+  }
+
+  .muse-outcome-pair {
+    width: 100%;
+    gap: .75rem;
+    margin-top: .75rem;
+    margin-bottom: 3rem;
+  }
+
+  .muse-outcome-pair img {
+    height: clamp(10rem, 35vw, 21rem);
+  }
+
+  .muse-composition-overlay {
+    width: 36%;
+    height: 85%;
+  }
+
+  .muse-composition-overlay--red {
+    left: 14%;
+  }
+
+  .muse-composition-overlay--blue {
+    right: 14%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1366px) and (orientation: portrait) {
+  .project-detail-content {
+    width: calc(100vw - clamp(6rem, 16vw, 12rem));
+  }
+
+  .muse-outcome-pair {
+    justify-content: center;
+    gap: clamp(.75rem, 1.25vw, 1.25rem);
+    container-type: inline-size;
+  }
+
+  .muse-outcome-pair img {
+    height: clamp(14rem, calc((100cqw - clamp(.75rem, 1.25vw, 1.25rem)) * .433), 32rem);
+  }
+
+  .muse-visual-development {
+    margin-block: clamp(1.5rem, 3.5vh, 2.75rem);
+  }
+
+  .muse-composition,
+  .muse-identity-development,
+  .muse-brand-row,
+  .muse-brand-application,
+  .muse-outcome-pair {
+    margin-bottom: clamp(1.5rem, 3.5vh, 2.75rem);
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait),
+       (min-width: 768px) and (max-width: 1366px) and (orientation: portrait) {
+  .muse-visual-development {
+    width: 84%;
+  }
+
+  .muse-identity-development {
+    width: 84%;
+    grid-template-columns: minmax(0, 1fr);
+    gap: clamp(1rem, 2.5vw, 1.5rem);
+  }
+
+  .muse-identity-copy {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .muse-identity-images {
+    width: 100%;
+  }
+
+  .muse-brand-application {
+    width: 84%;
+  }
+
+  .muse-composition {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, auto) auto;
+    width: 84%;
+    aspect-ratio: auto;
+    gap: clamp(.5rem, 1.5vw, 1rem);
+  }
+
+  .muse-composition-base {
+    display: contents;
+  }
+
+  .muse-composition-base img {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3.2 / 1;
+    object-fit: cover;
+    opacity: 1;
+  }
+
+  .muse-composition-base img:first-child {
+    grid-row: 1;
+  }
+
+  .muse-composition-base img:nth-child(2) {
+    grid-row: 2;
+  }
+
+  .muse-composition-base img:nth-child(3) {
+    grid-row: 3;
+  }
+
+  .muse-composition-overlay {
+    position: static;
+    grid-row: 4;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transform: none;
+  }
+
+  .muse-composition-overlay--red {
+    grid-column: 1;
+  }
+
+  .muse-composition-overlay--blue {
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  .project-intro {
+    margin-bottom: 1rem;
+  }
+
+  .muse-opening-image img {
+    aspect-ratio: 2.8 / 1;
+  }
+
+  .muse-visual-development {
+    width: 100%;
+  }
+
+  .muse-composition {
+    width: 100%;
+  }
+
+  .muse-identity-development {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .muse-brand-application {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .muse-brand-row {
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: clamp(16rem, 75vw, 26rem);
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+    aspect-ratio: auto;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+
+  .muse-brand-row img {
+    grid-area: 1 / 1;
+    place-self: center;
+    width: 60%;
+    max-height: 96%;
+    height: auto;
+    object-fit: contain;
+    opacity: 0;
+    animation: muse-brand-cycle 3s linear infinite;
+    transform: none;
+  }
+
+  .muse-brand-row img:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .muse-brand-row img:nth-child(2) {
+    animation-delay: 1s;
+  }
+
+  .muse-brand-row img:nth-child(3) {
+    animation-delay: 2s;
+  }
+
+  .muse-application-triptych {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .muse-application-triptych img {
+    aspect-ratio: 752 / 1047;
+    object-fit: cover;
+  }
+
+  .muse-application-triptych .muse-mobile-gallery-image {
+    display: block !important;
+  }
+
+  .muse-application-poster-frame {
+    aspect-ratio: 1.9 / 1;
+  }
+
+  .muse-outcome-pair {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .muse-outcome-pair img:first-child {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .muse-outcome-pair img:last-child {
+    width: 72%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@keyframes muse-brand-cycle {
+  0%, 29% { opacity: 1; }
+  33%, 100% { opacity: 0; }
+}
+
+@media (max-width: 767px) and (orientation: portrait) and (prefers-reduced-motion: reduce) {
+  .muse-brand-row img {
+    animation: none;
+  }
+
+  .muse-brand-row img:first-child {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .muse-opening-image {
+    width: 100%;
+  }
+}
+
+/* Match the other project pages on short mobile landscape screens. */
+@media (orientation: landscape) and (max-height: 500px) and (max-width: 950px) {
+  .project-detail-content {
+    width: 94vw;
+    padding-top: 6.5rem;
+    padding-bottom: 5rem;
+  }
+
+  .project-intro {
+    margin-bottom: 2rem;
+  }
+
+  .project-intro-copy {
+    grid-column: 5 / 12;
+    width: 87%;
+  }
+
+  .project-intro-subtitle {
+    font-size: clamp(.95rem, 2.8vw, 1.15rem);
+  }
+
+  .project-intro-description {
+    font-size: clamp(.9rem, 2.55vw, 1.05rem);
+  }
+
+  .muse-visual-development,
+  .muse-visual-development h2,
+  .muse-brand-application,
+  .muse-brand-application h2,
+  .muse-identity-copy {
+    font-size: clamp(.9rem, calc(.8rem + .35vw), 1.1rem);
+  }
+
+  .muse-identity-development {
+    --muse-copy-overhang: clamp(2rem, 5vw, 5rem);
+  }
+
+  .muse-opening-image,
+  .muse-visual-development,
+  .muse-composition,
+  .muse-identity-development,
+  .muse-brand-row,
+  .muse-brand-application,
+  .muse-application-gallery,
+  .muse-outcome-pair {
+    width: 84%;
+  }
+
+  .muse-composition {
+    aspect-ratio: 2.25 / 1;
+  }
+
+  .muse-opening-image,
+  .muse-composition,
+  .muse-identity-development,
+  .muse-brand-row,
+  .muse-outcome-pair {
+    margin-inline: auto;
+  }
+
+  .muse-outcome-pair {
+    justify-content: center;
+    gap: clamp(.75rem, 1.25vw, 1.25rem);
+    container-type: inline-size;
+  }
+
+  .muse-outcome-pair img {
+    height: clamp(14rem, calc((100cqw - clamp(.75rem, 1.25vw, 1.25rem)) * .433), 32rem);
+  }
+}
+
+/* Narrow landscape phones (including iPhone SE) use the same composition as wider phones. */
+@media (orientation: landscape) and (max-height: 500px) and (max-width: 767px) {
+  .muse-opening-image {
+    width: 92%;
+    margin-inline: auto;
+  }
+
+  .muse-visual-development {
+    width: 92%;
+    margin: clamp(3rem, 7vh, 6rem) auto;
+  }
+
+  .muse-identity-development {
+    width: 92%;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    gap: clamp(1rem, 2vw, 2rem);
+    margin: 0 auto clamp(4rem, 8vh, 7rem);
+  }
+
+  .muse-identity-copy {
+    width: calc(100% + var(--muse-copy-overhang));
+    margin-left: calc(0rem - var(--muse-copy-overhang));
+    text-align: right;
+  }
+
+  .muse-identity-copy h2 {
+    font-size: clamp(.9rem, calc(.8rem + .35vw), 1.1rem);
+  }
+
+  .muse-composition {
+    width: 92%;
+    aspect-ratio: 2.25 / 1;
+    margin: 0 auto clamp(4rem, 8vh, 7rem);
+  }
+
+  .muse-composition-overlay {
+    width: 33%;
+    height: 96%;
+  }
+
+  .muse-composition-overlay--red {
+    left: 16%;
+  }
+
+  .muse-composition-overlay--blue {
+    right: 16%;
+  }
+
+  .muse-brand-row {
+    width: 92%;
+    gap: clamp(.5rem, .8vw, .9rem);
+    margin: 0 auto clamp(4rem, 8vh, 7rem);
+  }
+
+  .muse-brand-application {
+    width: 92%;
+    margin: 0 auto clamp(4rem, 8vh, 7rem);
+  }
+
+  .muse-application-gallery {
+    width: 92%;
+    gap: clamp(.75rem, 1.25vw, 1.25rem);
+  }
+
+  .muse-outcome-pair {
+    width: 92%;
+    gap: clamp(.75rem, 1.25vw, 1.25rem);
+    margin: clamp(.75rem, 1.25vw, 1.25rem) auto clamp(4rem, 8vh, 7rem);
+    justify-content: center;
+  }
+
+  .muse-outcome-pair img {
+    height: clamp(14rem, calc((100cqw - clamp(.75rem, 1.25vw, 1.25rem)) * .433), 32rem);
+  }
+}

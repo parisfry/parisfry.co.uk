@@ -1,60 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <title>Paris Fry</title>
-
-  <link rel="stylesheet" href="homepage.css">
-  <link rel="stylesheet" href="style.css">
-
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#050505" />
+  <meta name="description" content="Paris Fry — graphic, print and digital designer." />
+  <title>Paris Fry — Designer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <script src="site-menu.js" defer></script>
 </head>
 
 <body>
-
-  <div class="hero">
-
-    <div class="hero-content">
-
-       <img
-        class="hero-image"
-        src="images/homepageimage.png">
-
-
-      <div class="hero-text">
-
-    <h1 class="hero-title">
-        PARIS FRY
-    </h1>
-
-    <h2 class="hero-subtitle">
-        DIGITAL & PRINT DESIGN · GRAPHIC DESIGN · VISUAL IDENTITY
-    </h2>
-
-    <div class="hero-nav">
-
-        <a href="about.html" class="hero-link">ABOUT</a>
-
-        <a href="projects.html" class="hero-link">PROJECTS</a>
-
-        <a href="contact.html" class="hero-link">CONTACT</a>
-
-    </div>
-</div>
-</div>
-
+  <button class="site-menu-toggle" type="button" aria-label="Open navigation" aria-controls="site-mobile-menu" aria-expanded="false">
+  </button>
+  <div class="site-mobile-menu" id="site-mobile-menu" aria-hidden="true" inert>
+    <button class="site-menu-backdrop" type="button" aria-label="Close navigation"></button>
+    <nav class="site-mobile-menu-panel" aria-label="Main navigation">
+      <a href="#home" aria-current="page">Home <span aria-hidden="true">↗</span></a>
+      <a href="projects.html">Projects <span aria-hidden="true">↗</span></a>
+      <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+    </nav>
   </div>
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <nav class="hero-nav" aria-label="Main navigation">
+          <a class="hero-home" href="#home" aria-current="page">Home <span aria-hidden="true">↗</span></a>
+          <a class="hero-projects" href="projects.html">Projects <span aria-hidden="true">↗</span></a>
+          <a class="hero-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+        </nav>
+        <div class="portrait-wrap" aria-hidden="true">
+          <img class="portrait" src="assets/homepageimage.png" alt="" />
+        </div>
+        <h1 class="hero-title" id="hero-title"><span>PARIS</span><span>FRY</span></h1>
+        <p class="discipline"><span>Digital &amp; print design ·</span><br class="discipline-break-first" /><span>Graphic design · Visual</span><br /><span>Identity</span></p>
+      </div>
+    </section>
 
-<script src="mobile-redirect.js"></script>
+    <section class="about" id="about" aria-label="About Paris">
+      <div class="about-copy">
+        <p>My creative practice is inspired by visual culture, design, and immersive experiences. I enjoy exploring how
+          print, creative coding and digital technologies can come together to create engaging visual experiences.</p>
+        <p>I studied Textile Design at Chelsea College of Arts alongside a Diploma in Creative Computing, graduating
+          with First Class Honours. Beginning with print design, my practice has evolved to include generative design
+          and digital experiences, allowing me to combine traditional design principles with digital experimentation.
+        </p>
+        <p>Alongside my creative work, I’ve developed experience in content creation and digital marketing through
+          producing social media content and building online communities.</p>
+      </div>
+    </section>
+
+    <section class="details" aria-label="Profile details">
+      <div class="details-grid">
+        <article class="detail-group group-what">
+          <h2>What I do</h2>
+          <ul class="scroll-list">
+            <li>Print Design</li>
+            <li>Creative Coding</li>
+            <li>Graphic Design</li>
+            <li>Content Creation</li>
+            <li>Generative Design</li>
+          </ul>
+        </article>
+        <article class="detail-group group-skills">
+          <h2>Skills</h2>
+          <ul class="scroll-list">
+            <li>Concept Development</li>
+            <li>Research</li>
+            <li>Layout Design</li>
+            <li>Art Direction</li>
+            <li>Typography</li>
+            <li>Colour &amp; Composition</li>
+            <li>Creative Thinking</li>
+            <li>Visual Storytelling</li>
+            <li>Presentation Design</li>
+            <li>Trend Research</li>
+            <li>Problem Solving</li>
+            <li>Communication</li>
+            <li>Collaboration</li>
+            <li>Organisation</li>
+            <li>Time Management</li>
+          </ul>
+        </article>
+        <article class="detail-group group-digital">
+          <h2>Digital Skills</h2>
+          <ul class="scroll-list">
+            <li>Adobe InDesign</li>
+            <li>Adobe Photoshop</li>
+            <li>Microsoft Office</li>
+            <li>Canva</li>
+            <li>CapCut</li>
+            <li>HTML / CSS</li>
+            <li>Creative Coding</li>
+          </ul>
+        </article>
+        <article class="detail-group group-interest">
+          <h2>Interested In</h2>
+          <ul class="scroll-list">
+            <li>Graphic Design</li>
+            <li>Brand Identity</li>
+            <li>Content Creation</li>
+            <li>Digital Culture</li>
+          </ul>
+        </article>
+        <article class="detail-group group-education">
+          <h2>Education</h2>
+          <ul class="scroll-list">
+            <li>First Class BA (Hons) Textile Design · Chelsea College of Arts, UAL</li>
+            <li>Diploma in Creative Computing (Distinction) · Creative Computing Institute, UAL</li>
+            <li>UAL Level 3 Foundation in Art and Design (Distinction) · Loughborough University</li>
+          </ul>
+        </article>
+        <article class="detail-group group-contact" id="contact">
+          <h2>Contact</h2>
+          <ul class="scroll-list">
+            <li><a href="mailto:missparisf@icloud.com">missparisf@icloud.com</a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+            <li><a href="mailto:missparisf@icloud.com">Send me a message</a></li>
+          </ul>
+        </article>
+      </div>
+      <a class="projects-link" href="projects.html">View all projects <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
 </body>
+
 </html>

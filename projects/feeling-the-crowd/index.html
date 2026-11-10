@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Feeling the crowd — Paris Fry</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../../project-detail.css" />
+  <link rel="stylesheet" href="../../project-intro.css" />
+  <link rel="stylesheet" href="feeling-the-crowd.css" />
+  <script src="feeling-the-crowd.js" defer></script>
+  <script src="../../site-menu.js" defer></script>
+</head>
+<body class="project-detail-page">
+  <button class="site-menu-toggle" type="button" aria-label="Open navigation" aria-controls="site-mobile-menu" aria-expanded="false">
+  </button>
+  <div class="site-mobile-menu" id="site-mobile-menu" aria-hidden="true" inert>
+    <button class="site-menu-backdrop" type="button" aria-label="Close navigation"></button>
+    <nav class="site-mobile-menu-panel" aria-label="Main navigation">
+      <a href="../../index.html">Home <span aria-hidden="true">↗</span></a>
+      <a href="../../projects.html">Projects <span aria-hidden="true">↗</span></a>
+      <a href="../../index.html#contact">Contact <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+  <nav class="project-detail-nav" aria-label="Main navigation">
+    <a href="../../index.html">Home <span aria-hidden="true">↗</span></a>
+    <a href="../../projects.html">Projects <span aria-hidden="true">↗</span></a>
+    <a href="../../index.html#contact">Contact <span aria-hidden="true">↗</span></a>
+  </nav>
+  <main class="project-detail-content">
+    <header class="project-intro">
+      <div class="project-intro-copy">
+        <h1>Feeling the Crowd</h1>
+        <p class="project-intro-subtitle">Computational Analysis | Machine Learning | Data Visualisation</p>
+        <p class="project-intro-description">A computational investigation into the emotional atmosphere of the TCS London Marathon. Treating the marathon as a complex human system, this project explores how computational tools can be used to analyse crowd behaviour, collective emotion, and spectator support during a large-scale public event.</p>
+      </div>
+    </header>
+    <section class="feeling-crowd-video" aria-label="Feeling the Crowd opening video">
+      <video autoplay muted loop playsinline preload="metadata" aria-label="Feeling the Crowd project video">
+        <source src="../../assets/FeelingTheCrowd/video1.mp4" type="video/mp4" />
+        Your browser does not support embedded video.
+      </video>
+    </section>
+    <section class="feeling-crowd-aim-section" aria-label="Project aim">
+      <div class="feeling-crowd-copy feeling-crowd-aim">
+        <h2>Project Aim</h2>
+        <p>To investigate changes in emotional atmosphere using computer vision and audio analysis, identifying crowd dynamics that could inform improvements to the runner experience.</p>
+      </div>
+    </section>
+    <section class="feeling-crowd-research-image" aria-label="Marathon research image">
+      <img src="../../assets/FeelingTheCrowd/image1.png" alt="Crowd research image from the London Marathon" loading="lazy" />
+    </section>
+    <section class="feeling-crowd-copy feeling-crowd-investigation" aria-label="Investigation questions">
+      <h2>Investigation Questions</h2>
+      <p class="feeling-crowd-questions">(1) How does emotional atmosphere change throughout a marathon?<br />
+        (2) What social patterns emerge between runners and spectators?<br />
+        (3) How can these insights improve event accessibility?<br />
+        (4) Can computational tools visualise public emotion?<br />
+        (5) Can computational tools effectively analyse mass events?</p>
+    </section>
+    <section class="feeling-crowd-video-crop" aria-label="Crowd footage from the London Marathon">
+      <video autoplay muted loop playsinline preload="metadata" aria-label="Crowd footage from the London Marathon">
+        <source src="../../assets/FeelingTheCrowd/video2.mp4" type="video/mp4" />
+        Your browser does not support embedded video.
+      </video>
+    </section>
+    <section class="feeling-crowd-deepface" aria-label="Python DeepFace analysis">
+      <div class="feeling-crowd-deepface-images">
+        <img src="../../assets/FeelingTheCrowd/image3.png" alt="Python DeepFace analysis visualisation, image three" loading="lazy" />
+        <img src="../../assets/FeelingTheCrowd/image4.png" alt="Python DeepFace analysis visualisation, image four" loading="lazy" />
+      </div>
+      <div class="feeling-crowd-copy feeling-crowd-deepface-copy">
+        <h2>Python DeepFace Analysis</h2>
+        <p>Real-world conditions such as crowd density and inconsistent image quality caused unreliable facial detection and emotion classification.</p>
+        <p>This highlighted the limitations of relying solely on AI-based emotion recognition in uncontrolled environments.</p>
+      </div>
+    </section>
+    <section class="feeling-crowd-methods" aria-label="Software and methods">
+      <div class="feeling-crowd-methods-placeholder" role="img" aria-label="Landscape image placeholder">Image placeholder</div>
+      <div class="feeling-crowd-copy feeling-crowd-methods-copy">
+        <h2>Software &amp; Methods</h2>
+        <p class="feeling-crowd-questions"><strong>(1) Python</strong> used to develop the project<br />
+          <strong>(2) DeepFace</strong> library used for facial emotion recognition<br />
+          <strong>(3) Librosa</strong> used for audio analysis through RMS loudness extraction<br />
+          <strong>(4)</strong> Data collected was processed and stored in <strong>JSON</strong> format</p>
+      </div>
+    </section>
+    <section class="feeling-crowd-copy feeling-crowd-carousel-intro" aria-label="Crowd analysis summary">
+      <p>Combining emotion detection with audio analysis revealed patterns in crowd support, while highlighting the limitations of AI in real-world environments. These insights suggest how real-time data could improve spectator distribution, runner morale and the overall marathon experience.</p>
+    </section>
+    <section class="feeling-crowd-carousel" aria-label="Feeling the Crowd image carousel">
+      <button class="feeling-crowd-carousel-arrow feeling-crowd-carousel-prev" type="button" aria-label="Show previous image">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6" /></svg>
+      </button>
+      <div class="feeling-crowd-carousel-track" aria-label="Swipe to view images 5 to 8">
+        <div class="feeling-crowd-carousel-slide" role="group" aria-roledescription="slide" aria-label="1 of 4"><img src="../../assets/FeelingTheCrowd/image5.png" alt="Feeling the Crowd image five" loading="lazy" /></div>
+        <div class="feeling-crowd-carousel-slide" role="group" aria-roledescription="slide" aria-label="2 of 4"><img src="../../assets/FeelingTheCrowd/image6.png" alt="Feeling the Crowd image six" loading="lazy" /></div>
+        <div class="feeling-crowd-carousel-slide" role="group" aria-roledescription="slide" aria-label="3 of 4"><img src="../../assets/FeelingTheCrowd/image7.png" alt="Feeling the Crowd image seven" loading="lazy" /></div>
+        <div class="feeling-crowd-carousel-slide" role="group" aria-roledescription="slide" aria-label="4 of 4"><img src="../../assets/FeelingTheCrowd/image8.png" alt="Feeling the Crowd image eight" loading="lazy" /></div>
+      </div>
+      <button class="feeling-crowd-carousel-arrow feeling-crowd-carousel-next" type="button" aria-label="Show next image">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+      </button>
+    </section>
+    <a class="project-detail-all-projects" href="../../projects.html"><span aria-hidden="true">↖</span> Back to all projects</a>
+  </main>
+</body>
+</html>

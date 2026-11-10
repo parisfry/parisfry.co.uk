@@ -1,0 +1,830 @@
+.dancefloor-image-row {
+  display: grid;
+  width: 100%;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2.37fr);
+  aspect-ratio: 2.25 / 1;
+  align-items: stretch;
+  gap: clamp(.75rem, 1.5vw, 1.5rem);
+  margin: 0 auto clamp(4rem, 8vh, 7rem);
+}
+
+.dancefloor-image-row img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+}
+
+.dancefloor-image-landscape {
+  object-position: center;
+}
+
+.dancefloor-video-copy-row {
+  --dancefloor-overhang: clamp(3rem, 8.5vw, 10rem);
+  display: grid;
+  width: min(84%, 68rem);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: clamp(1rem, 2vw, 2rem);
+  margin: clamp(-5rem, -6vh, -2rem) auto clamp(4rem, 8vh, 7rem);
+}
+
+.dancefloor-video-copy-row .dancefloor-copy-block {
+  width: calc(100% + var(--dancefloor-overhang));
+  max-width: none;
+  margin-right: calc(0rem - var(--dancefloor-overhang));
+}
+
+.dancefloor-video-frame {
+  width: 100%;
+  aspect-ratio: 6 / 5;
+  overflow: hidden;
+}
+
+.dancefloor-square-video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+.dancefloor-copy-block {
+  min-width: 0;
+  max-width: 100%;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: clamp(1.05rem, 1.2vw, 1.35rem);
+  font-weight: 200;
+  line-height: 1.25;
+}
+
+.dancefloor-copy-block h2 {
+  margin: 0 0 .6rem;
+  color: #f1f1f1;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: clamp(1rem, 1.3vw, 1.4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.dancefloor-copy-block p {
+  margin: 0;
+}
+
+.dancefloor-touch-copy {
+  display: none;
+}
+
+@media (max-width: 767px),
+       (min-width: 768px) and (max-width: 1366px) and (max-aspect-ratio: 3 / 2) {
+  .dancefloor-mouse-copy {
+    display: none;
+  }
+
+  .dancefloor-touch-copy {
+    display: block;
+  }
+
+  .dancefloor-copy-block h2 .dancefloor-touch-copy {
+    display: inline;
+  }
+}
+
+.dancefloor-triptych {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(.75rem, 1.5vw, 1.5rem);
+  margin: 0 auto clamp(4rem, 8vh, 7rem);
+}
+
+.dancefloor-triptych img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.dancefloor-centered-copy {
+  width: min(76%, 58rem);
+  margin: 0 auto clamp(4rem, 8vh, 7rem);
+  text-align: center;
+}
+
+.dancefloor-image-copy-row {
+  --dancefloor-overhang: clamp(3rem, 8.5vw, 10rem);
+  display: grid;
+  width: 100%;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(1rem, 1.5vw, 1.5rem);
+  margin: 0 auto clamp(4rem, 8vh, 7rem);
+}
+
+.dancefloor-landscape-image-placeholder {
+  display: grid;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  place-items: center;
+  background: #141414;
+  color: #777;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: clamp(.85rem, 1vw, 1.1rem);
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.dancefloor-image-copy {
+  width: calc(100% + var(--dancefloor-overhang));
+  margin-right: calc(0rem - var(--dancefloor-overhang));
+}
+
+.dancefloor-cd-videos {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: clamp(1.5rem, 4.5vw, 3.25rem);
+  row-gap: clamp(.75rem, 1.5vw, 1.5rem);
+  align-items: center;
+  margin: 0 auto clamp(4rem, 8vh, 7rem);
+}
+
+.dancefloor-cd-videos video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  justify-self: center;
+}
+
+.dancefloor-cd-videos video:nth-child(3) {
+  grid-column: auto;
+  width: 100%;
+}
+
+.dancefloor-context-row {
+  --dancefloor-overhang: clamp(3rem, 8.5vw, 10rem);
+  display: grid;
+  width: 100%;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, .9fr);
+  align-items: center;
+  gap: clamp(.75rem, 1.5vw, 1.5rem);
+  margin: 0 auto clamp(4rem, 8vh, 7rem);
+}
+
+.dancefloor-context-row video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.dancefloor-context-copy {
+  --dancefloor-overhang: clamp(3rem, 8.5vw, 10rem);
+  width: calc(100% + var(--dancefloor-overhang));
+  max-width: none;
+  margin-right: calc(0rem - var(--dancefloor-overhang));
+}
+
+.dancefloor-media-pair {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(.75rem, 1.5vw, 1.5rem);
+  margin: 0 auto clamp(4rem, 8vh, 7rem);
+}
+
+.dancefloor-media-pair img,
+.dancefloor-media-pair video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.dancefloor-carousel {
+  position: relative;
+  display: block;
+  width: min(100%, 46rem);
+  margin: 0 auto clamp(4rem, 8vh, 7rem);
+}
+
+.dancefloor-carousel-track {
+  display: grid;
+  min-width: 0;
+  grid-auto-columns: 100%;
+  grid-auto-flow: column;
+  gap: .75rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.dancefloor-carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.dancefloor-carousel-slide {
+  display: flex;
+  width: 100%;
+  height: clamp(17rem, 58vh, 40rem);
+  align-items: center;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.dancefloor-carousel-slide img {
+  display: block;
+  width: min(clamp(12.75rem, 43.5vh, 30rem), calc(100% - 4rem));
+  aspect-ratio: 3 / 4;
+  height: auto;
+  object-fit: cover;
+  margin-inline: auto;
+}
+
+.dancefloor-carousel-arrow {
+  display: grid;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 1.8rem;
+  height: 2rem;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.dancefloor-carousel-arrow--prev {
+  left: -2.5rem;
+}
+
+.dancefloor-carousel-arrow--next {
+  right: -2.5rem;
+}
+
+.dancefloor-carousel-arrow[hidden] {
+  display: none;
+}
+
+.dancefloor-carousel-arrow:hover,
+.dancefloor-carousel-arrow:focus-visible {
+  color: #fff;
+}
+
+.dancefloor-carousel-arrow svg {
+  display: block;
+  width: 1.45rem;
+  height: 1.45rem;
+}
+
+.dancefloor-video-copy-pair {
+  display: grid;
+  --dancefloor-overhang: clamp(3rem, 8.5vw, 10rem);
+  width: 100%;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, .9fr);
+  align-items: center;
+  gap: clamp(.75rem, 1.5vw, 1.5rem);
+  margin: 0 0 clamp(4rem, 8vh, 7rem);
+}
+
+.dancefloor-video-copy-pair .dancefloor-copy-block {
+  width: calc(100% + var(--dancefloor-overhang));
+  margin-right: calc(0rem - var(--dancefloor-overhang));
+}
+
+.dancefloor-video-copy-pair video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.dancefloor-landscape-video-placeholder {
+  display: grid;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  place-items: center;
+  margin: 0 auto clamp(4rem, 8vh, 7rem);
+  background: #141414;
+  color: #777;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: clamp(.85rem, 1vw, 1.1rem);
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.dancefloor-sketch-section {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin: 0 auto clamp(4rem, 8vh, 7rem);
+}
+
+.dancefloor-sketch {
+  width: 100%;
+  aspect-ratio: 50 / 33;
+  overflow: hidden;
+  background: #000;
+}
+
+.dancefloor-sketch canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.dancefloor-video-text-row {
+  display: grid;
+  --dancefloor-overhang: clamp(3rem, 8.5vw, 10rem);
+  width: 100%;
+  grid-template-columns: minmax(0, .7fr) minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(.75rem, 1.5vw, 1.5rem);
+  margin: 0 auto clamp(4rem, 8vh, 7rem);
+}
+
+.dancefloor-video-text-row video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.dancefloor-small-copy {
+  width: calc(100% + var(--dancefloor-overhang));
+  max-width: none;
+  margin-left: calc(0rem - var(--dancefloor-overhang));
+  text-align: right;
+}
+
+.dancefloor-final-gallery {
+  display: grid;
+  width: 100%;
+  gap: clamp(.75rem, 1.5vw, 1.5rem);
+  margin: 0 auto clamp(4rem, 8vh, 7rem);
+}
+
+.dancefloor-gallery-landscape,
+.dancefloor-gallery-row img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.dancefloor-gallery-landscape {
+  aspect-ratio: 16 / 5;
+}
+
+.dancefloor-gallery-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(.75rem, 1.5vw, 1.5rem);
+}
+
+.dancefloor-gallery-row img {
+  aspect-ratio: 4 / 5;
+}
+
+/* Match the main desktop media inset used on Music Marketing. */
+@media (min-width: 801px) {
+  .dancefloor-image-row,
+  .dancefloor-image-copy-row,
+  .dancefloor-cd-videos,
+  .dancefloor-triptych,
+  .dancefloor-media-pair,
+  .dancefloor-sketch-section,
+  .dancefloor-video-text-row,
+  .dancefloor-landscape-video-placeholder,
+  .dancefloor-final-gallery,
+  .dancefloor-video-copy-pair,
+  .dancefloor-context-row {
+    width: 84%;
+  }
+
+  .dancefloor-cd-videos {
+    width: 100%;
+  }
+
+  .dancefloor-video-copy-pair,
+  .dancefloor-video-text-row,
+  .dancefloor-image-copy-row,
+  .dancefloor-context-row {
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 801px) and (min-aspect-ratio: 3 / 2), (min-width: 1367px) {
+  .dancefloor-carousel {
+    width: min(100%, clamp(12.75rem, 39vh, 27rem));
+    max-width: none;
+  }
+
+  .dancefloor-carousel-slide {
+    height: auto;
+  }
+
+  .dancefloor-carousel-slide img {
+    width: 100%;
+  }
+}
+
+/* Use the desktop carousel layout on tablet landscape as well. */
+@media (min-width: 801px) and (max-width: 1366px) and (max-aspect-ratio: 3 / 2) {
+  .dancefloor-carousel {
+    width: min(100%, clamp(12.75rem, 39vh, 27rem));
+    max-width: none;
+  }
+
+  .dancefloor-carousel-slide {
+    height: auto;
+  }
+
+  .dancefloor-carousel-slide img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 800px),
+       (min-width: 801px) and (max-width: 1366px) and (max-aspect-ratio: 3 / 2) {
+  .project-detail-content {
+    width: calc(100vw - clamp(6rem, 16vw, 12rem));
+  }
+
+  .dancefloor-video-copy-row,
+  .dancefloor-video-copy-pair,
+  .dancefloor-image-copy-row,
+  .dancefloor-context-row,
+  .dancefloor-video-text-row {
+    --dancefloor-overhang: clamp(2rem, 5vw, 5rem);
+  }
+
+  .dancefloor-video-copy-pair {
+    width: 84%;
+  }
+
+}
+
+/* Match Music Marketing's responsive tablet typography. */
+@media (min-width: 521px) and (max-width: 1024px) {
+  .project-intro-subtitle {
+    font-size: clamp(.95rem, 2.8vw, 1.15rem);
+  }
+
+  .project-intro-description {
+    font-size: clamp(.9rem, 2.55vw, 1.05rem);
+  }
+
+  .dancefloor-copy-block {
+    font-size: clamp(.9rem, calc(.8rem + .35vw), 1.1rem);
+  }
+
+  .dancefloor-copy-block h2 {
+    font-size: clamp(.9rem, calc(.8rem + .35vw), 1.1rem);
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1366px) and (max-aspect-ratio: 3 / 2) {
+  .dancefloor-copy-block {
+    font-size: clamp(.95rem, calc(.85rem + .35vw), 1.2rem);
+  }
+
+  .dancefloor-copy-block h2 {
+    font-size: clamp(.95rem, calc(.85rem + .35vw), 1.2rem);
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) and (max-width: 950px) {
+  .project-detail-content {
+    width: 94vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-detail-content {
+    width: min(90vw, 42rem);
+  }
+
+  .dancefloor-video-copy-row {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dancefloor-video-frame {
+    width: 82%;
+    margin-inline: auto;
+  }
+
+  .dancefloor-video-copy-row {
+    --dancefloor-overhang: 0rem;
+  }
+
+  .dancefloor-carousel {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1.75rem minmax(0, 1fr) 1.75rem;
+    align-items: center;
+    gap: .35rem;
+  }
+
+  .dancefloor-carousel-track {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .dancefloor-carousel-slide {
+    display: block;
+    height: auto;
+    overflow: visible;
+  }
+
+  .dancefloor-carousel-slide img {
+    width: 90%;
+    aspect-ratio: 3 / 4;
+  }
+
+  .dancefloor-carousel-arrow {
+    position: static;
+    width: 1.75rem;
+    height: 1.75rem;
+    transform: none;
+  }
+
+  .dancefloor-carousel-arrow--prev {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .dancefloor-carousel-arrow--next {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .dancefloor-carousel-arrow svg {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+
+  .dancefloor-video-copy-row .dancefloor-copy-block {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .dancefloor-copy-block {
+    font-size: clamp(.86rem, calc(.58rem + 1.35vw), 1rem);
+  }
+
+  .dancefloor-copy-block h2 {
+    font-size: clamp(.9rem, calc(.66rem + 1.2vw), 1.05rem);
+  }
+
+  .dancefloor-video-copy-pair {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    --dancefloor-overhang: 0rem;
+  }
+
+  .dancefloor-video-copy-pair .dancefloor-copy-block {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .dancefloor-centered-copy {
+    width: 100%;
+  }
+
+  .dancefloor-research-copy {
+    text-align: left;
+  }
+
+  .dancefloor-sketch-section {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .dancefloor-video-text-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    --dancefloor-overhang: 0rem;
+  }
+
+  .dancefloor-small-copy {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .dancefloor-image-copy-row {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+    --dancefloor-overhang: 0rem;
+  }
+
+  .dancefloor-media-pair {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dancefloor-context-row {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    --dancefloor-overhang: 0rem;
+  }
+
+  .dancefloor-small-copy {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .dancefloor-image-copy {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .dancefloor-context-copy {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* Match System Overload's tablet content width. */
+@media (min-width: 521px) and (max-width: 800px) {
+  .project-detail-content {
+    width: calc(100vw - clamp(6rem, 16vw, 12rem));
+  }
+}
+
+/* Match System Overload's mobile section spacing. */
+@media (max-width: 767px) {
+  .project-intro {
+    margin-bottom: 1rem;
+  }
+
+  .dancefloor-image-row,
+  .dancefloor-video-copy-row,
+  .dancefloor-triptych,
+  .dancefloor-centered-copy,
+  .dancefloor-image-copy-row,
+  .dancefloor-cd-videos,
+  .dancefloor-context-row,
+  .dancefloor-media-pair,
+  .dancefloor-carousel,
+  .dancefloor-video-copy-pair,
+  .dancefloor-landscape-video-placeholder,
+  .dancefloor-sketch-section,
+  .dancefloor-video-text-row,
+  .dancefloor-final-gallery {
+    margin-bottom: 3rem;
+  }
+
+  .dancefloor-image-row {
+    margin-bottom: 3.5rem;
+  }
+}
+
+/* Match System Overload's tighter section spacing on portrait iPads. */
+@media (min-width: 768px) and (max-width: 1366px) and (orientation: portrait) {
+  .dancefloor-image-row {
+    margin-bottom: clamp(2.5rem, 4vh, 3rem);
+  }
+
+  .dancefloor-video-copy-row {
+    margin-top: 0;
+  }
+
+  .dancefloor-carousel {
+    width: min(100%, 16rem);
+    max-width: none;
+  }
+
+  .dancefloor-carousel-slide {
+    height: auto;
+  }
+
+  .dancefloor-carousel-slide img {
+    width: 100%;
+  }
+
+  .dancefloor-video-copy-row,
+  .dancefloor-triptych,
+  .dancefloor-centered-copy,
+  .dancefloor-image-copy-row,
+  .dancefloor-cd-videos,
+  .dancefloor-context-row,
+  .dancefloor-media-pair,
+  .dancefloor-carousel,
+  .dancefloor-video-copy-pair,
+  .dancefloor-landscape-video-placeholder,
+  .dancefloor-sketch-section,
+  .dancefloor-video-text-row,
+  .dancefloor-final-gallery {
+    margin-bottom: clamp(1.5rem, 3.5vh, 2.75rem);
+  }
+}
+
+/* Match System Overload's short mobile-landscape page and section margins. */
+@media (orientation: landscape) and (max-height: 500px) and (max-width: 950px) {
+  .project-detail-content {
+    width: 94vw;
+    padding-top: 6.5rem;
+    padding-bottom: 5rem;
+  }
+
+  .project-intro {
+    margin-bottom: 2rem;
+  }
+
+  .project-intro-copy {
+    grid-column: 5 / 12;
+    width: 87%;
+  }
+
+  .dancefloor-image-row,
+  .dancefloor-video-copy-row,
+  .dancefloor-triptych,
+  .dancefloor-centered-copy,
+  .dancefloor-image-copy-row,
+  .dancefloor-cd-videos,
+  .dancefloor-context-row,
+  .dancefloor-media-pair,
+  .dancefloor-carousel,
+  .dancefloor-video-copy-pair,
+  .dancefloor-landscape-video-placeholder,
+  .dancefloor-sketch-section,
+  .dancefloor-video-text-row,
+  .dancefloor-final-gallery {
+    width: 84%;
+    margin-inline: auto;
+  }
+
+  .dancefloor-video-copy-row,
+  .dancefloor-video-copy-pair {
+    --dancefloor-overhang: clamp(3rem, 8.5vw, 10rem);
+  }
+
+  .dancefloor-video-copy-row .dancefloor-copy-block,
+  .dancefloor-video-copy-pair .dancefloor-copy-block {
+    width: calc(100% + var(--dancefloor-overhang));
+    max-width: none;
+    margin-right: calc(0rem - var(--dancefloor-overhang));
+  }
+
+  .dancefloor-carousel {
+    width: min(42%, 13rem);
+  }
+
+  .dancefloor-gallery-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait),
+       (min-width: 768px) and (max-width: 1366px) and (orientation: portrait) {
+  .dancefloor-context-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    --dancefloor-overhang: 0rem;
+  }
+
+  .dancefloor-context-row video {
+    grid-row: 2;
+  }
+
+  .dancefloor-context-copy {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .dancefloor-cd-videos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: clamp(1.25rem, 3vw, 2.5rem);
+  }
+
+  .dancefloor-cd-videos video:nth-child(3) {
+    grid-column: 1 / -1;
+    width: 84%;
+  }
+
+  .dancefloor-gallery-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dancefloor-gallery-row img:last-child {
+    grid-column: 1 / -1;
+    aspect-ratio: 6 / 5;
+  }
+}

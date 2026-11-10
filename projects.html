@@ -1,205 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <title>Projects</title>
-
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="projects.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Selected projects and work by Paris Fry." />
+  <title>Projects — Paris Fry</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="projects.css" />
+  <script src="projects.js" defer></script>
+  <script src="site-menu.js" defer></script>
 </head>
 
-<body> 
-
-<header class="site-header">
-  
-
-  <nav class="desktop-nav">
-    <a href="index.html">HOME</a>
-    <a href="about.html">ABOUT</a>
-    <a href="projects.html">PROJECTS</a>
-    <a href="contact.html">CONTACT</a>
+<body class="projects-page">
+  <button class="site-menu-toggle" type="button" aria-label="Open navigation" aria-controls="site-mobile-menu" aria-expanded="false">
+  </button>
+  <div class="site-mobile-menu" id="site-mobile-menu" aria-hidden="true" inert>
+    <button class="site-menu-backdrop" type="button" aria-label="Close navigation"></button>
+    <nav class="site-mobile-menu-panel" aria-label="Main navigation">
+      <a href="index.html">Home <span aria-hidden="true">↗</span></a>
+      <a href="#projects" aria-current="page">Projects <span aria-hidden="true">↗</span></a>
+      <a href="index.html#contact">Contact <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+  <a class="back-home" href="index.html"><span aria-hidden="true">↖</span> Back to home</a>
+  <nav class="projects-nav" aria-label="Main navigation">
+    <a href="index.html">Home <span aria-hidden="true">↗</span></a>
+    <a href="#projects" aria-current="page">Projects <span aria-hidden="true">↗</span></a>
+    <a href="index.html#contact">Contact <span aria-hidden="true">↗</span></a>
   </nav>
-</header>
-
-<header class="mobile-header">
-
-<nav class="mobile-nav">
-
-<a href="mobile.html">HOME</a>
-
-<a href="projects.html">PROJECTS</a>
-
-<a href="contact.html">CONTACT</a>
-
-</nav>
-
-</header>
-
-
-<section class="projects-list">
-
-  <a href="SugarGirl.html" class="project-row">
-
-      <span class="project-number">[01]</span>
-
-      <span class="project-date">2026</span>
-
-      <span class="project-name">
-        Sugar Girl - Campaign Concept.
-      </span>
-
-      <span class="project-tags">
-        Social Media · Digital Campaign · Music Marketing
-
-
-      </span>
-
-      <img src="images/sugargirl.png" class="project-preview preview-7">
-
-  </a>
-
-  <a href="AnOdeToTheDancefloor.html" class="project-row">
-
-      <span class="project-number">[02]</span>
-
-      <span class="project-date">2026</span>
-
-      <span class="project-name">
-        An Ode To The Dancefloor.
-      </span>
-
-      <span class="project-tags">
-        Creative Coding · Generative Design · Experimental Systems
-
-
-      </span>
-
-      <img src="images/project1.png" class="project-preview preview-2">
-
-  </a>
-
-  <a href="Tiktok.html" class="project-row">
-
-      <span class="project-number">[03]</span>
-
-      <span class="project-date">2025</span>
-
-      <span class="project-name">
-        Digital Running Diary - TikTok.
-      </span>
-
-      <span class="project-tags">
-        Short-Form Content · Content Creation · Digital Storytelling
-      </span>
-
-      <img src="images/tiktok(16_9).png" class="project-preview preview-1">
-  </a>
-
-
-    <a href="SystemOverload.html" class="project-row">
-
-      <span class="project-number">[04]</span>
-
-      <span class="project-date">2025</span>
-
-      <span class="project-name">
-        System Overload.
-      </span>
-
-      <span class="project-tags">
-        Motion Graphics · Electronic Music Culture · Audio Reactive Design
-      </span>
-
-      <img src="images/project2(4:3).jpeg" class="project-preview preview-3">
-
-  </a>
-
-    <a href="FeelingTheCrowd.html" class="project-row">
-
-      <span class="project-number">[05]</span>
-
-      <span class="project-date">2025</span>
-
-      <span class="project-name">
-        Feeling The Crowd.
-      </span>
-
-      <span class="project-tags">
-        Computational Analysis · Machine Learning · Data Visualisation
-      </span>
-
-      <img src="images/project5(3:5).jpeg" class="project-preview preview-4">
-
-  </a>
-
-    <a href="Muse.html" class="project-row">
-
-      <span class="project-number">[06]</span>
-
-      <span class="project-date">2024</span>
-
-      <span class="project-name">
-        Muse.
-      </span>
-
-      <span class="project-tags">
-        Print Design · Visual Identity · Art Direction
-      </span>
-
-      <img src="images/project3(4:5).jpeg" class="project-preview preview-5">
-
-  </a>
-
-    <a href="Framework.html" class="project-row">
-
-      <span class="project-number">[07]</span>
-
-      <span class="project-date">2023</span>
-
-      <span class="project-name">
-        Framework.
-      </span>
-
-      <span class="project-tags">
-        Mixed Media · Print Design · Material Exploration
-      </span>
-
-      <img src="images/project4(3:2).jpeg" class="project-preview preview-6">
-
-  </a>
-
-
-</section>
-
-<footer class="site-footer">
-
-  <div class="footer-left">
-    <p class="footer-name">PARIS FRY</p>
-    <a href="mailto:missparisf@icloud.com">
-      missparisf@icloud.com
-    </a>
-  </div>
-
-  <div class="footer-right">
-    <a href="index.html">HOME</a>
-    <a href="contact.html">CONTACT</a>
-  </div>
-
-</footer>
-
+  <main class="projects-shell" id="projects">
+    <header class="projects-header">
+      <div class="projects-home">
+        <span class="icon-placeholder" aria-hidden="true"></span>
+        <span class="projects-name">Paris Fry</span>
+      </div>
+      <nav class="project-categories" aria-label="Project categories">
+        <button class="category-button is-active" type="button" data-category="all" aria-pressed="true">All projects</button>
+        <button class="category-button" type="button" data-category="academic" aria-pressed="false">Academic projects</button>
+        <span class="category-separator" aria-hidden="true">·</span>
+        <button class="category-button" type="button" data-category="creative" aria-pressed="false">Creative briefs</button>
+        <span class="category-separator" aria-hidden="true">·</span>
+        <button class="category-button" type="button" data-category="personal" aria-pressed="false">Personal projects</button>
+      </nav>
+    </header>
+
+    <section class="projects-content" aria-label="Selected projects">
+      <div class="project-list" aria-live="polite">
+        <a class="project-item" href="projects/an-ode-to-the-dancefloor/" aria-label="Open An Ode to the dancefloor project" data-category="academic" data-title="An Ode to the dancefloor" data-image="assets/ProjectPageImages/AnOdeToTheDancefloor.jpg">
+          <h2>An Ode to the dancefloor</h2>
+          <p class="project-description">Creative Coding <span class="description-separator">·</span> Generative Design <span class="description-separator">·</span> Experimental Systems <span class="description-separator">·</span></p>
+          <p class="project-date">[2026]</p>
+        </a>
+        <a class="project-item" href="projects/music-marketing-campaign-concept/" aria-label="Open Music Marketing campaign concept project" data-category="creative" data-title="Music Marketing - Campaign Concept" data-image="assets/ProjectPageImages/MusicMarketing.png">
+          <h2>Music Marketing - Campaign Concept</h2>
+          <p class="project-description">Social Media <span class="description-separator">·</span> Digital Campaign <span class="description-separator">·</span> Music Marketing <span class="description-separator">·</span></p>
+          <p class="project-date">[2026]</p>
+        </a>
+        <a class="project-item" href="projects/feeling-the-crowd/" aria-label="Open Feeling the crowd project" data-category="academic" data-title="Feeling the crowd" data-image="assets/ProjectPageImages/FeelingTheCrowd.jpeg">
+          <h2>Feeling the crowd</h2>
+          <p class="project-description">Computational Analysis <span class="description-separator">·</span> Machine Learning <span class="description-separator">·</span> Data Analysis <span class="description-separator">·</span></p>
+          <p class="project-date">[2025]</p>
+        </a>
+        <a class="project-item" href="projects/system-overload/" aria-label="Open System Overload project" data-category="academic" data-title="System Overload" data-image="assets/ProjectPageImages/SystemOverload.jpeg">
+          <h2>System Overload</h2>
+          <p class="project-description">Motion Graphics <span class="description-separator">·</span> Electronic Music Culture <span class="description-separator">·</span> Audio Reactive Design <span class="description-separator">·</span></p>
+          <p class="project-date">[2025]</p>
+        </a>
+        <a class="project-item" href="projects/digital-running-diary/" aria-label="Open Digital running diary project" data-category="personal" data-title="Digital running diary" data-image="assets/ProjectPageImages/DigitalRunningDiary.png">
+          <h2>Digital running diary</h2>
+          <p class="project-description">Short-Form Content <span class="description-separator">·</span> Content Creation <span class="description-separator">·</span> Digital Storytelling <span class="description-separator">·</span></p>
+          <p class="project-date">[2025]</p>
+        </a>
+        <a class="project-item" href="projects/muse/" aria-label="Open Muse project" data-category="academic" data-title="Muse" data-image="assets/ProjectPageImages/Muse.jpeg">
+          <h2>Muse</h2>
+          <p class="project-description">Print Design <span class="description-separator">·</span> Visual Identity <span class="description-separator">·</span> Art Direction <span class="description-separator">·</span></p>
+          <p class="project-date">[2024]</p>
+        </a>
+      </div>
+
+      <div class="project-preview" aria-hidden="true">
+        <img src="assets/ProjectPageImages/AnOdeToTheDancefloor.jpg" alt="" />
+      </div>
+    </section>
+  </main>
 </body>
-    <script src="sketch.js"></script>
+
 </html>
