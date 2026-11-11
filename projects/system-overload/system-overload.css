@@ -138,6 +138,16 @@
   object-fit: cover;
 }
 
+.overload-video-frame {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.overload-video-frame--zoom video {
+  transform: scale(1.12);
+}
+
 .overload-video-placeholder {
   display: grid;
   place-items: center;
