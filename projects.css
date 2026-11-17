@@ -98,10 +98,26 @@
 
 .icon-placeholder {
   display: block;
-  width: 2.15rem;
+  width: 3.2rem;
   aspect-ratio: 1;
-  border: 1px solid #555;
-  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (min-width: 681px) {
+  .projects-home {
+    --projects-star-size: clamp(3.8rem, 4.8vw, 5.5rem);
+    position: relative;
+    padding-top: 3.85rem;
+  }
+
+  .icon-placeholder {
+    position: absolute;
+    top: calc(3.2rem - var(--projects-star-size) + .55rem);
+    left: clamp(-1.45rem, -1.45vw, -.9rem);
+    width: var(--projects-star-size);
+    transform: none;
+    translate: none;
+  }
 }
 
 .projects-name {

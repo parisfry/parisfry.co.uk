@@ -34,14 +34,14 @@ a {
 }
 
 @media (max-width: 680px) and (orientation: portrait) {
+  .projects-home .icon-placeholder {
+    display: none;
+  }
+
   .hero-nav,
   .projects-nav,
   .project-detail-nav {
     display: none !important;
-  }
-
-  .projects-home .icon-placeholder {
-    display: none;
   }
 
   .site-menu-toggle {
@@ -50,12 +50,12 @@ a {
     top: 1rem;
     right: 1rem;
     display: flex;
-    width: 2.15rem;
-    height: 2.15rem;
+    width: clamp(2.75rem, 11vw, 3.5rem);
+    height: clamp(2.75rem, 11vw, 3.5rem);
     padding: 0;
-    border: 1px solid #555;
-    border-radius: 50%;
-    background: #000;
+    border: 0;
+    border-radius: 0;
+    background: transparent url("assets/White%20Four-Pointed%20Sparkle%20Star.png") center / auto 100% no-repeat;
     cursor: pointer;
   }
 

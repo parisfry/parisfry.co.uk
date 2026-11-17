@@ -77,7 +77,29 @@
       </div>
     </section>
     <section class="feeling-crowd-methods" aria-label="Software and methods">
-      <div class="feeling-crowd-methods-placeholder" role="img" aria-label="Landscape image placeholder">Image placeholder</div>
+      <div class="feeling-crowd-methods-visual" aria-label="Python audio analysis code and animated RMS loudness graph">
+        <div class="feeling-crowd-code-panel">
+          <span class="feeling-crowd-code-label">Python / Librosa</span>
+          <pre aria-label="Python code calculating RMS loudness"><code><span class="code-muted"># Measure crowd audio energy over time</span>
+rms = librosa.feature.rms(y=y, hop_length=512)[0]
+times = librosa.frames_to_time(
+    range(len(rms)), sr=sr, hop_length=512
+)
+plt.plot(times, rms, color=<span class="code-string">"orange"</span>)</code></pre>
+        </div>
+        <div class="feeling-crowd-graph-panel">
+          <div class="feeling-crowd-graph-heading">
+            <span>RMS loudness over time</span>
+            <span>0—10 sec</span>
+          </div>
+          <svg class="feeling-crowd-rms-graph" viewBox="0 0 1000 220" role="img" aria-label="Animated line graph showing measured marathon audio loudness over time">
+            <path class="graph-grid" d="M38 48H980 M38 92H980 M38 136H980 M38 180H980" />
+            <path class="graph-axis" d="M38 30V180H980" />
+            <path class="graph-line" pathLength="1" d="M90 112 L103 86 L115 134 L128 154 L140 145 L153 131 L165 153 L178 80 L191 73 L203 64 L216 135 L228 133 L241 58 L253 89 L266 111 L278 96 L291 82 L303 109 L316 93 L329 53 L341 77 L354 70 L366 119 L379 126 L391 105 L404 125 L416 99 L429 128 L442 128 L454 111 L467 127 L479 121 L492 102 L504 114 L517 76 L529 60 L542 39 L554 116 L567 105 L580 92 L592 104 L605 96 L617 121 L630 118 L642 122 L655 121 L667 138 L680 136 L692 154 L705 148 L718 152 L730 152 L743 146 L755 140 L768 142 L780 154 L793 148 L805 134 L818 141 L830 131 L843 145 L856 149 L868 146 L881 136 L893 105 L906 112 L918 116 L931 145" />
+          </svg>
+          <div class="feeling-crowd-graph-footer"><span>LOUDNESS</span><span>TIME (SECONDS)</span></div>
+        </div>
+      </div>
       <div class="feeling-crowd-copy feeling-crowd-methods-copy">
         <h2>Software &amp; Methods</h2>
         <p class="feeling-crowd-questions"><strong>(1) Python</strong> used to develop the project<br />

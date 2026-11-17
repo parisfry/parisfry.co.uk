@@ -62,17 +62,119 @@
   margin: 0 auto clamp(4rem, 8vh, 7rem);
 }
 
-.feeling-crowd-methods-placeholder {
+.feeling-crowd-methods-visual {
   display: grid;
   width: 100%;
   aspect-ratio: 16 / 9;
-  place-items: center;
-  background: #141414;
-  color: #777;
+  grid-template-rows: 1fr 1fr;
+  overflow: hidden;
+  background: #101010;
+  color: #e5e5e5;
+}
+
+.feeling-crowd-code-panel,
+.feeling-crowd-graph-panel {
+  min-height: 0;
+  padding: clamp(.55rem, 1.2vw, 1.1rem) clamp(.7rem, 1.6vw, 1.4rem);
+}
+
+.feeling-crowd-code-panel {
+  position: relative;
+  border-bottom: 1px solid #292929;
+  background: #101010;
+}
+
+.feeling-crowd-code-label,
+.feeling-crowd-graph-heading,
+.feeling-crowd-graph-footer {
   font-family: 'Titillium Web', sans-serif;
-  font-size: clamp(.85rem, 1vw, 1.1rem);
-  font-weight: 200;
+  font-size: clamp(.48rem, .68vw, .7rem);
+  letter-spacing: .12em;
   text-transform: uppercase;
+}
+
+.feeling-crowd-code-label {
+  color: #8b8b8b;
+}
+
+.feeling-crowd-code-panel pre {
+  margin: clamp(.3rem, .55vw, .55rem) 0 0;
+  overflow: hidden;
+  color: #d5d5d5;
+  font: 400 clamp(.48rem, .72vw, .72rem)/1.38 ui-monospace, SFMono-Regular, Menlo, monospace;
+  white-space: pre;
+}
+
+.feeling-crowd-code-panel code {
+  font: inherit;
+}
+
+.feeling-crowd-code-panel .code-muted {
+  color: #777;
+}
+
+.feeling-crowd-code-panel .code-string {
+  color: #ff9a3c;
+}
+
+.feeling-crowd-graph-panel {
+  display: flex;
+  flex-direction: column;
+  background: #101010;
+}
+
+.feeling-crowd-graph-heading,
+.feeling-crowd-graph-footer {
+  display: flex;
+  justify-content: space-between;
+  color: #888;
+}
+
+.feeling-crowd-graph-heading span:first-child {
+  color: #dedede;
+}
+
+.feeling-crowd-rms-graph {
+  display: block;
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+  overflow: visible;
+}
+
+.feeling-crowd-rms-graph .graph-grid {
+  fill: none;
+  stroke: #292929;
+  stroke-width: 1;
+}
+
+.feeling-crowd-rms-graph .graph-axis {
+  fill: none;
+  stroke: #555;
+  stroke-width: 1.5;
+}
+
+.feeling-crowd-rms-graph .graph-line {
+  fill: none;
+  stroke: #ff9a3c;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: feeling-crowd-draw-graph 8s ease-in-out infinite;
+}
+
+@keyframes feeling-crowd-draw-graph {
+  0% { stroke-dashoffset: 1; }
+  58%, 100% { stroke-dashoffset: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .feeling-crowd-rms-graph .graph-line {
+    stroke-dashoffset: 0;
+    animation: none;
+  }
 }
 
 .feeling-crowd-methods-copy {
@@ -470,7 +572,7 @@
     align-items: center;
   }
 
-  .feeling-crowd-methods-placeholder {
+  .feeling-crowd-methods-visual {
     grid-column: 2;
     grid-row: 1;
     aspect-ratio: 16 / 9;

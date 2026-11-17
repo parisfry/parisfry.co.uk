@@ -215,6 +215,10 @@
   object-fit: contain;
 }
 
+.muse-tshirt-pair {
+  display: none;
+}
+
 @media (min-width: 521px) and (max-width: 1024px) {
   .muse-visual-development,
   .muse-visual-development h2,
@@ -529,20 +533,27 @@
   }
 
   .muse-outcome-pair {
-    flex-direction: column;
-    align-items: center;
+    display: none;
   }
 
-  .muse-outcome-pair img:first-child {
+  .muse-tshirt-pair {
+    display: grid;
     width: 100%;
-    max-width: 100%;
-    height: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: clamp(.5rem, 2vw, .9rem);
+    margin: 1rem auto 1.5rem;
   }
 
-  .muse-outcome-pair img:last-child {
-    width: 72%;
-    max-width: 100%;
+  .muse-tshirt-pair img {
+    display: block;
+    width: 100%;
     height: auto;
+    object-fit: contain;
+  }
+
+  .muse-tshirt-pair .muse-tshirt-one {
+    transform: scaleX(-1);
   }
 }
 
