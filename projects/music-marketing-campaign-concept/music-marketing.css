@@ -38,6 +38,161 @@
   height: auto;
 }
 
+.music-instagram-grid {
+  display: grid;
+  width: 100%;
+  aspect-ratio: 3260 / 4070;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  gap: clamp(2px, .22vw, 5px);
+  overflow: visible;
+  background: #000;
+}
+
+.music-instagram-tile {
+  position: relative;
+  display: block;
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  background-color: #111;
+}
+
+button.music-instagram-tile {
+  z-index: 0;
+  cursor: pointer;
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+
+button.music-instagram-tile:hover {
+  z-index: 2;
+  transform: scale(1.045);
+  box-shadow: 0 0 .9rem rgba(0, 0, 0, .65);
+}
+
+button.music-instagram-tile:focus-visible {
+  z-index: 3;
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.music-instagram-tile img,
+.music-instagram-tile video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.music-instagram-tile:nth-child(2),
+.music-instagram-tile:nth-child(7) {
+  background-image: url("../../assets/MusicMarketing/img5.webp");
+  background-repeat: no-repeat;
+  background-size: 300% 300%;
+}
+
+.music-instagram-tile:nth-child(2) { background-position: 50% 0; }
+.music-instagram-tile:nth-child(7) { background-position: 0 100%; }
+
+.music-instagram-tile[data-post-kind="video"] video {
+  opacity: 0;
+  transition: opacity .18s ease;
+}
+
+.music-instagram-tile[data-post-kind="video"].is-playing video {
+  opacity: 1;
+}
+
+.music-instagram-static {
+  background-image: url("../../assets/MusicMarketing/img5.webp");
+  background-repeat: no-repeat;
+  background-size: 300% 300%;
+}
+
+.music-instagram-static:nth-child(3) { background-position: 100% 0; }
+.music-instagram-static:nth-child(4) { background-position: 0 50%; }
+.music-instagram-static:nth-child(5) { background-position: 50% 50%; }
+.music-instagram-static:nth-child(9) { background-position: 100% 100%; }
+
+.music-post-dialog {
+  position: fixed;
+  width: min(58vw, 42vh);
+  height: min(72.5vw, 52.5vh);
+  max-width: none;
+  max-height: 80vh;
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+  color: #fff;
+}
+
+.music-post-dialog.music-post-dialog--video {
+  width: min(40.78125vw, 29.53125vh);
+  aspect-ratio: var(--post-ratio, 9 / 16);
+}
+
+.music-post-dialog::backdrop {
+  background: rgba(0, 0, 0, .08);
+  backdrop-filter: blur(10px);
+}
+
+.music-post-dialog-content {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  overflow: hidden;
+}
+
+.music-post-dialog-content img,
+.music-post-dialog-content video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: transparent;
+}
+
+.music-post-dialog-content video {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.music-post-dialog-close {
+  position: absolute;
+  z-index: 1;
+  top: -1rem;
+  right: -2.35rem;
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 1.7rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.music-post-dialog-close:hover {
+  opacity: .72;
+}
+
+.music-post-dialog-close:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
 .music-brand-board picture {
   display: block;
   width: 100%;
@@ -406,10 +561,8 @@
     align-items: center;
   }
 
-  .music-campaign-swipe img {
-    display: block;
+  .music-campaign-swipe .music-instagram-grid {
     width: 100%;
-    height: auto;
   }
 
   .music-campaign-arrow {
@@ -663,6 +816,10 @@
 
 @media (prefers-reduced-motion: reduce) {
   .project-detail-back {
+    transition: none;
+  }
+
+  button.music-instagram-tile {
     transition: none;
   }
 }
