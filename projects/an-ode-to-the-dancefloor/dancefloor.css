@@ -397,8 +397,26 @@
   gap: clamp(.75rem, 1.5vw, 1.5rem);
 }
 
-.dancefloor-gallery-row img {
+.dancefloor-gallery-row img,
+.dancefloor-gallery-rotated-frame {
   aspect-ratio: 4 / 5;
+}
+
+.dancefloor-gallery-rotated-frame {
+  position: relative;
+  overflow: hidden;
+}
+
+.dancefloor-gallery-rotated-frame img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 125%;
+  height: 80%;
+  max-width: none;
+  aspect-ratio: auto;
+  object-fit: cover;
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 /* Match the main desktop media inset used on Music Marketing. */

@@ -109,7 +109,7 @@ a {
     align-items: center;
     justify-content: flex-end;
     gap: .5rem;
-    color: #aaa;
+    color: #fff;
     font-family: 'Titillium Web', sans-serif;
     font-size: clamp(.98rem, 4vw, 1.2rem);
     font-weight: 400;
@@ -781,6 +781,42 @@ a {
 }
 
 @media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape) {
+  .hero-nav {
+    position: fixed;
+    z-index: 20;
+    top: clamp(1rem, 3vh, 2rem);
+    right: clamp(1rem, 3vw, 2rem);
+    gap: clamp(.9rem, 3vw, 1.5rem);
+  }
+
+  .hero-nav .hero-home,
+  .hero-nav .hero-projects,
+  .hero-nav .hero-contact {
+    gap: .16rem;
+    color: #777;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: clamp(.82rem, 3.4vw, 1.05rem);
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .hero-nav .hero-home span,
+  .hero-nav .hero-projects span,
+  .hero-nav .hero-contact span {
+    font-size: .72em;
+  }
+
+  .hero-nav .hero-home:hover,
+  .hero-nav .hero-home:focus-visible,
+  .hero-nav .hero-projects:hover,
+  .hero-nav .hero-projects:focus-visible,
+  .hero-nav .hero-contact:hover,
+  .hero-nav .hero-contact:focus-visible {
+    color: #f1f1f1;
+    font-weight: 700;
+  }
+
   .hero {
     height: 100svh;
     min-height: 100svh;
@@ -899,5 +935,21 @@ a {
 
   .hero-home[aria-current="page"] {
     font-style: italic;
+  }
+}
+
+@media (max-width: 1000px) and (max-height: 500px) and (orientation: landscape) {
+  .hero-nav {
+    position: fixed;
+    z-index: 20;
+    top: clamp(1rem, 3vh, 2rem);
+    right: calc(clamp(1rem, 3vw, 2rem) - 1.15rem);
+    left: auto;
+    gap: clamp(.9rem, 3vw, 1.5rem);
+  }
+
+  .hero-nav .hero-home[aria-current="page"] {
+    font-weight: 700;
+    font-style: normal;
   }
 }

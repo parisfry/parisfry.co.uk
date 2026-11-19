@@ -100,16 +100,63 @@ if (supportsProjectPreview) {
 categoryButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const category = button.dataset.category;
+    setProjectCategory(category);
     categoryButtons.forEach((categoryButton) => {
       const isActive = categoryButton === button;
       categoryButton.classList.toggle('is-active', isActive);
       categoryButton.setAttribute('aria-pressed', String(isActive));
     });
-
-    projectItems.forEach((item) => {
-      item.hidden = category !== 'all' && item.dataset.category !== category;
-    });
-
     hideProjectPreview();
   });
 });
+
+const categoryLabels = {
+  all: 'All projects',
+  academic: 'Academic projects',
+  creative: 'Creative briefs',
+  personal: 'Personal projects',
+};
+const selectedCategory = new URLSearchParams(window.location.search).get('category');
+const mobileCategoryTitle = document.querySelector('#mobile-category-title');
+const mobileCategoryHeading = document.querySelector('.mobile-category-page-heading');
+const mobileBrowseView = window.matchMedia(
+  '(max-width: 680px) and (orientation: portrait), (max-width: 1000px) and (max-height: 500px) and (orientation: landscape)'
+);
+
+function setProjectCategory(category) {
+  projectItems.forEach((item) => {
+    item.hidden = category !== 'all' && item.dataset.category !== category;
+  });
+}
+
+function updateMobileCategoryView() {
+  const isMobileBrowse = mobileBrowseView.matches;
+  const hasCategoryPage = isMobileBrowse && Object.hasOwn(categoryLabels, selectedCategory);
+
+  document.body.classList.toggle('mobile-category-page-active', hasCategoryPage);
+  document.body.classList.toggle('mobile-category-landing-active', isMobileBrowse && !hasCategoryPage);
+
+  if (hasCategoryPage) {
+    mobileCategoryHeading.hidden = false;
+    mobileCategoryTitle.textContent = categoryLabels[selectedCategory];
+    document.title = `${categoryLabels[selectedCategory]} — Projects — Paris Fry`;
+    setProjectCategory(selectedCategory);
+    categoryButtons.forEach((button) => {
+      const isActive = button.dataset.category === selectedCategory;
+      button.classList.toggle('is-active', isActive);
+      button.setAttribute('aria-pressed', String(isActive));
+    });
+  } else {
+    mobileCategoryHeading.hidden = true;
+    document.title = 'Projects — Paris Fry';
+    if (selectedCategory && Object.hasOwn(categoryLabels, selectedCategory)) {
+      setProjectCategory(selectedCategory);
+    } else {
+      setProjectCategory('all');
+    }
+  }
+  updateDescriptionMarquees();
+}
+
+updateMobileCategoryView();
+mobileBrowseView.addEventListener('change', updateMobileCategoryView);

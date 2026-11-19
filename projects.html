@@ -35,6 +35,7 @@
       <div class="projects-home">
         <img class="icon-placeholder" src="assets/White%20Four-Pointed%20Sparkle%20Star.png" alt="" />
         <span class="projects-name">Paris Fry</span>
+        <a class="mobile-home-back" href="index.html"><span aria-hidden="true">←</span> Back to home</a>
       </div>
       <nav class="project-categories" aria-label="Project categories">
         <button class="category-button is-active" type="button" data-category="all" aria-pressed="true">All projects</button>
@@ -45,6 +46,18 @@
         <button class="category-button" type="button" data-category="personal" aria-pressed="false">Personal projects</button>
       </nav>
     </header>
+
+    <nav class="mobile-category-landing" aria-label="Choose a project category">
+      <a class="mobile-category-link" href="projects.html?category=all"><span>All projects</span></a>
+      <a class="mobile-category-link" href="projects.html?category=academic"><span>Academic projects</span></a>
+      <a class="mobile-category-link" href="projects.html?category=creative"><span>Creative briefs</span></a>
+      <a class="mobile-category-link" href="projects.html?category=personal"><span>Personal projects</span></a>
+    </nav>
+
+    <section class="mobile-category-page-heading" hidden aria-labelledby="mobile-category-title">
+      <a class="mobile-category-back" href="projects.html"><span aria-hidden="true">←</span> All categories</a>
+      <h1 id="mobile-category-title"></h1>
+    </section>
 
     <section class="projects-content" aria-label="Selected projects">
       <div class="project-list" aria-live="polite">
@@ -84,6 +97,10 @@
         <img src="assets/ProjectPageImages/AnOdeToTheDancefloor.webp" alt="" />
       </div>
     </section>
+
+    <div class="mobile-category-footer-image" aria-hidden="true">
+      <img src="assets/contact.png" alt="" loading="lazy" />
+    </div>
   </main>
 </body>
 

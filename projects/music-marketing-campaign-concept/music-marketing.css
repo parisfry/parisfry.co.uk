@@ -578,6 +578,10 @@ button.music-instagram-tile:focus-visible {
     cursor: pointer;
   }
 
+  .music-campaign-arrow[hidden] {
+    display: none;
+  }
+
   .music-campaign-arrow svg {
     display: block;
     width: 1.1rem;
@@ -924,5 +928,13 @@ button.music-instagram-tile:focus-visible {
   .music-copy-block h2,
   .music-phone-copy h2 {
     font-size: clamp(.9rem, calc(.66rem + 1.2vw), 1.05rem);
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  .music-campaign-mobile .music-campaign-slide > img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }

@@ -48,8 +48,20 @@ const campaignSwipe = document.querySelector(".music-campaign-swipe");
 
 if (campaignSwipe) {
   const firstSlide = campaignSwipe.querySelector(".music-campaign-slide");
+  const campaignSlides = [...campaignSwipe.querySelectorAll(".music-campaign-slide")];
   const previousButton = document.querySelector(".music-campaign-arrow--prev");
   const nextButton = document.querySelector(".music-campaign-arrow--next");
+
+  function updateCampaignArrows() {
+    const gap = Number.parseFloat(getComputedStyle(campaignSwipe).columnGap) || 0;
+    const slideWidth = firstSlide?.getBoundingClientRect().width || 0;
+    const activeSlide = slideWidth
+      ? Math.round(campaignSwipe.scrollLeft / (slideWidth + gap))
+      : 0;
+
+    if (previousButton) previousButton.hidden = activeSlide === 0;
+    if (nextButton) nextButton.hidden = activeSlide >= Math.min(1, campaignSlides.length - 1);
+  }
 
   function moveCampaignSlide(direction) {
     if (!firstSlide) return;
@@ -61,6 +73,9 @@ if (campaignSwipe) {
 
   previousButton?.addEventListener("click", () => moveCampaignSlide(-1));
   nextButton?.addEventListener("click", () => moveCampaignSlide(1));
+  campaignSwipe.addEventListener("scroll", updateCampaignArrows, { passive: true });
+  window.addEventListener("resize", updateCampaignArrows);
+  updateCampaignArrows();
 }
 
 const postDialog = document.querySelector(".music-post-dialog");
